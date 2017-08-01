@@ -7,7 +7,6 @@
 target 'ysbilibili' do 
   pod "DynamicBlurView"
   pod 'ReachabilitySwift', '~> 3'
-  pod 'SDWebImage', '~>3.8'
   pod 'SwiftyJSON'
   pod 'SwiftDate', '~> 4.0'
   pod 'SnapKit', '~> 3.0.2'	

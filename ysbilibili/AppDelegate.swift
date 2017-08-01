@@ -7,40 +7,90 @@
 //
 
 import UIKit
+import Kingfisher
+import ReachabilitySwift
+
+enum NetworkType {
+    /// 2g3g4g
+    case WWAN
+    /// wifi
+    case WIFI
+    /// 没有网络
+    case NONETWORK
+}
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var networkType: NetworkType?
+    let reachability = Reachability()!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        // 初始化控制器
+        initMainController()
+        // 加载动画
+        splashAnimate()
+        // 显示FPS
+        YSFPSStatus.shared.open()
+        // 添加观察者观察网络变化
+        initNetworkObserver()
+        
         return true
     }
-
-    func applicationWillResignActive(_ application: UIApplication) {
-        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-        // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+    
+    fileprivate func initNetworkObserver() {
+        reachability.whenReachable = { [weak self] reachability in
+            DispatchQueue.main.async {
+                if reachability.isReachableViaWiFi {
+                    self?.networkType = .WIFI
+                } else if reachability.isReachableViaWWAN {
+                    self?.networkType = .WWAN
+                }
+            }
+        }
+        
+        reachability.whenUnreachable = { [weak self] reachability in
+            DispatchQueue.main.async {
+                self?.networkType = .NONETWORK
+            }
+        }
+        
+        do {
+            try reachability.startNotifier()
+        } catch {
+            print("Unable to start notifier")
+        }
     }
-
-    func applicationDidEnterBackground(_ application: UIApplication) {
-        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    
+    fileprivate func splashAnimate() {
+        let backImageView = UIImageView()
+        backImageView.image = UIImage(contentsOfFile: Bundle.main.path(forResource: "bilibili_splash_iphone_bg@3x", ofType: "png")!)
+        backImageView.contentMode = .scaleAspectFill
+        backImageView.frame = window!.bounds
+        let splashView = UIImageView()
+        splashView.image = UIImage(contentsOfFile: Bundle.main.path(forResource: "bilibili_splash_default@3x", ofType: "png")!)
+        splashView.bounds = CGRect(x: 0, y: 0, width: backImageView.ysWidth * 0.7, height: backImageView.ysHeight * 0.7)
+        splashView.center = CGPoint(x: backImageView.ysCenterX, y: backImageView.ysCenterY - backImageView.ysHeight * 0.3 / 2)
+        backImageView.addSubview(splashView)
+        splashView.transform = splashView.transform.scaledBy(x: 0.01, y: 0.01)
+        UIView.animate(withDuration: 0.8, animations: {
+            splashView.isHidden = false
+            splashView.transform = CGAffineTransform.identity
+        }) { (complete) in
+            DispatchQueue.afer(time: 0.5, action: {
+                backImageView.removeFromSuperview()
+            })
+        }
+        window?.addSubview(backImageView)
     }
-
-    func applicationWillEnterForeground(_ application: UIApplication) {
-        // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+    
+    fileprivate func initMainController() {
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = YSMainTabBarController()
+        window?.makeKeyAndVisible()
     }
-
-    func applicationDidBecomeActive(_ application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    }
-
-    func applicationWillTerminate(_ application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-    }
-
 
 }
 

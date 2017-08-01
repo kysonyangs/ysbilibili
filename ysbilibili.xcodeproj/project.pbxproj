@@ -7,19 +7,75 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		480AC4781F2B1288001524B6 /* YSFPSStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480AC4771F2B1288001524B6 /* YSFPSStatus.swift */; };
+		480AC47A1F2B1293001524B6 /* HairLineConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480AC4791F2B1293001524B6 /* HairLineConstraint.swift */; };
+		480AC4821F2B12BA001524B6 /* DispatchQueue+ysAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480AC47C1F2B12BA001524B6 /* DispatchQueue+ysAdd.swift */; };
+		480AC4831F2B12BA001524B6 /* UIColor+ysAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480AC47D1F2B12BA001524B6 /* UIColor+ysAdd.swift */; };
+		480AC4841F2B12BA001524B6 /* UIImage+ysAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480AC47E1F2B12BA001524B6 /* UIImage+ysAdd.swift */; };
+		480AC4851F2B12BA001524B6 /* UITableViewCell+instanceMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480AC47F1F2B12BA001524B6 /* UITableViewCell+instanceMethod.swift */; };
+		480AC4861F2B12BA001524B6 /* UIView+captureImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480AC4801F2B12BA001524B6 /* UIView+captureImage.swift */; };
+		480AC4871F2B12BA001524B6 /* UIView+frameAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480AC4811F2B12BA001524B6 /* UIView+frameAdd.swift */; };
+		480AC48B1F2B13A6001524B6 /* YSMainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480AC48A1F2B13A6001524B6 /* YSMainTabBarController.swift */; };
+		480AC49B1F2B2B79001524B6 /* Configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480AC49A1F2B2B79001524B6 /* Configs.swift */; };
+		480AC49D1F2B2C30001524B6 /* YSMainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480AC49C1F2B2C30001524B6 /* YSMainNavigationController.swift */; };
+		480AC4A01F2B2E3C001524B6 /* bilibili_splash_default@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 480AC49F1F2B2E3C001524B6 /* bilibili_splash_default@3x.png */; };
+		480AC4A21F2B2E44001524B6 /* bilibili_splash_iphone_bg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 480AC4A11F2B2E44001524B6 /* bilibili_splash_iphone_bg@3x.png */; };
+		480AC4A51F2B3179001524B6 /* YSBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480AC4A41F2B3179001524B6 /* YSBaseViewController.swift */; };
+		480AC4A91F2B32A4001524B6 /* YSMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480AC4A81F2B32A4001524B6 /* YSMineViewController.swift */; };
+		480AC4AB1F2B32C4001524B6 /* YSMineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480AC4AA1F2B32C4001524B6 /* YSMineViewModel.swift */; };
 		48175E0F1F2B0C29005A00F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48175E0E1F2B0C29005A00F1 /* AppDelegate.swift */; };
 		48175E141F2B0C29005A00F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48175E121F2B0C29005A00F1 /* Main.storyboard */; };
 		48175E161F2B0C29005A00F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48175E151F2B0C29005A00F1 /* Assets.xcassets */; };
 		48175E191F2B0C29005A00F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48175E171F2B0C29005A00F1 /* LaunchScreen.storyboard */; };
+		482C56C21F2ECF3C00225D39 /* YSDynamicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482C56C11F2ECF3C00225D39 /* YSDynamicViewController.swift */; };
+		482C56C91F2EF78F00225D39 /* YSZoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482C56C81F2EF78F00225D39 /* YSZoneViewController.swift */; };
+		482C56CC1F2EF81700225D39 /* YSNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482C56CB1F2EF81700225D39 /* YSNavigationBar.swift */; };
+		482C56CE1F2EF94100225D39 /* YSZoneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482C56CD1F2EF94100225D39 /* YSZoneViewModel.swift */; };
+		482C56D01F2EFA9100225D39 /* YSZoneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482C56CF1F2EFA9100225D39 /* YSZoneModel.swift */; };
+		482C56D61F2EFCAA00225D39 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 482C56D51F2EFCAA00225D39 /* IJKMediaFramework.framework */; };
+		482C56D81F2EFDB900225D39 /* YSZoneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482C56D71F2EFDB900225D39 /* YSZoneCell.swift */; };
+		482C56DA1F2EFE3400225D39 /* YSNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482C56D91F2EFE3400225D39 /* YSNetworkTool.swift */; };
+		482C56DC1F2F009200225D39 /* YSJsonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482C56DB1F2F009200225D39 /* YSJsonHelper.swift */; };
+		482C56DE1F2F13E300225D39 /* YSZoneDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482C56DD1F2F13E300225D39 /* YSZoneDetailViewController.swift */; };
+		5937379367D709AC0248AA28 /* Pods_ysbilibili.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D14DC222EBC77973F8EFED8 /* Pods_ysbilibili.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D14DC222EBC77973F8EFED8 /* Pods_ysbilibili.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ysbilibili.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		182094C9B13A576FC7BE7458 /* Pods-ysbilibili.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ysbilibili.release.xcconfig"; path = "Pods/Target Support Files/Pods-ysbilibili/Pods-ysbilibili.release.xcconfig"; sourceTree = "<group>"; };
+		480AC4771F2B1288001524B6 /* YSFPSStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSFPSStatus.swift; sourceTree = "<group>"; };
+		480AC4791F2B1293001524B6 /* HairLineConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HairLineConstraint.swift; sourceTree = "<group>"; };
+		480AC47C1F2B12BA001524B6 /* DispatchQueue+ysAdd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+ysAdd.swift"; sourceTree = "<group>"; };
+		480AC47D1F2B12BA001524B6 /* UIColor+ysAdd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+ysAdd.swift"; sourceTree = "<group>"; };
+		480AC47E1F2B12BA001524B6 /* UIImage+ysAdd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+ysAdd.swift"; sourceTree = "<group>"; };
+		480AC47F1F2B12BA001524B6 /* UITableViewCell+instanceMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+instanceMethod.swift"; sourceTree = "<group>"; };
+		480AC4801F2B12BA001524B6 /* UIView+captureImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+captureImage.swift"; sourceTree = "<group>"; };
+		480AC4811F2B12BA001524B6 /* UIView+frameAdd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+frameAdd.swift"; sourceTree = "<group>"; };
+		480AC48A1F2B13A6001524B6 /* YSMainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSMainTabBarController.swift; sourceTree = "<group>"; };
+		480AC49A1F2B2B79001524B6 /* Configs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configs.swift; sourceTree = "<group>"; };
+		480AC49C1F2B2C30001524B6 /* YSMainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSMainNavigationController.swift; sourceTree = "<group>"; };
+		480AC49F1F2B2E3C001524B6 /* bilibili_splash_default@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bilibili_splash_default@3x.png"; sourceTree = "<group>"; };
+		480AC4A11F2B2E44001524B6 /* bilibili_splash_iphone_bg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bilibili_splash_iphone_bg@3x.png"; sourceTree = "<group>"; };
+		480AC4A41F2B3179001524B6 /* YSBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSBaseViewController.swift; sourceTree = "<group>"; };
+		480AC4A81F2B32A4001524B6 /* YSMineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSMineViewController.swift; sourceTree = "<group>"; };
+		480AC4AA1F2B32C4001524B6 /* YSMineViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSMineViewModel.swift; sourceTree = "<group>"; };
 		48175E0B1F2B0C29005A00F1 /* ysbilibili.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ysbilibili.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48175E0E1F2B0C29005A00F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48175E131F2B0C29005A00F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		48175E151F2B0C29005A00F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48175E181F2B0C29005A00F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48175E1A1F2B0C29005A00F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		482C56C11F2ECF3C00225D39 /* YSDynamicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSDynamicViewController.swift; sourceTree = "<group>"; };
+		482C56C81F2EF78F00225D39 /* YSZoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSZoneViewController.swift; sourceTree = "<group>"; };
+		482C56CB1F2EF81700225D39 /* YSNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSNavigationBar.swift; sourceTree = "<group>"; };
+		482C56CD1F2EF94100225D39 /* YSZoneViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSZoneViewModel.swift; sourceTree = "<group>"; };
+		482C56CF1F2EFA9100225D39 /* YSZoneModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSZoneModel.swift; sourceTree = "<group>"; };
+		482C56D51F2EFCAA00225D39 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		482C56D71F2EFDB900225D39 /* YSZoneCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSZoneCell.swift; sourceTree = "<group>"; };
+		482C56D91F2EFE3400225D39 /* YSNetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSNetworkTool.swift; sourceTree = "<group>"; };
+		482C56DB1F2F009200225D39 /* YSJsonHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSJsonHelper.swift; sourceTree = "<group>"; };
+		482C56DD1F2F13E300225D39 /* YSZoneDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSZoneDetailViewController.swift; sourceTree = "<group>"; };
+		B0D146E37321B37E0D5C42EE /* Pods-ysbilibili.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ysbilibili.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ysbilibili/Pods-ysbilibili.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +83,92 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5937379367D709AC0248AA28 /* Pods_ysbilibili.framework in Frameworks */,
+				482C56D61F2EFCAA00225D39 /* IJKMediaFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06601BD99A15473E6ABEF275 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D14DC222EBC77973F8EFED8 /* Pods_ysbilibili.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		480AC47B1F2B12BA001524B6 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				480AC47C1F2B12BA001524B6 /* DispatchQueue+ysAdd.swift */,
+				480AC47D1F2B12BA001524B6 /* UIColor+ysAdd.swift */,
+				480AC47E1F2B12BA001524B6 /* UIImage+ysAdd.swift */,
+				480AC47F1F2B12BA001524B6 /* UITableViewCell+instanceMethod.swift */,
+				480AC4801F2B12BA001524B6 /* UIView+captureImage.swift */,
+				480AC4811F2B12BA001524B6 /* UIView+frameAdd.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		480AC4881F2B1381001524B6 /* Mian */ = {
+			isa = PBXGroup;
+			children = (
+				480AC4891F2B1385001524B6 /* Controller */,
+				482C56CA1F2EF7CA00225D39 /* View */,
+			);
+			name = Mian;
+			path = Mian;
+			sourceTree = "<group>";
+		};
+		480AC4891F2B1385001524B6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				480AC4A41F2B3179001524B6 /* YSBaseViewController.swift */,
+				480AC49C1F2B2C30001524B6 /* YSMainNavigationController.swift */,
+				480AC48A1F2B13A6001524B6 /* YSMainTabBarController.swift */,
+			);
+			name = Controller;
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		480AC49E1F2B2DFD001524B6 /* splash */ = {
+			isa = PBXGroup;
+			children = (
+				480AC49F1F2B2E3C001524B6 /* bilibili_splash_default@3x.png */,
+				480AC4A11F2B2E44001524B6 /* bilibili_splash_iphone_bg@3x.png */,
+			);
+			name = splash;
+			path = splash;
+			sourceTree = "<group>";
+		};
+		480AC4A61F2B327F001524B6 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				480AC4A71F2B3285001524B6 /* Controller */,
+			);
+			name = Mine;
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		480AC4A71F2B3285001524B6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				480AC4A81F2B32A4001524B6 /* YSMineViewController.swift */,
+				480AC4AA1F2B32C4001524B6 /* YSMineViewModel.swift */,
+			);
+			name = Controller;
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		48175E021F2B0C29005A00F1 = {
 			isa = PBXGroup;
 			children = (
-				48175E0D1F2B0C29005A00F1 /* ysbilibili */,
+				06601BD99A15473E6ABEF275 /* Frameworks */,
+				55641C68419E32CC21A3B544 /* Pods */,
 				48175E0C1F2B0C29005A00F1 /* Products */,
+				48175E0D1F2B0C29005A00F1 /* ysbilibili */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,15 +183,15 @@
 		48175E0D1F2B0C29005A00F1 /* ysbilibili */ = {
 			isa = PBXGroup;
 			children = (
-				48175E271F2B0C85005A00F1 /* Expand */,
-				48175E261F2B0C7F005A00F1 /* Resources */,
 				48175E251F2B0C63005A00F1 /* Classes */,
+				48175E271F2B0C85005A00F1 /* Expand */,
 				48175E211F2B0C4C005A00F1 /* Libs */,
+				48175E261F2B0C7F005A00F1 /* Resources */,
 				48175E0E1F2B0C29005A00F1 /* AppDelegate.swift */,
-				48175E121F2B0C29005A00F1 /* Main.storyboard */,
 				48175E151F2B0C29005A00F1 /* Assets.xcassets */,
-				48175E171F2B0C29005A00F1 /* LaunchScreen.storyboard */,
 				48175E1A1F2B0C29005A00F1 /* Info.plist */,
+				48175E171F2B0C29005A00F1 /* LaunchScreen.storyboard */,
+				48175E121F2B0C29005A00F1 /* Main.storyboard */,
 			);
 			path = ysbilibili;
 			sourceTree = "<group>";
@@ -70,6 +201,7 @@
 			children = (
 			);
 			name = CustomUI;
+			path = CustomUI;
 			sourceTree = "<group>";
 		};
 		48175E211F2B0C4C005A00F1 /* Libs */ = {
@@ -77,53 +209,72 @@
 			children = (
 			);
 			name = Libs;
+			path = Libs;
 			sourceTree = "<group>";
 		};
 		48175E221F2B0C53005A00F1 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				480AC4791F2B1293001524B6 /* HairLineConstraint.swift */,
+				480AC4771F2B1288001524B6 /* YSFPSStatus.swift */,
+				482C56DB1F2F009200225D39 /* YSJsonHelper.swift */,
+				482C56D91F2EFE3400225D39 /* YSNetworkTool.swift */,
 			);
 			name = Helpers;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		48175E231F2B0C58005A00F1 /* Configs */ = {
 			isa = PBXGroup;
 			children = (
+				480AC49A1F2B2B79001524B6 /* Configs.swift */,
 			);
 			name = Configs;
+			path = Configs;
 			sourceTree = "<group>";
 		};
 		48175E241F2B0C5D005A00F1 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				480AC47B1F2B12BA001524B6 /* General */,
 			);
 			name = Extensions;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		48175E251F2B0C63005A00F1 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				482C56C01F2ECEF100225D39 /* Dynamic */,
+				480AC4881F2B1381001524B6 /* Mian */,
+				480AC4A61F2B327F001524B6 /* Mine */,
+				482C56C31F2EF76300225D39 /* Zone */,
 			);
 			name = Classes;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		48175E261F2B0C7F005A00F1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				480AC49E1F2B2DFD001524B6 /* splash */,
+				482C56D51F2EFCAA00225D39 /* IJKMediaFramework.framework */,
 			);
 			name = Resources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		48175E271F2B0C85005A00F1 /* Expand */ = {
 			isa = PBXGroup;
 			children = (
-				48175E2A1F2B0CB9005A00F1 /* Tools */,
-				48175E201F2B0C3A005A00F1 /* CustomUI */,
-				48175E221F2B0C53005A00F1 /* Helpers */,
 				48175E231F2B0C58005A00F1 /* Configs */,
+				48175E201F2B0C3A005A00F1 /* CustomUI */,
 				48175E241F2B0C5D005A00F1 /* Extensions */,
+				48175E221F2B0C53005A00F1 /* Helpers */,
+				48175E2A1F2B0CB9005A00F1 /* Tools */,
 			);
 			name = Expand;
+			path = Expand;
 			sourceTree = "<group>";
 		};
 		48175E2A1F2B0CB9005A00F1 /* Tools */ = {
@@ -131,6 +282,83 @@
 			children = (
 			);
 			name = Tools;
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		482C56C01F2ECEF100225D39 /* Dynamic */ = {
+			isa = PBXGroup;
+			children = (
+				482C56C11F2ECF3C00225D39 /* YSDynamicViewController.swift */,
+			);
+			name = Dynamic;
+			path = Dynamic;
+			sourceTree = "<group>";
+		};
+		482C56C31F2EF76300225D39 /* Zone */ = {
+			isa = PBXGroup;
+			children = (
+				482C56C41F2EF76900225D39 /* Controller */,
+				482C56C71F2EF77700225D39 /* Model */,
+				482C56C51F2EF76E00225D39 /* View */,
+				482C56C61F2EF77200225D39 /* ViewModel */,
+			);
+			name = Zone;
+			path = Zone;
+			sourceTree = "<group>";
+		};
+		482C56C41F2EF76900225D39 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				482C56DD1F2F13E300225D39 /* YSZoneDetailViewController.swift */,
+				482C56C81F2EF78F00225D39 /* YSZoneViewController.swift */,
+			);
+			name = Controller;
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		482C56C51F2EF76E00225D39 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				482C56D71F2EFDB900225D39 /* YSZoneCell.swift */,
+			);
+			name = View;
+			path = View;
+			sourceTree = "<group>";
+		};
+		482C56C61F2EF77200225D39 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				482C56CD1F2EF94100225D39 /* YSZoneViewModel.swift */,
+			);
+			name = ViewModel;
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		482C56C71F2EF77700225D39 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				482C56CF1F2EFA9100225D39 /* YSZoneModel.swift */,
+			);
+			name = Model;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		482C56CA1F2EF7CA00225D39 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				482C56CB1F2EF81700225D39 /* YSNavigationBar.swift */,
+			);
+			name = View;
+			path = View;
+			sourceTree = "<group>";
+		};
+		55641C68419E32CC21A3B544 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B0D146E37321B37E0D5C42EE /* Pods-ysbilibili.debug.xcconfig */,
+				182094C9B13A576FC7BE7458 /* Pods-ysbilibili.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,9 +368,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48175E1D1F2B0C29005A00F1 /* Build configuration list for PBXNativeTarget "ysbilibili" */;
 			buildPhases = (
+				80D273C5AE446B4B401F9ED2 /* [CP] Check Pods Manifest.lock */,
 				48175E071F2B0C29005A00F1 /* Sources */,
 				48175E081F2B0C29005A00F1 /* Frameworks */,
 				48175E091F2B0C29005A00F1 /* Resources */,
+				C7736BE8BC519D63B74600F5 /* [CP] Embed Pods Frameworks */,
+				465C5A8E69F906AEBFA95E91 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -159,6 +390,7 @@
 		48175E031F2B0C29005A00F1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = YS;
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = YangShen;
@@ -193,19 +425,92 @@
 			buildActionMask = 2147483647;
 			files = (
 				48175E191F2B0C29005A00F1 /* LaunchScreen.storyboard in Resources */,
+				480AC4A21F2B2E44001524B6 /* bilibili_splash_iphone_bg@3x.png in Resources */,
 				48175E161F2B0C29005A00F1 /* Assets.xcassets in Resources */,
+				480AC4A01F2B2E3C001524B6 /* bilibili_splash_default@3x.png in Resources */,
 				48175E141F2B0C29005A00F1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		465C5A8E69F906AEBFA95E91 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ysbilibili/Pods-ysbilibili-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80D273C5AE446B4B401F9ED2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C7736BE8BC519D63B74600F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ysbilibili/Pods-ysbilibili-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		48175E071F2B0C29005A00F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				480AC48B1F2B13A6001524B6 /* YSMainTabBarController.swift in Sources */,
+				482C56D81F2EFDB900225D39 /* YSZoneCell.swift in Sources */,
+				482C56DC1F2F009200225D39 /* YSJsonHelper.swift in Sources */,
+				480AC47A1F2B1293001524B6 /* HairLineConstraint.swift in Sources */,
+				480AC4851F2B12BA001524B6 /* UITableViewCell+instanceMethod.swift in Sources */,
+				480AC4AB1F2B32C4001524B6 /* YSMineViewModel.swift in Sources */,
+				482C56C91F2EF78F00225D39 /* YSZoneViewController.swift in Sources */,
+				482C56D01F2EFA9100225D39 /* YSZoneModel.swift in Sources */,
+				480AC4821F2B12BA001524B6 /* DispatchQueue+ysAdd.swift in Sources */,
+				480AC4831F2B12BA001524B6 /* UIColor+ysAdd.swift in Sources */,
 				48175E0F1F2B0C29005A00F1 /* AppDelegate.swift in Sources */,
+				480AC4781F2B1288001524B6 /* YSFPSStatus.swift in Sources */,
+				482C56C21F2ECF3C00225D39 /* YSDynamicViewController.swift in Sources */,
+				480AC4A51F2B3179001524B6 /* YSBaseViewController.swift in Sources */,
+				480AC4871F2B12BA001524B6 /* UIView+frameAdd.swift in Sources */,
+				482C56DA1F2EFE3400225D39 /* YSNetworkTool.swift in Sources */,
+				480AC49D1F2B2C30001524B6 /* YSMainNavigationController.swift in Sources */,
+				482C56CC1F2EF81700225D39 /* YSNavigationBar.swift in Sources */,
+				482C56DE1F2F13E300225D39 /* YSZoneDetailViewController.swift in Sources */,
+				480AC4841F2B12BA001524B6 /* UIImage+ysAdd.swift in Sources */,
+				480AC4A91F2B32A4001524B6 /* YSMineViewController.swift in Sources */,
+				480AC4861F2B12BA001524B6 /* UIView+captureImage.swift in Sources */,
+				480AC49B1F2B2B79001524B6 /* Configs.swift in Sources */,
+				482C56CE1F2EF94100225D39 /* YSZoneViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +523,7 @@
 				48175E131F2B0C29005A00F1 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		48175E171F2B0C29005A00F1 /* LaunchScreen.storyboard */ = {
@@ -226,6 +532,7 @@
 				48175E181F2B0C29005A00F1 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -326,9 +633,15 @@
 		};
 		48175E1E1F2B0C29005A00F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0D146E37321B37E0D5C42EE /* Pods-ysbilibili.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ysbilibili",
+				);
 				INFOPLIST_FILE = ysbilibili/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = YangShen.ysbilibili;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -338,9 +651,15 @@
 		};
 		48175E1F1F2B0C29005A00F1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 182094C9B13A576FC7BE7458 /* Pods-ysbilibili.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ysbilibili",
+				);
 				INFOPLIST_FILE = ysbilibili/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = YangShen.ysbilibili;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -367,6 +686,7 @@
 				48175E1F1F2B0C29005A00F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
