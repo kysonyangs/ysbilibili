@@ -8,6 +8,16 @@
 
 import UIKit
 import Alamofire
+import ReachabilitySwift
+
+enum NetworkType {
+    /// 2g3g4g
+    case WWAN
+    /// wifi
+    case WIFI
+    /// 没有网络
+    case NONETWORK
+}
 
 enum MethodType {
     case get
@@ -15,9 +25,14 @@ enum MethodType {
 }
 
 class YSNetworkTool: NSObject {
+    let reachability = Reachability()!
+    var networkType: NetworkType?
+    
+    static var shared = YSNetworkTool()
+    
     /// 接口返回的是json
     @discardableResult // 返回值可以不接受（ 返回的DataRequest有cancle方法能取消请求）
-    class func requestData(_ type: MethodType, URLString: String, parameters: [String : Any]? = nil, finished: @escaping (_ result: Any) -> () , faliued: @escaping (_ faliue : Error) -> ()) -> DataRequest{
+    func requestData(_ type: MethodType, URLString: String, parameters: [String : Any]? = nil, finished: @escaping (_ result: Any) -> () , faliued: @escaping (_ faliue : Error) -> ()) -> DataRequest{
         
         let method = type == .get ? HTTPMethod.get : HTTPMethod.post
         
@@ -41,7 +56,7 @@ class YSNetworkTool: NSObject {
     
     /// 接口返回的是data
     @discardableResult // 返回值可以不接受（ 返回的DataRequest有cancle方法能取消请求）
-    class func dataReponeseRequestdata(_ type: MethodType, URLString: String, parameters: [String : Any]? = nil, finished:  @escaping (_ result : Any) -> () , faliued: @escaping (_ faliue : Error) -> ()) -> DataRequest{
+    func dataReponeseRequestdata(_ type: MethodType, URLString: String, parameters: [String : Any]? = nil, finished:  @escaping (_ result : Any) -> () , faliued: @escaping (_ faliue : Error) -> ()) -> DataRequest{
         
         let method = type == .get ? HTTPMethod.get : HTTPMethod.post
         
@@ -56,6 +71,30 @@ class YSNetworkTool: NSObject {
             let resultString = tempString.substring(to: length) as NSString
             finished(resultString)
         })
+    }
+    
+    func startNetworkObserver() {
+        reachability.whenReachable = { [weak self] reachability in
+            DispatchQueue.main.async {
+                if reachability.isReachableViaWiFi {
+                    self?.networkType = .WIFI
+                } else if reachability.isReachableViaWWAN {
+                    self?.networkType = .WWAN
+                }
+            }
+        }
+        
+        reachability.whenUnreachable = { [weak self] reachability in
+            DispatchQueue.main.async {
+                self?.networkType = .NONETWORK
+            }
+        }
+        
+        do {
+            try reachability.startNotifier()
+        } catch {
+            print("Unable to start notifier")
+        }
     }
 
 }

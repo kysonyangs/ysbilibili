@@ -8,23 +8,11 @@
 
 import UIKit
 import Kingfisher
-import ReachabilitySwift
-
-enum NetworkType {
-    /// 2g3g4g
-    case WWAN
-    /// wifi
-    case WIFI
-    /// 没有网络
-    case NONETWORK
-}
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var networkType: NetworkType?
-    let reachability = Reachability()!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
@@ -35,33 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // 显示FPS
         YSFPSStatus.shared.open()
         // 添加观察者观察网络变化
-        initNetworkObserver()
+        YSNetworkTool.shared.startNetworkObserver()
         
         return true
-    }
-    
-    fileprivate func initNetworkObserver() {
-        reachability.whenReachable = { [weak self] reachability in
-            DispatchQueue.main.async {
-                if reachability.isReachableViaWiFi {
-                    self?.networkType = .WIFI
-                } else if reachability.isReachableViaWWAN {
-                    self?.networkType = .WWAN
-                }
-            }
-        }
-        
-        reachability.whenUnreachable = { [weak self] reachability in
-            DispatchQueue.main.async {
-                self?.networkType = .NONETWORK
-            }
-        }
-        
-        do {
-            try reachability.startNotifier()
-        } catch {
-            print("Unable to start notifier")
-        }
     }
     
     fileprivate func splashAnimate() {

@@ -9,7 +9,7 @@
 import UIKit
 
 let kZoneCellReuseKey = "kZoneCellReuseKey"
-let kHomeViewControllerShowLiveNotification = "kHomeViewControllerShowLiveNotification"
+
 
 class YSZoneViewController: YSBaseViewController {
     
@@ -84,8 +84,8 @@ extension YSZoneViewController: UICollectionViewDelegate {
         let zoneModel = zoneViewModel.zoneModelArray[indexPath.row]
         if zoneModel.name == "直播" {
             print("goto 直播")
-//            tabBarController?.selectedIndex = 0
-//            NotificationCenter.default.post(name: khomeViewControllerShowLIVEnotification, object: nil)
+            tabBarController?.selectedIndex = 0
+            YSNotificationHelper.zoneItemClickNotification()
         } else if zoneModel.name == "广告" {
             print("goto 广告")
         } else if zoneModel.name == "游戏中心" {

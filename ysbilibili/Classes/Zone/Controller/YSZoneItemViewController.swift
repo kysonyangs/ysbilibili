@@ -11,22 +11,25 @@ import UIKit
 class YSZoneItemViewController: UIViewController {
 
     var zoneItemModel: YSZoneModel?
+    var inset = UIEdgeInsets.zero {
+        didSet {
+            contentTableView.contentInset = inset
+            contentTableView.scrollIndicatorInsets = contentTableView.contentInset
+        }
+    }
     var itemViewModel = YSZoneItemViewModel()
     
-    fileprivate lazy var contentTableView: UITableView = {
+    fileprivate lazy var contentTableView: UITableView = { [unowned self] in
         let tableView = UITableView(frame: CGRect.zero, style: .grouped)
         tableView.delegate = self
         tableView.dataSource = self
         tableView.separatorStyle = .none
         tableView.backgroundColor = kHomeBackColor
-        tableView.contentInset = UIEdgeInsetsMake(0, 0, 80, 0)
         return tableView
     }()
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = UIColor.ysRandomColor()
-        
+        super.viewDidLoad()        
         view.addSubview(contentTableView)
         view.layer.cornerRadius = 10
         view.clipsToBounds = true
@@ -84,7 +87,7 @@ extension YSZoneItemViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 30
+        return 40
     }
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {

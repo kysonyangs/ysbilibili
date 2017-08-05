@@ -134,7 +134,7 @@ extension SlideMenu {
             label.tag = i
             label.isUserInteractionEnabled = true
             label.textAlignment = .center
-            let tapGest = UITapGestureRecognizer(tap: {  [weak self] in
+            let tapGest = UITapGestureRecognizer(tap: { [weak self] in
                 self?.delegate?.selectedIndex!(index: i)
                 let visableRect = CGRect(x: delta * CGFloat(i), y: 0, width: (self?.contentScrollView?.ysWidth)!, height: (self?.contentScrollView?.ysHeight)!)
                 self?.contentScrollView?.scrollRectToVisible(visableRect, animated: true)
@@ -143,6 +143,7 @@ extension SlideMenu {
             label.text = tempArray[i]
             label.font = UIFont.systemFont(ofSize: titleFont)
             labelArray.append(label)
+            label.backgroundColor = UIColor.red
             superView.addSubview(label)
             
             if i == showingIndex {
@@ -175,6 +176,13 @@ extension SlideMenu {
                 // 缓存frame和宽度
                 titleFrameArray.append(currentRect)
                 titleWidthArray.append(fitWidth)
+                
+//                if i == tempArray.count - 1 {
+//                    let centerX = self.ysCenterX
+//                    self.ysWidth = startX
+//                    self.ysCenterX = centerX
+//                }
+                
             } else { // 竖直显示 超过边界换行显示，均分哪一行的间距
                 // 如果需要自适应的话就重新计算一下padding
                 if i == lineFeedIndex {

@@ -23,7 +23,7 @@ class YSZoneItemViewModel: UIView {
 
 extension YSZoneItemViewModel {
     func requestData(rid: Int, finishAction: @escaping (() -> Void)) {
-        YSNetworkTool.requestData(.get, URLString: "http://app.bilibili.com/x/v2/region/show/child?actionKey=appkey&appkey=27eb53fc9058f8c3&build=3970&device=phone&mobi_app=iphone&platform=ios&rid=\(rid)&sign=f2850f2934407d055f8b200d49a96a6f&ts=1483686014", finished: { (result) in
+        YSNetworkTool.shared.requestData(.get, URLString: "http://app.bilibili.com/x/v2/region/show/child?actionKey=appkey&appkey=27eb53fc9058f8c3&build=3970&device=phone&mobi_app=iphone&platform=ios&rid=\(rid)&sign=f2850f2934407d055f8b200d49a96a6f&ts=1483686014", finished: { (result) in
             // 字典转模型
             let resultJson = JSON(result)
             let recommendAryStr = YSJsonHelper.getjsonArrayString(key: "recommend", json: resultJson["data"].dictionaryObject)

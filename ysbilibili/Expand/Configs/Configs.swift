@@ -8,6 +8,10 @@
 
 import UIKit
 
+/// 番剧
+let kHomeBangumiRecommendDesFont = UIFont.systemFont(ofSize: 11)
+let kHomeBangumiRecommendCoverHeight: CGFloat = 100
+
 // Mark: - 长宽
 let kScreenWidth = UIScreen.main.bounds.size.width
 let kScreenHeight = UIScreen.main.bounds.size.height
@@ -22,6 +26,7 @@ let kCornerRadius: CGFloat = 8
 let kCellCornerRadius: CGFloat = 5
 let cellIconHeight: CGFloat = 8
 let cellIconWidth: CGFloat = 10
+let kPadding: CGFloat = 15
 
 // Mark: - 字体
 /// cell 标题的字体

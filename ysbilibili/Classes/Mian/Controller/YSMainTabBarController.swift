@@ -19,7 +19,7 @@ class YSMainTabBarController: UITabBarController {
     fileprivate lazy var controllerArray: [UIViewController] = {
         var controllers = [UIViewController]()
         
-        let item1 = YSMainNavigationController(rootViewController: UIViewController())
+        let item1 = YSMainNavigationController(rootViewController: YSHomeViewController())
         controllers.append(item1)
         
         let item2 = YSMainNavigationController(rootViewController: YSZoneViewController())
@@ -65,7 +65,6 @@ class YSMainTabBarController: UITabBarController {
             vc.tabBarItem.imageInsets = UIEdgeInsetsMake(5, 0, -5, 0)
             addChildViewController(vc)
         }
-        self.selectedIndex = 1;
     }
     
     // 和statusbar的旋转相呼应

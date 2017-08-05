@@ -74,6 +74,7 @@ extension YSZoneDetailViewController {
             addChildViewController(vc)
             contentScrollView.addSubview(vc.view)
             vc.view.frame = CGRect(x: kScreenWidth * CGFloat(i), y: 0, width: kScreenWidth, height: contentScrollView.ysHeight)
+            vc.inset = UIEdgeInsetsMake(0, 0, contentScrollView.ysY, 0)
         }
     }
 }

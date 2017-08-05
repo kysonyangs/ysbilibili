@@ -17,7 +17,7 @@ class YSZoneViewModel: NSObject {
 
 extension YSZoneViewModel {
     func requestData(finishAction: @escaping (() -> Void)) {
-        YSNetworkTool.requestData(.get, URLString: kZoneURL, finished: { (result) in
+        YSNetworkTool.shared.requestData(.get, URLString: kZoneURL, finished: { (result) in
             let jsonArryStr = YSJsonHelper.getjsonArrayString(key: "data", json: result)
             if let zoneArray = JSONDeserializer<YSZoneModel>.deserializeModelArrayFrom(json: jsonArryStr) as? [YSZoneModel] {
                 self.zoneModelArray = zoneArray
