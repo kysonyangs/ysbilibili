@@ -65,7 +65,7 @@ class YSMainTabBarController: UITabBarController {
             vc.tabBarItem.imageInsets = UIEdgeInsetsMake(5, 0, -5, 0)
             addChildViewController(vc)
         }
-        
+        self.selectedIndex = 1;
     }
     
     // 和statusbar的旋转相呼应

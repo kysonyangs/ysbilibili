@@ -84,12 +84,13 @@ extension YSZoneViewController: UICollectionViewDelegate {
         let zoneModel = zoneViewModel.zoneModelArray[indexPath.row]
         if zoneModel.name == "直播" {
             print("goto 直播")
+//            tabBarController?.selectedIndex = 0
+//            NotificationCenter.default.post(name: khomeViewControllerShowLIVEnotification, object: nil)
         } else if zoneModel.name == "广告" {
             print("goto 广告")
         } else if zoneModel.name == "游戏中心" {
             print("goto 游戏中心")
         } else {
-            print("goto 详情页")
             let detailVc = YSZoneDetailViewController()
             detailVc.zoneModel = zoneModel
             navigationController?.pushViewController(detailVc, animated: true)

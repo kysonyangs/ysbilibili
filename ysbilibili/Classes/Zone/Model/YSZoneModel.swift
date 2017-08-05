@@ -10,8 +10,6 @@
 import UIKit
 import HandyJSON
 
-let kMiniPadding: CGFloat = 30
-
 class YSZoneModel: HandyJSON {
     //    "tid": 13,
     //    "reid": 0,

@@ -27,16 +27,30 @@
 		48175E141F2B0C29005A00F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48175E121F2B0C29005A00F1 /* Main.storyboard */; };
 		48175E161F2B0C29005A00F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48175E151F2B0C29005A00F1 /* Assets.xcassets */; };
 		48175E191F2B0C29005A00F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48175E171F2B0C29005A00F1 /* LaunchScreen.storyboard */; };
+		481E9EF41F34642A00C4DBE4 /* YSZoneItemHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481E9EF31F34642A00C4DBE4 /* YSZoneItemHeader.swift */; };
+		481E9EF61F3465E900C4DBE4 /* YSZoneItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481E9EF51F3465E900C4DBE4 /* YSZoneItemViewModel.swift */; };
+		481E9EFA1F3466AF00C4DBE4 /* YSRecommendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481E9EF91F3466AF00C4DBE4 /* YSRecommendModel.swift */; };
+		481E9EFD1F3470CE00C4DBE4 /* YSGifHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481E9EFC1F3470CE00C4DBE4 /* YSGifHeader.swift */; };
+		482A18EA1F3169DB000301F8 /* YSZoneItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482A18E91F3169DB000301F8 /* YSZoneItemViewController.swift */; };
 		482C56C21F2ECF3C00225D39 /* YSDynamicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482C56C11F2ECF3C00225D39 /* YSDynamicViewController.swift */; };
 		482C56C91F2EF78F00225D39 /* YSZoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482C56C81F2EF78F00225D39 /* YSZoneViewController.swift */; };
 		482C56CC1F2EF81700225D39 /* YSNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482C56CB1F2EF81700225D39 /* YSNavigationBar.swift */; };
 		482C56CE1F2EF94100225D39 /* YSZoneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482C56CD1F2EF94100225D39 /* YSZoneViewModel.swift */; };
 		482C56D01F2EFA9100225D39 /* YSZoneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482C56CF1F2EFA9100225D39 /* YSZoneModel.swift */; };
-		482C56D61F2EFCAA00225D39 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 482C56D51F2EFCAA00225D39 /* IJKMediaFramework.framework */; };
 		482C56D81F2EFDB900225D39 /* YSZoneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482C56D71F2EFDB900225D39 /* YSZoneCell.swift */; };
 		482C56DA1F2EFE3400225D39 /* YSNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482C56D91F2EFE3400225D39 /* YSNetworkTool.swift */; };
 		482C56DC1F2F009200225D39 /* YSJsonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482C56DB1F2F009200225D39 /* YSJsonHelper.swift */; };
 		482C56DE1F2F13E300225D39 /* YSZoneDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482C56DD1F2F13E300225D39 /* YSZoneDetailViewController.swift */; };
+		4830D4851F305963001E427B /* SlideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4830D4841F305963001E427B /* SlideMenu.swift */; };
+		4830D4871F306D2A001E427B /* UIGestureRecognizer+ysAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4830D4861F306D2A001E427B /* UIGestureRecognizer+ysAdd.swift */; };
+		4830D48A1F306FD8001E427B /* String+ysAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4830D4891F306FD8001E427B /* String+ysAdd.swift */; };
+		48F6512E1F359F1C008F8212 /* YSPlayerRelatesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F6512C1F359F1C008F8212 /* YSPlayerRelatesCell.swift */; };
+		48F6512F1F359F1C008F8212 /* YSPlayerRelatesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48F6512D1F359F1C008F8212 /* YSPlayerRelatesCell.xib */; };
+		48F651311F35A01B008F8212 /* YSBaseLineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F651301F35A01B008F8212 /* YSBaseLineCell.swift */; };
+		48F651351F35A0A9008F8212 /* YSPlayDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F651341F35A0A9008F8212 /* YSPlayDetailModel.swift */; };
+		48F651371F35A191008F8212 /* UIimageView+gifAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F651361F35A191008F8212 /* UIimageView+gifAdd.swift */; };
+		48F651391F35A1F3008F8212 /* YSHairLineConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F651381F35A1F3008F8212 /* YSHairLineConstraint.swift */; };
+		48F6513B1F35A312008F8212 /* Int+coutdealAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F6513A1F35A312008F8212 /* Int+coutdealAdd.swift */; };
 		5937379367D709AC0248AA28 /* Pods_ysbilibili.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D14DC222EBC77973F8EFED8 /* Pods_ysbilibili.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,16 +79,31 @@
 		48175E151F2B0C29005A00F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48175E181F2B0C29005A00F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48175E1A1F2B0C29005A00F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		481E9EF31F34642A00C4DBE4 /* YSZoneItemHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSZoneItemHeader.swift; sourceTree = "<group>"; };
+		481E9EF51F3465E900C4DBE4 /* YSZoneItemViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSZoneItemViewModel.swift; sourceTree = "<group>"; };
+		481E9EF91F3466AF00C4DBE4 /* YSRecommendModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSRecommendModel.swift; sourceTree = "<group>"; };
+		481E9EFC1F3470CE00C4DBE4 /* YSGifHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSGifHeader.swift; sourceTree = "<group>"; };
+		481E9EFE1F3471E200C4DBE4 /* ysbilibili-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ysbilibili-Bridging-Header.h"; sourceTree = "<group>"; };
+		482A18E91F3169DB000301F8 /* YSZoneItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSZoneItemViewController.swift; sourceTree = "<group>"; };
 		482C56C11F2ECF3C00225D39 /* YSDynamicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSDynamicViewController.swift; sourceTree = "<group>"; };
 		482C56C81F2EF78F00225D39 /* YSZoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSZoneViewController.swift; sourceTree = "<group>"; };
 		482C56CB1F2EF81700225D39 /* YSNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSNavigationBar.swift; sourceTree = "<group>"; };
 		482C56CD1F2EF94100225D39 /* YSZoneViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSZoneViewModel.swift; sourceTree = "<group>"; };
 		482C56CF1F2EFA9100225D39 /* YSZoneModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSZoneModel.swift; sourceTree = "<group>"; };
-		482C56D51F2EFCAA00225D39 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
 		482C56D71F2EFDB900225D39 /* YSZoneCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSZoneCell.swift; sourceTree = "<group>"; };
 		482C56D91F2EFE3400225D39 /* YSNetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSNetworkTool.swift; sourceTree = "<group>"; };
 		482C56DB1F2F009200225D39 /* YSJsonHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSJsonHelper.swift; sourceTree = "<group>"; };
 		482C56DD1F2F13E300225D39 /* YSZoneDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSZoneDetailViewController.swift; sourceTree = "<group>"; };
+		4830D4841F305963001E427B /* SlideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenu.swift; sourceTree = "<group>"; };
+		4830D4861F306D2A001E427B /* UIGestureRecognizer+ysAdd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIGestureRecognizer+ysAdd.swift"; sourceTree = "<group>"; };
+		4830D4891F306FD8001E427B /* String+ysAdd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+ysAdd.swift"; sourceTree = "<group>"; };
+		48F6512C1F359F1C008F8212 /* YSPlayerRelatesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YSPlayerRelatesCell.swift; path = YSPlayerRelatesCell.swift; sourceTree = "<group>"; };
+		48F6512D1F359F1C008F8212 /* YSPlayerRelatesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = YSPlayerRelatesCell.xib; path = YSPlayerRelatesCell.xib; sourceTree = "<group>"; };
+		48F651301F35A01B008F8212 /* YSBaseLineCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSBaseLineCell.swift; sourceTree = "<group>"; };
+		48F651341F35A0A9008F8212 /* YSPlayDetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSPlayDetailModel.swift; sourceTree = "<group>"; };
+		48F651361F35A191008F8212 /* UIimageView+gifAdd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIimageView+gifAdd.swift"; sourceTree = "<group>"; };
+		48F651381F35A1F3008F8212 /* YSHairLineConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSHairLineConstraint.swift; sourceTree = "<group>"; };
+		48F6513A1F35A312008F8212 /* Int+coutdealAdd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+coutdealAdd.swift"; sourceTree = "<group>"; };
 		B0D146E37321B37E0D5C42EE /* Pods-ysbilibili.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ysbilibili.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ysbilibili/Pods-ysbilibili.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,7 +113,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5937379367D709AC0248AA28 /* Pods_ysbilibili.framework in Frameworks */,
-				482C56D61F2EFCAA00225D39 /* IJKMediaFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +132,7 @@
 			children = (
 				480AC47C1F2B12BA001524B6 /* DispatchQueue+ysAdd.swift */,
 				480AC47D1F2B12BA001524B6 /* UIColor+ysAdd.swift */,
+				4830D4861F306D2A001E427B /* UIGestureRecognizer+ysAdd.swift */,
 				480AC47E1F2B12BA001524B6 /* UIImage+ysAdd.swift */,
 				480AC47F1F2B12BA001524B6 /* UITableViewCell+instanceMethod.swift */,
 				480AC4801F2B12BA001524B6 /* UIView+captureImage.swift */,
@@ -118,7 +147,6 @@
 				480AC4891F2B1385001524B6 /* Controller */,
 				482C56CA1F2EF7CA00225D39 /* View */,
 			);
-			name = Mian;
 			path = Mian;
 			sourceTree = "<group>";
 		};
@@ -129,7 +157,6 @@
 				480AC49C1F2B2C30001524B6 /* YSMainNavigationController.swift */,
 				480AC48A1F2B13A6001524B6 /* YSMainTabBarController.swift */,
 			);
-			name = Controller;
 			path = Controller;
 			sourceTree = "<group>";
 		};
@@ -139,7 +166,6 @@
 				480AC49F1F2B2E3C001524B6 /* bilibili_splash_default@3x.png */,
 				480AC4A11F2B2E44001524B6 /* bilibili_splash_iphone_bg@3x.png */,
 			);
-			name = splash;
 			path = splash;
 			sourceTree = "<group>";
 		};
@@ -148,7 +174,6 @@
 			children = (
 				480AC4A71F2B3285001524B6 /* Controller */,
 			);
-			name = Mine;
 			path = Mine;
 			sourceTree = "<group>";
 		};
@@ -158,7 +183,6 @@
 				480AC4A81F2B32A4001524B6 /* YSMineViewController.swift */,
 				480AC4AA1F2B32C4001524B6 /* YSMineViewModel.swift */,
 			);
-			name = Controller;
 			path = Controller;
 			sourceTree = "<group>";
 		};
@@ -192,6 +216,7 @@
 				48175E1A1F2B0C29005A00F1 /* Info.plist */,
 				48175E171F2B0C29005A00F1 /* LaunchScreen.storyboard */,
 				48175E121F2B0C29005A00F1 /* Main.storyboard */,
+				481E9EFE1F3471E200C4DBE4 /* ysbilibili-Bridging-Header.h */,
 			);
 			path = ysbilibili;
 			sourceTree = "<group>";
@@ -199,8 +224,10 @@
 		48175E201F2B0C3A005A00F1 /* CustomUI */ = {
 			isa = PBXGroup;
 			children = (
+				4830D4841F305963001E427B /* SlideMenu.swift */,
+				481E9EFC1F3470CE00C4DBE4 /* YSGifHeader.swift */,
+				48F651381F35A1F3008F8212 /* YSHairLineConstraint.swift */,
 			);
-			name = CustomUI;
 			path = CustomUI;
 			sourceTree = "<group>";
 		};
@@ -208,7 +235,6 @@
 			isa = PBXGroup;
 			children = (
 			);
-			name = Libs;
 			path = Libs;
 			sourceTree = "<group>";
 		};
@@ -220,7 +246,6 @@
 				482C56DB1F2F009200225D39 /* YSJsonHelper.swift */,
 				482C56D91F2EFE3400225D39 /* YSNetworkTool.swift */,
 			);
-			name = Helpers;
 			path = Helpers;
 			sourceTree = "<group>";
 		};
@@ -229,7 +254,6 @@
 			children = (
 				480AC49A1F2B2B79001524B6 /* Configs.swift */,
 			);
-			name = Configs;
 			path = Configs;
 			sourceTree = "<group>";
 		};
@@ -237,8 +261,10 @@
 			isa = PBXGroup;
 			children = (
 				480AC47B1F2B12BA001524B6 /* General */,
+				48F6513A1F35A312008F8212 /* Int+coutdealAdd.swift */,
+				4830D4891F306FD8001E427B /* String+ysAdd.swift */,
+				48F651361F35A191008F8212 /* UIimageView+gifAdd.swift */,
 			);
-			name = Extensions;
 			path = Extensions;
 			sourceTree = "<group>";
 		};
@@ -246,11 +272,12 @@
 			isa = PBXGroup;
 			children = (
 				482C56C01F2ECEF100225D39 /* Dynamic */,
+				481E9EF71F34667500C4DBE4 /* Home */,
 				480AC4881F2B1381001524B6 /* Mian */,
 				480AC4A61F2B327F001524B6 /* Mine */,
+				48F651321F35A094008F8212 /* Player */,
 				482C56C31F2EF76300225D39 /* Zone */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -258,9 +285,7 @@
 			isa = PBXGroup;
 			children = (
 				480AC49E1F2B2DFD001524B6 /* splash */,
-				482C56D51F2EFCAA00225D39 /* IJKMediaFramework.framework */,
 			);
-			name = Resources;
 			path = Resources;
 			sourceTree = "<group>";
 		};
@@ -273,7 +298,6 @@
 				48175E221F2B0C53005A00F1 /* Helpers */,
 				48175E2A1F2B0CB9005A00F1 /* Tools */,
 			);
-			name = Expand;
 			path = Expand;
 			sourceTree = "<group>";
 		};
@@ -281,8 +305,33 @@
 			isa = PBXGroup;
 			children = (
 			);
-			name = Tools;
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		481E9EF71F34667500C4DBE4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				481E9EF81F34667900C4DBE4 /* Model */,
+				481E9EFB1F346A6C00C4DBE4 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		481E9EF81F34667900C4DBE4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				481E9EF91F3466AF00C4DBE4 /* YSRecommendModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		481E9EFB1F346A6C00C4DBE4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				48F6512C1F359F1C008F8212 /* YSPlayerRelatesCell.swift */,
+				48F6512D1F359F1C008F8212 /* YSPlayerRelatesCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		482C56C01F2ECEF100225D39 /* Dynamic */ = {
@@ -290,7 +339,6 @@
 			children = (
 				482C56C11F2ECF3C00225D39 /* YSDynamicViewController.swift */,
 			);
-			name = Dynamic;
 			path = Dynamic;
 			sourceTree = "<group>";
 		};
@@ -302,7 +350,6 @@
 				482C56C51F2EF76E00225D39 /* View */,
 				482C56C61F2EF77200225D39 /* ViewModel */,
 			);
-			name = Zone;
 			path = Zone;
 			sourceTree = "<group>";
 		};
@@ -310,9 +357,9 @@
 			isa = PBXGroup;
 			children = (
 				482C56DD1F2F13E300225D39 /* YSZoneDetailViewController.swift */,
+				482A18E91F3169DB000301F8 /* YSZoneItemViewController.swift */,
 				482C56C81F2EF78F00225D39 /* YSZoneViewController.swift */,
 			);
-			name = Controller;
 			path = Controller;
 			sourceTree = "<group>";
 		};
@@ -320,17 +367,17 @@
 			isa = PBXGroup;
 			children = (
 				482C56D71F2EFDB900225D39 /* YSZoneCell.swift */,
+				481E9EF31F34642A00C4DBE4 /* YSZoneItemHeader.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
 		482C56C61F2EF77200225D39 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				481E9EF51F3465E900C4DBE4 /* YSZoneItemViewModel.swift */,
 				482C56CD1F2EF94100225D39 /* YSZoneViewModel.swift */,
 			);
-			name = ViewModel;
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
@@ -339,17 +386,34 @@
 			children = (
 				482C56CF1F2EFA9100225D39 /* YSZoneModel.swift */,
 			);
-			name = Model;
 			path = Model;
 			sourceTree = "<group>";
 		};
 		482C56CA1F2EF7CA00225D39 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				48F651301F35A01B008F8212 /* YSBaseLineCell.swift */,
 				482C56CB1F2EF81700225D39 /* YSNavigationBar.swift */,
 			);
-			name = View;
 			path = View;
+			sourceTree = "<group>";
+		};
+		48F651321F35A094008F8212 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				48F651331F35A099008F8212 /* Model */,
+			);
+			name = Player;
+			path = Player;
+			sourceTree = "<group>";
+		};
+		48F651331F35A099008F8212 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				48F651341F35A0A9008F8212 /* YSPlayDetailModel.swift */,
+			);
+			name = Model;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		55641C68419E32CC21A3B544 /* Pods */ = {
@@ -397,6 +461,7 @@
 				TargetAttributes = {
 					48175E0A1F2B0C29005A00F1 = {
 						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -429,6 +494,7 @@
 				48175E161F2B0C29005A00F1 /* Assets.xcassets in Resources */,
 				480AC4A01F2B2E3C001524B6 /* bilibili_splash_default@3x.png in Resources */,
 				48175E141F2B0C29005A00F1 /* Main.storyboard in Resources */,
+				48F6512F1F359F1C008F8212 /* YSPlayerRelatesCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +553,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4830D48A1F306FD8001E427B /* String+ysAdd.swift in Sources */,
 				480AC48B1F2B13A6001524B6 /* YSMainTabBarController.swift in Sources */,
 				482C56D81F2EFDB900225D39 /* YSZoneCell.swift in Sources */,
 				482C56DC1F2F009200225D39 /* YSJsonHelper.swift in Sources */,
@@ -495,19 +562,32 @@
 				480AC4AB1F2B32C4001524B6 /* YSMineViewModel.swift in Sources */,
 				482C56C91F2EF78F00225D39 /* YSZoneViewController.swift in Sources */,
 				482C56D01F2EFA9100225D39 /* YSZoneModel.swift in Sources */,
+				481E9EF41F34642A00C4DBE4 /* YSZoneItemHeader.swift in Sources */,
 				480AC4821F2B12BA001524B6 /* DispatchQueue+ysAdd.swift in Sources */,
+				481E9EFA1F3466AF00C4DBE4 /* YSRecommendModel.swift in Sources */,
+				481E9EF61F3465E900C4DBE4 /* YSZoneItemViewModel.swift in Sources */,
 				480AC4831F2B12BA001524B6 /* UIColor+ysAdd.swift in Sources */,
 				48175E0F1F2B0C29005A00F1 /* AppDelegate.swift in Sources */,
+				48F651351F35A0A9008F8212 /* YSPlayDetailModel.swift in Sources */,
 				480AC4781F2B1288001524B6 /* YSFPSStatus.swift in Sources */,
 				482C56C21F2ECF3C00225D39 /* YSDynamicViewController.swift in Sources */,
 				480AC4A51F2B3179001524B6 /* YSBaseViewController.swift in Sources */,
+				4830D4851F305963001E427B /* SlideMenu.swift in Sources */,
+				48F6512E1F359F1C008F8212 /* YSPlayerRelatesCell.swift in Sources */,
+				4830D4871F306D2A001E427B /* UIGestureRecognizer+ysAdd.swift in Sources */,
+				48F651391F35A1F3008F8212 /* YSHairLineConstraint.swift in Sources */,
 				480AC4871F2B12BA001524B6 /* UIView+frameAdd.swift in Sources */,
 				482C56DA1F2EFE3400225D39 /* YSNetworkTool.swift in Sources */,
+				482A18EA1F3169DB000301F8 /* YSZoneItemViewController.swift in Sources */,
+				48F651371F35A191008F8212 /* UIimageView+gifAdd.swift in Sources */,
+				48F651311F35A01B008F8212 /* YSBaseLineCell.swift in Sources */,
+				481E9EFD1F3470CE00C4DBE4 /* YSGifHeader.swift in Sources */,
 				480AC49D1F2B2C30001524B6 /* YSMainNavigationController.swift in Sources */,
 				482C56CC1F2EF81700225D39 /* YSNavigationBar.swift in Sources */,
 				482C56DE1F2F13E300225D39 /* YSZoneDetailViewController.swift in Sources */,
 				480AC4841F2B12BA001524B6 /* UIImage+ysAdd.swift in Sources */,
 				480AC4A91F2B32A4001524B6 /* YSMineViewController.swift in Sources */,
+				48F6513B1F35A312008F8212 /* Int+coutdealAdd.swift in Sources */,
 				480AC4861F2B12BA001524B6 /* UIView+captureImage.swift in Sources */,
 				480AC49B1F2B2B79001524B6 /* Configs.swift in Sources */,
 				482C56CE1F2EF94100225D39 /* YSZoneViewModel.swift in Sources */,
@@ -636,6 +716,7 @@
 			baseConfigurationReference = B0D146E37321B37E0D5C42EE /* Pods-ysbilibili.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ysbilibili",
@@ -645,7 +726,10 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = YangShen.ysbilibili;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ysbilibili/ysbilibili-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Debug;
 		};
@@ -654,6 +738,7 @@
 			baseConfigurationReference = 182094C9B13A576FC7BE7458 /* Pods-ysbilibili.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ysbilibili",
@@ -663,7 +748,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = YangShen.ysbilibili;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ysbilibili/ysbilibili-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Release;
 		};

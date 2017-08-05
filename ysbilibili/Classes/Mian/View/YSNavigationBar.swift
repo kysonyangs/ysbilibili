@@ -38,7 +38,7 @@ class YSNavigationBar: UIView {
     lazy var titleLabel: UILabel = {
         let titleLabel = UILabel()
         titleLabel.textColor = UIColor.white
-        titleLabel.font = UIFont.systemFont(ofSize: 18)
+        titleLabel.font = UIFont.systemFont(ofSize: 17)
         titleLabel.textAlignment = .center
         return titleLabel
     }()
@@ -58,16 +58,16 @@ class YSNavigationBar: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        backArrowButton.snp.makeConstraints { (make) in
-            make.centerY.equalTo(self).offset(10)
-            make.left.equalTo(self).offset(10)
-            make.size.equalTo(CGSize(width: 40, height: 30))
-        }
-        
         titleLabel.snp.makeConstraints { (make) in
             make.centerX.equalTo(self)
-            make.centerY.equalTo(self).offset(10)
-            make.size.equalTo(CGSize(width: kScreenWidth - 140, height: 40))
+            make.centerY.equalTo(self).offset(6)
+            make.size.equalTo(CGSize(width: kScreenWidth - 140, height: 44))
+        }
+        
+        backArrowButton.snp.makeConstraints { (make) in
+            make.centerY.equalTo(titleLabel)
+            make.left.equalTo(self)
+            make.size.equalTo(CGSize(width: 40, height: 44))
         }
         
         leftItem?.snp.makeConstraints({ (make) in
@@ -75,9 +75,9 @@ class YSNavigationBar: UIView {
         })
         
         rightItem?.snp.makeConstraints({ (make) in
-            make.centerY.equalTo(self).offset(10)
-            make.right.equalTo(self.snp.right).offset(-20)
-            make.size.equalTo(CGSize(width: 40, height: 30))
+            make.centerY.equalTo(titleLabel)
+            make.right.equalTo(self.snp.right)
+            make.size.equalTo(CGSize(width: 40, height: 44))
         })
     }
 
