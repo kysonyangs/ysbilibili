@@ -51,9 +51,9 @@ extension YSLiveViewModel {
             guard let resultDict = result as? [String:Any] else{return}
             // <2. 转成string
                 // <<1.banner的数据
-            let bannerJsonString = YSJsonHelper.getjsonArrayString(key: "banner", json: resultDict["data"])
+            let bannerJsonString = YSJsonHelper.getjsonArrayString(key: "banner", json: resultDict["data"] ?? "")
                 // <<2.普通分区的数据
-            let areaJsonString = YSJsonHelper.getjsonArrayString(key: "partitions", json: resultDict["data"])
+            let areaJsonString = YSJsonHelper.getjsonArrayString(key: "partitions", json: resultDict["data"] ?? "")
             // <3. 转模型
                 // <<1.banner 数据
             if let bannerArray = JSONDeserializer<YSLiveBannerModel>.deserializeModelArrayFrom(json: bannerJsonString){

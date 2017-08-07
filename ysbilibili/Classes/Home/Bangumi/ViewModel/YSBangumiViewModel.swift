@@ -53,7 +53,7 @@ extension YSBangumiViewModel {
             let resultJson = JSON(result)
             // 2. 转成模型
             // <1. 头部的banner
-            let headArrayString = YSJsonHelper.getjsonArrayString(key: "head", json: resultJson["result"]["ad"].dictionaryObject)
+            let headArrayString = YSJsonHelper.getjsonArrayString(key: "head", json: resultJson["result"]["ad"].dictionaryObject ?? "")
             if let bannerHeadArray = JSONDeserializer<YSHomeBangumiADdetailModel>.deserializeModelArrayFrom(json: headArrayString){
                 guard let bannerHeadArray = bannerHeadArray as? [YSHomeBangumiADdetailModel] else {return}
                 self.headBannerModelArray = bannerHeadArray
@@ -66,7 +66,7 @@ extension YSBangumiViewModel {
             }
             
             // <3. 第一组的底部的banner
-            let bodyArrayString = YSJsonHelper.getjsonArrayString(key: "body", json: resultJson["result"]["ad"].dictionaryObject)
+            let bodyArrayString = YSJsonHelper.getjsonArrayString(key: "body", json: resultJson["result"]["ad"].dictionaryObject ?? "")
             if let bodyBannerArray = JSONDeserializer<YSHomeBangumiADdetailModel>.deserializeModelArrayFrom(json: bodyArrayString){
                 guard let bodyBannerArray = bodyBannerArray as? [YSHomeBangumiADdetailModel] else {return}
                 self.bodyBannerModelArray = bodyBannerArray
@@ -79,14 +79,14 @@ extension YSBangumiViewModel {
             }
             
             // <3. 新番
-            let previousArrayString = YSJsonHelper.getjsonArrayString(key: "list", json: resultJson["result"]["previous"].dictionaryObject)
+            let previousArrayString = YSJsonHelper.getjsonArrayString(key: "list", json: resultJson["result"]["previous"].dictionaryObject ?? "")
             if let previousModelArray = JSONDeserializer<YSHomeBangumiDetailModel>.deserializeModelArrayFrom(json: previousArrayString ){
                 guard let previousModelArray = previousModelArray as? [YSHomeBangumiDetailModel] else {return}
                 self.previousModelArray = previousModelArray
             }
             
             // <4. 连载番剧
-            let serializingArrayString = YSJsonHelper.getjsonArrayString(key: "serializing", json: resultJson["result"].dictionaryObject)
+            let serializingArrayString = YSJsonHelper.getjsonArrayString(key: "serializing", json: resultJson["result"].dictionaryObject ?? "")
             if let serializingModelArray = JSONDeserializer<YSHomeBangumiDetailModel>.deserializeModelArrayFrom(json: serializingArrayString){
                 guard let serializingModelArray = serializingModelArray as? [YSHomeBangumiDetailModel] else {return}
                 self.serializingModelArray = serializingModelArray
@@ -108,7 +108,7 @@ extension YSBangumiViewModel {
             // <1. 转成json
             let resultJson = JSON(result)
             // <2. 转modelarray
-            let recommendArrayString = YSJsonHelper.getjsonArrayString(key: "result", json: resultJson.dictionaryObject)
+            let recommendArrayString = YSJsonHelper.getjsonArrayString(key: "result", json: resultJson.dictionaryObject ?? "")
             if let recommendArray = JSONDeserializer<YSHomeBangumiRecommendModel>.deserializeModelArrayFrom(json: recommendArrayString) {
                 // <<1. 赋值
                 guard let recommendArray = recommendArray as? [YSHomeBangumiRecommendModel] else {return}

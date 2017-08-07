@@ -149,6 +149,7 @@ extension YSLiveShowViewController: UICollectionViewDelegate{
         let rowModel = sectionModel.lives?[indexPath.row]
         // 2.生成控制器
         guard let playUrl = rowModel?.playurl else {return}
+        print(playUrl)
 //        let vc = YSBilibiliLivePlayerViewController()
 //        // 3.赋值
 //        vc.liveString = playUrl
