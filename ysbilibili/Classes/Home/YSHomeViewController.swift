@@ -35,7 +35,6 @@ class YSHomeViewController: YSBaseViewController {
         
         // 4.生成slidemenu
         let menu = SlideMenu(frame: rect, titles: ["直播","推荐","追番"], padding: 30, normalColor: normalColor, highlightColor: hightLightColor, font: 16, sliderColor: UIColor.white, scrollView: self.contentScrollView, isHorizon: true, rowHeight: 30)
-        menu.backgroundColor = kNavBarColor
         return menu
         }()
 
@@ -73,25 +72,22 @@ extension YSHomeViewController {
     fileprivate func addChildVCs() {
         
         // 1 直播
-        let liveVC = UIViewController() //HomeLiveShowViewController()
-        liveVC.view.backgroundColor = UIColor.ysRandomColor()
+        let liveVC = YSLiveShowViewController()
         self.addChildViewController(liveVC)
         contentScrollView.addSubview(liveVC.view)
-        liveVC.view.frame = CGRect(x: 0, y: kNavBarHeight, width: view.ysWidth, height: view.ysHeight - kTabbarHeight)
+        liveVC.view.frame = CGRect(x: 0, y: 0, width: view.ysWidth, height: view.ysHeight - kTabbarHeight)
         
         // 2 推荐
-        let recommondVC = UIViewController() //HomeRecommendViewController()
-        recommondVC.view.backgroundColor = UIColor.ysRandomColor()
+        let recommondVC = YSRecommendViewController()
         self.addChildViewController(recommondVC)
         contentScrollView.addSubview(recommondVC.view)
-        recommondVC.view.frame = CGRect(x: view.ysWidth, y: kNavBarHeight, width: view.ysWidth, height: view.ysHeight - kTabbarHeight)
+        recommondVC.view.frame = CGRect(x: view.ysWidth, y: 0, width: view.ysWidth, height: view.ysHeight - kTabbarHeight)
         
         // 3 番剧
-        let serialVC = UIViewController() //HomebangumiViewController()
-        serialVC.view.backgroundColor = UIColor.ysRandomColor()
+        let serialVC = YSBangumiViewController()
         self.addChildViewController(serialVC)
         contentScrollView.addSubview(serialVC.view)
-        serialVC.view.frame = CGRect(x: view.ysWidth*2, y: kNavBarHeight, width: view.ysWidth, height: view.ysHeight - kTabbarHeight)
+        serialVC.view.frame = CGRect(x: view.ysWidth*2, y: 0, width: view.ysWidth, height: view.ysHeight - kTabbarHeight)
     }
 }
 

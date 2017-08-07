@@ -27,12 +27,13 @@ let kCellCornerRadius: CGFloat = 5
 let cellIconHeight: CGFloat = 8
 let cellIconWidth: CGFloat = 10
 let kPadding: CGFloat = 15
+let kCenterPadding = 10
 
 // Mark: - 字体
 /// cell 标题的字体
 let kNormalItemCellTitleFont = UIFont.systemFont(ofSize: 13)
 /// cell header的标题的字体
-let kCellHeaderTitleFont = UIFont.systemFont(ofSize: 15)
+let kCollectionHeaderTitleFont = UIFont.systemFont(ofSize: 15)
 /// cell 内提示的字体
 let kCellDetailFont = UIFont.systemFont(ofSize: 11)
 
@@ -49,3 +50,8 @@ let kNormalHearTextHotColor = UIColor.ysColor(red: 254, green: 192, blue: 50, al
 let kHomeBackColor = UIColor.ysColor(red: 244, green: 244, blue: 244, alpha: 1)
 // 分割线的颜色
 let kCellLineColor = UIColor.ysColor(red: 225, green: 225, blue: 225, alpha: 1)
+
+let kCollectColor = kNavBarColor
+let kShareColor = UIColor.ysColor(red: 12, green: 194, blue: 100, alpha: 1)
+let kCoinColor = UIColor.ysColor(red: 245, green: 191, blue: 25, alpha: 1)
+let kDownloadColor = UIColor.ysColor(red: 127, green: 189, blue: 247, alpha: 1)

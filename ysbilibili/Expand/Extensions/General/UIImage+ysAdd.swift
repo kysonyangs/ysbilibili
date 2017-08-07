@@ -15,11 +15,11 @@ extension UIImage {
         return self.resizableImage(withCapInsets: UIEdgeInsetsMake(vinset, hinset, vinset, hinset), resizingMode: .stretch)
     }
     
-    func ysImageWithTintColor(tintColor: UIColor) -> UIImage {
+    func ysTintColor(_ tintColor: UIColor) -> UIImage {
         return imageWithTintColor(tintColor: tintColor, blendMode: .destinationIn)
     }
     
-    func ysImageWithGradientTintColor(tintColor: UIColor) -> UIImage {
+    func ysGradientTintColor(_ tintColor: UIColor) -> UIImage {
         return imageWithTintColor(tintColor: tintColor, blendMode: .overlay)
     }
     

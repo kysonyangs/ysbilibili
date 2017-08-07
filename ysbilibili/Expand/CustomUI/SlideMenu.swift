@@ -28,6 +28,7 @@ class SlideMenu: UIView {
     
     // 当前显示的index
     fileprivate var showingIndex = 0
+    fileprivate var lastOffsetX: CGFloat = 0
     
     // 标题数组
     fileprivate var titleArray: [String]?
@@ -136,14 +137,12 @@ extension SlideMenu {
             label.textAlignment = .center
             let tapGest = UITapGestureRecognizer(tap: { [weak self] in
                 self?.delegate?.selectedIndex!(index: i)
-                let visableRect = CGRect(x: delta * CGFloat(i), y: 0, width: (self?.contentScrollView?.ysWidth)!, height: (self?.contentScrollView?.ysHeight)!)
-                self?.contentScrollView?.scrollRectToVisible(visableRect, animated: true)
+                self?.contentScrollView?.setContentOffset(CGPoint(x: delta * CGFloat(i), y: 0), animated: true)
             })
             label.addGestureRecognizer(tapGest)
             label.text = tempArray[i]
             label.font = UIFont.systemFont(ofSize: titleFont)
             labelArray.append(label)
-            label.backgroundColor = UIColor.red
             superView.addSubview(label)
             
             if i == showingIndex {
@@ -176,13 +175,7 @@ extension SlideMenu {
                 // 缓存frame和宽度
                 titleFrameArray.append(currentRect)
                 titleWidthArray.append(fitWidth)
-                
-//                if i == tempArray.count - 1 {
-//                    let centerX = self.ysCenterX
-//                    self.ysWidth = startX
-//                    self.ysCenterX = centerX
-//                }
-                
+
             } else { // 竖直显示 超过边界换行显示，均分哪一行的间距
                 // 如果需要自适应的话就重新计算一下padding
                 if i == lineFeedIndex {
@@ -211,6 +204,11 @@ extension SlideMenu {
         }
         
         if isHorizon {
+            if startX < ysWidth {
+                menuScrollView.ysWidth = startX
+                menuScrollView.ysCenterX = ysWidth / 2
+            }
+            
             menuScrollView.contentSize = CGSize(width: startX, height: self.ysHeight)
         }
         
@@ -286,17 +284,15 @@ extension SlideMenu {
         let leftLabel = labelArray[index]
         let rightLabel = labelArray[index + 1]
         
-        let normalToHightColor = UIColor.ysColor(red: normalColor.red + percent * redDelta, green: normalColor.green + percent * greenDelta, blue: normalColor.blue + percent * blueDelta, alpha: 1)
-        let hightToNormalColor = UIColor.ysColor(red: highlightColor.red - percent * redDelta, green: highlightColor.green - percent * greenDelta, blue: highlightColor.blue - percent * blueDelta, alpha: 1)
+        let leftColor = UIColor.ysColor(red: normalColor.red + percent * redDelta, green: normalColor.green + percent * greenDelta, blue: normalColor.blue + percent * blueDelta, alpha: 1)
+        let rightColor = UIColor.ysColor(red: normalColor.red + (1 - percent) * redDelta, green: normalColor.green + (1 - percent) * greenDelta, blue: normalColor.blue + (1 - percent) * blueDelta, alpha: 1)
         
         // 标题颜色变化
-        
-        let toRight = showingIndex == index // true 向右 false 向左
-        
-        leftLabel.textColor = toRight ? hightToNormalColor : normalToHightColor
-        rightLabel.textColor = toRight ? normalToHightColor : hightToNormalColor
+        leftLabel.textColor = leftColor
+        rightLabel.textColor = rightColor
         
         // 滑块位置的变化
+        let toRight = showingIndex == index // true 向右 false 向左
         if leftRect.origin.y == rightRect.origin.y { // 不换行
             // 位置变化
             let x = (rightRect.origin.x - leftRect.origin.x) * percent + leftRect.origin.x
@@ -354,6 +350,8 @@ extension SlideMenu {
             let slidingRect = CGRect(x: x, y: y, width: width, height: kSliderHeight)
             slider.frame = slidingRect
         }
+        
+        lastOffsetX = offsetX
     }
 }
 
