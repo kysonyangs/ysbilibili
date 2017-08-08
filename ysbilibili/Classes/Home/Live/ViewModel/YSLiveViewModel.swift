@@ -252,7 +252,7 @@ extension YSLiveViewModel {
 }
 
 //======================================================================
-// MARK:- normalBaseCell 的代理
+// MARK:- YSNormalBaseCell 的代理
 //======================================================================
 extension YSLiveViewModel: YSNormalBaseCellDelegate {
     

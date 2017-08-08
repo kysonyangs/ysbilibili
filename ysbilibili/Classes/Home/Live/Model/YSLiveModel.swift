@@ -10,24 +10,21 @@ import UIKit
 import HandyJSON
 
 class YSLiveModel: HandyJSON {
-
     // 轮播的数据
     var banner: [YSLiveBannerModel]?
-    
-    // 直播的数据
+    // 直播分区的数据
     var partitions: [YSLiveItemModel]?
     
     required init() {}
 }
 
-// 整个banner的model
+// Live banner
 class YSLiveBannerModel: HandyJSON {
-    
     // 轮播的标题
     var title: String?
     // 轮播的图片
     var img: String?
-    // 我也不知道是啥
+    // 备注
     var remark: String?
     // 当前轮播对应的链接
     var link: String?
@@ -35,26 +32,35 @@ class YSLiveBannerModel: HandyJSON {
     required init() {}
 }
 
-
-class YSLiveHeadModel: HandyJSON {
+// Live 分区
+class YSLiveItemModel: HandyJSON {
+    // 分区详情
+    var partition: YSLiveHeadModel?
+    // 分区下的直播
+    var lives: [YSLiveDetailModel]?
     
+    var banner_data: [YSLiveDetailModel]?
+    
+    required init() {}
+}
+
+// Live 分区详细信息
+class YSLiveHeadModel: HandyJSON {
     var id: Int = 0
-    // 这个head的类型(中文)
+    // 名字
     var name: String?
-    // 这个head的类型(英文)
+    // 类型
     var area: String?
-    // 这个head的图标model
+    // 图标model
     var sub_icon: YSLiveHeadIconModel?
     // 当前直播的人数
     var count: Int = 0
-    
     
     required init() {}
 }
 
 // 每组head上的icon model
 class YSLiveHeadIconModel: HandyJSON {
-    
     // 每个section的head对应icon
     var src: String?
     // 图标的高度
@@ -65,37 +71,8 @@ class YSLiveHeadIconModel: HandyJSON {
     required init() {}
 }
 
-
-// 当前直播的人的信息
-class YSLivePeopleModel: HandyJSON {
-    
-    // 头像
-    var face: String?
-    // 我也不知道是啥
-    var mid: String?
-    // 名字
-    var name: String?
-    
-    required init() {}
-}
-
-// 当前直播显示的背景model
-class YSLiveCoverModel: HandyJSON {
-    
-    // 背景图片
-    var src: String?
-    // 宽度
-    var width: Int = 0
-    // 高度
-    var height: Int = 0
-    
-    required init() {}
-}
-
-
 // 直播细节的model
 class YSLiveDetailModel: HandyJSON {
-    
     // 直播的人
     var owner: YSLivePeopleModel?
     // 直播的背景
@@ -112,6 +89,7 @@ class YSLiveDetailModel: HandyJSON {
     var area_id: Int = 0
     // 当前的直播的url
     var playurl: String?
+    
     // 右上角的显示
     var corner: String?
     
@@ -127,17 +105,29 @@ class YSLiveDetailModel: HandyJSON {
     required init() {}
 }
 
-
-// 直播item的model
-class YSLiveItemModel: HandyJSON {
-
-    var partition: YSLiveHeadModel?
-    
-    var lives: [YSLiveDetailModel]?
-    
-    var banner_data: [YSLiveDetailModel]?
+// 当前直播的人的信息
+class YSLivePeopleModel: HandyJSON {
+    // 头像
+    var face: String?
+    //
+    var mid: String?
+    // 名字
+    var name: String?
     
     required init() {}
 }
+
+// 当前直播显示的背景model
+class YSLiveCoverModel: HandyJSON {
+    // 背景图片
+    var src: String?
+    // 宽度
+    var width: Int = 0
+    // 高度
+    var height: Int = 0
+    
+    required init() {}
+}
+
 
 

@@ -22,7 +22,7 @@ let kTabbarHeight: CGFloat = 49
 let kCarouseHeight: CGFloat = 110
 let kNormalHeaderHeight: CGFloat = 44
 /// 圆角
-let kCornerRadius: CGFloat = 8
+let kCornerRadius: CGFloat = 6
 let kCellCornerRadius: CGFloat = 5
 let cellIconHeight: CGFloat = 8
 let cellIconWidth: CGFloat = 10

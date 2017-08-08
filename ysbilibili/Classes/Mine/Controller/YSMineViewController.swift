@@ -196,7 +196,7 @@ class YSMineCollectionCell: UICollectionViewCell {
     
     fileprivate lazy var titleLabel: UILabel = {
         var label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 15)
+        label.font = UIFont.systemFont(ofSize: 13)
         return label
     }()
     
@@ -263,7 +263,7 @@ class YSMineHeaderView: UICollectionReusableView {
 
     fileprivate var titleLabel: UILabel = {
         var label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 17)
+        label.font = UIFont.systemFont(ofSize: 15)
         return label
     }()
     

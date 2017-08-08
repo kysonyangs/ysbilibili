@@ -88,7 +88,7 @@
     
     CGColorSpaceRef genericRGBColorspace = CGColorSpaceCreateDeviceRGB();
     CGContextRef imageContext = CGBitmapContextCreate(imageData, (int)layerPixelSize.width, (int)layerPixelSize.height, 8, (int)layerPixelSize.width * 4, genericRGBColorspace,  kCGBitmapByteOrder32Little | kCGImageAlphaPremultipliedFirst);
-    //    CGContextRotateCTM(imageContext, M_PI_2);
+    //    CGContextRotateCTM(imageContext, Double.pi / 2);
     CGContextTranslateCTM(imageContext, 0.0f, layerPixelSize.height);
     CGContextScaleCTM(imageContext, layer.contentsScale, -layer.contentsScale);
     //        CGContextSetBlendMode(imageContext, kCGBlendModeCopy); // From Technical Q&A QA1708: http://developer.apple.com/library/ios/#qa/qa1708/_index.html

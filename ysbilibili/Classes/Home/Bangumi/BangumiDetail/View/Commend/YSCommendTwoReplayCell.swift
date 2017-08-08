@@ -1,5 +1,5 @@
 //
-//  ZHNcommendTwoReplayCell.swift
+//  YSCommendTwoReplayCell.swift
 //  zhnbilibili
 //
 //  Created by 张辉男 on 17/1/4.

@@ -161,7 +161,7 @@
                                     <rect key="frame" x="0.0" y="10" width="149" height="44"/>
                                     <state key="normal" image="hd_home_bangumi_recommend_new"/>
                                     <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="number" keyPath="zhn_cornerRadius">
+                                        <userDefinedRuntimeAttribute type="number" keyPath="ysCornerRadius">
                                             <real key="value" value="5"/>
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
@@ -182,7 +182,7 @@
                                     <rect key="frame" x="5" y="10" width="144" height="44"/>
                                     <state key="normal" image="hd_home_bangumi_timeline_new"/>
                                     <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="number" keyPath="zhn_cornerRadius">
+                                        <userDefinedRuntimeAttribute type="number" keyPath="ysCornerRadius">
                                             <real key="value" value="5"/>
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
@@ -203,7 +203,7 @@
                                     <rect key="frame" x="5" y="10" width="149" height="44"/>
                                     <state key="normal" image="hd_home_bangumi_category_new"/>
                                     <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="number" keyPath="zhn_cornerRadius">
+                                        <userDefinedRuntimeAttribute type="number" keyPath="ysCornerRadius">
                                             <real key="value" value="5"/>
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>

@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 
-class YSBilibiliWebViewController: UIViewController {
+class YSBilibiliWebViewController: YSBaseViewController {
     
     // 展示的url
     var urlString:String?
@@ -21,19 +21,10 @@ class YSBilibiliWebViewController: UIViewController {
         return contentWebView
     }()
     
-    lazy var navibar: YSNavigationBar = {
-        let navibar = YSNavigationBar()
-        let leftButton = UIButton()
-        leftButton.setTitle("取消", for: .normal)
-        leftButton.setTitle("取消", for: .highlighted)
-        leftButton.addTarget(self, action: #selector(pravitePopViewController), for: .touchUpInside)
-        navibar.leftItem = leftButton
-        return navibar
-    }()
-    
     // MARK: - life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // 1. 初始化ui
         setupUI()
         // 2. 加载url
@@ -44,19 +35,12 @@ class YSBilibiliWebViewController: UIViewController {
 extension YSBilibiliWebViewController {
     fileprivate func setupUI() {
         view.addSubview(contentWebView)
-        view.addSubview(navibar)
-        
-        navibar.snp.makeConstraints { (make) in
-            make.top.left.right.equalTo(view)
-            make.height.equalTo(64)
-        }
         
         contentWebView.snp.makeConstraints { (make) in
             make.left.right.bottom.equalTo(view)
-            make.top.equalTo(view).offset(44)
+            make.top.equalTo(view).offset(kNavBarHeight)
         }
         
-        navibar.titleLabel.text = urlString
     }
     
     fileprivate func loadRequest() {
@@ -73,7 +57,8 @@ extension YSBilibiliWebViewController {
 //======================================================================
 extension YSBilibiliWebViewController: WKNavigationDelegate {
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        navibar.titleLabel.text = webView.title
+        naviBar.titleLabel.font = UIFont.systemFont(ofSize: 15)
+        naviBar.titleLabel.text = webView.title
     }
 }
 

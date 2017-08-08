@@ -27,21 +27,12 @@ class YSMainNavigationController: UINavigationController {
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
         if viewControllers.count > 0 {
             viewController.hidesBottomBarWhenPushed = true
-            viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "common_back_v2"), style: .plain, target: self, action: #selector(navigationBackClick))
             if viewController.isKind(of: YSBaseViewController.self) {
                 let vc = viewController as! YSBaseViewController
                 vc.naviBar.backArrowButton.isHidden = false
             }
         }
         super.pushViewController(viewController, animated: animated)
-    }
-    
-    @objc fileprivate func navigationBackClick() {
-        if UIApplication.shared.isNetworkActivityIndicatorVisible {
-            UIApplication.shared.isNetworkActivityIndicatorVisible = false
-        }
-        
-        popViewController(animated: true)
     }
 
 }

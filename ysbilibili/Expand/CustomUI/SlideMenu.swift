@@ -284,8 +284,8 @@ extension SlideMenu {
         let leftLabel = labelArray[index]
         let rightLabel = labelArray[index + 1]
         
-        let leftColor = UIColor.ysColor(red: normalColor.red + percent * redDelta, green: normalColor.green + percent * greenDelta, blue: normalColor.blue + percent * blueDelta, alpha: 1)
-        let rightColor = UIColor.ysColor(red: normalColor.red + (1 - percent) * redDelta, green: normalColor.green + (1 - percent) * greenDelta, blue: normalColor.blue + (1 - percent) * blueDelta, alpha: 1)
+        let leftColor = UIColor.ysColor(red: highlightColor.red - percent * redDelta, green: highlightColor.red - percent * greenDelta, blue: highlightColor.red - percent * blueDelta, alpha: 1)
+        let rightColor = UIColor.ysColor(red: highlightColor.red - (1 - percent) * redDelta, green: highlightColor.red - (1 - percent) * greenDelta, blue: highlightColor.red - (1 - percent) * blueDelta, alpha: 1)
         
         // 标题颜色变化
         leftLabel.textColor = leftColor

@@ -26,7 +26,6 @@ class YSBaseViewController: UIViewController {
             make.height.equalTo(kNavBarHeight)
         }
         naviBar.backArrowButton.addTarget(self, action: #selector(popViewController), for: .touchUpInside)
-        naviBar.backArrowButton.isHidden = true
     }
     
     @objc func popViewController() {

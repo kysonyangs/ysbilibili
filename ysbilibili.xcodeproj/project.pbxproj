@@ -22,7 +22,107 @@
 		480AC4A21F2B2E44001524B6 /* bilibili_splash_iphone_bg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 480AC4A11F2B2E44001524B6 /* bilibili_splash_iphone_bg@3x.png */; };
 		480AC4A51F2B3179001524B6 /* YSBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480AC4A41F2B3179001524B6 /* YSBaseViewController.swift */; };
 		480AC4A91F2B32A4001524B6 /* YSMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480AC4A81F2B32A4001524B6 /* YSMineViewController.swift */; };
-		480AC4AB1F2B32C4001524B6 /* YSMineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480AC4AA1F2B32C4001524B6 /* YSMineViewModel.swift */; };
+		480FB45D1F394E3500E423D6 /* ZHNloadingProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB45A1F394E3500E423D6 /* ZHNloadingProgressView.swift */; };
+		480FB45E1F394E3500E423D6 /* ZHNplayerMenuBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB45B1F394E3500E423D6 /* ZHNplayerMenuBaseView.swift */; };
+		480FB45F1F394E3500E423D6 /* ZHNplayerUrlLoadingBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB45C1F394E3500E423D6 /* ZHNplayerUrlLoadingBackView.swift */; };
+		480FB4611F394E4700E423D6 /* ZHNPlayerBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4601F394E4700E423D6 /* ZHNPlayerBaseViewController.swift */; };
+		480FB4671F394E5D00E423D6 /* ZHNnormalPlayerFullScreenActionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4621F394E5D00E423D6 /* ZHNnormalPlayerFullScreenActionModel.swift */; };
+		480FB4681F394E5D00E423D6 /* ZHNplayBaseActionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4631F394E5D00E423D6 /* ZHNplayBaseActionModel.swift */; };
+		480FB4691F394E5D00E423D6 /* ZHNplayerUrlLoadingBackViewActionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4641F394E5D00E423D6 /* ZHNplayerUrlLoadingBackViewActionModel.swift */; };
+		480FB46A1F394E5D00E423D6 /* ZHNplayFullScreenMenuViewActionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4651F394E5D00E423D6 /* ZHNplayFullScreenMenuViewActionModel.swift */; };
+		480FB46B1F394E5D00E423D6 /* ZHNplayNormalMenuViewActionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4661F394E5D00E423D6 /* ZHNplayNormalMenuViewActionModel.swift */; };
+		480FB46D1F394E7800E423D6 /* ZHNbilibiliLivePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB46C1F394E7800E423D6 /* ZHNbilibiliLivePlayerViewController.swift */; };
+		480FB4751F394EAB00E423D6 /* ZHNlivePlayDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4741F394EAB00E423D6 /* ZHNlivePlayDetailViewModel.swift */; };
+		480FB47E1F394EB800E423D6 /* ZHNliveDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4761F394EB800E423D6 /* ZHNliveDetailView.swift */; };
+		480FB47F1F394EB800E423D6 /* ZHNliveDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 480FB4771F394EB800E423D6 /* ZHNliveDetailView.xib */; };
+		480FB4801F394EB800E423D6 /* ZHNliveFullScreenMenuViewBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4781F394EB800E423D6 /* ZHNliveFullScreenMenuViewBottom.swift */; };
+		480FB4811F394EB800E423D6 /* ZHNliveFullScreenMenuViewBottom.xib in Resources */ = {isa = PBXBuildFile; fileRef = 480FB4791F394EB800E423D6 /* ZHNliveFullScreenMenuViewBottom.xib */; };
+		480FB4821F394EB800E423D6 /* ZHNliveFullScreenMenuViewTop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB47A1F394EB800E423D6 /* ZHNliveFullScreenMenuViewTop.swift */; };
+		480FB4831F394EB800E423D6 /* ZHNliveFullScreenMenuViewTop.xib in Resources */ = {isa = PBXBuildFile; fileRef = 480FB47B1F394EB800E423D6 /* ZHNliveFullScreenMenuViewTop.xib */; };
+		480FB4841F394EB800E423D6 /* ZHNlivePlayFullScreenMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB47C1F394EB800E423D6 /* ZHNlivePlayFullScreenMenuView.swift */; };
+		480FB4851F394EB800E423D6 /* ZHNlivePlayNoramlMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB47D1F394EB800E423D6 /* ZHNlivePlayNoramlMenuView.swift */; };
+		480FB48B1F394EDE00E423D6 /* VideoURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4881F394EDE00E423D6 /* VideoURL.m */; };
+		480FB48C1F394EDE00E423D6 /* VideoURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 480FB48A1F394EDE00E423D6 /* VideoURLProtocol.m */; };
+		480FB4901F394EF800E423D6 /* danmuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB48E1F394EF800E423D6 /* danmuModel.swift */; };
+		480FB4911F394EF800E423D6 /* ZHHnormalPayerItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB48F1F394EF800E423D6 /* ZHHnormalPayerItemModel.swift */; };
+		480FB4931F394F1000E423D6 /* ZHNnormalPlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4921F394F1000E423D6 /* ZHNnormalPlayerViewModel.swift */; };
+		480FB4951F394F1E00E423D6 /* ZHNnormalPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4941F394F1E00E423D6 /* ZHNnormalPlayerViewController.swift */; };
+		480FB4981F394F3B00E423D6 /* ZHNnormalPlayerCommondTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4971F394F3B00E423D6 /* ZHNnormalPlayerCommondTableViewController.swift */; };
+		480FB49A1F394F4300E423D6 /* ZHNplayerCommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4991F394F4300E423D6 /* ZHNplayerCommendViewModel.swift */; };
+		480FB4A01F394F7500E423D6 /* ZHNnormalPlayerDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB49F1F394F7500E423D6 /* ZHNnormalPlayerDetailTableViewController.swift */; };
+		480FB4A21F394F7F00E423D6 /* ZHNplayerDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4A11F394F7F00E423D6 /* ZHNplayerDetailViewModel.swift */; };
+		480FB4AA1F394F8C00E423D6 /* ZHNplayerDetailStatusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4A31F394F8C00E423D6 /* ZHNplayerDetailStatusTableViewCell.swift */; };
+		480FB4AB1F394F8C00E423D6 /* ZHNplayerDetailStatusTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 480FB4A41F394F8C00E423D6 /* ZHNplayerDetailStatusTableViewCell.xib */; };
+		480FB4AC1F394F8C00E423D6 /* ZHNplayerPageListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4A51F394F8C00E423D6 /* ZHNplayerPageListTableViewCell.swift */; };
+		480FB4AD1F394F8C00E423D6 /* ZHNplayerPersonDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4A61F394F8C00E423D6 /* ZHNplayerPersonDetailTableViewCell.swift */; };
+		480FB4AE1F394F8C00E423D6 /* ZHNplayerPersonDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 480FB4A71F394F8C00E423D6 /* ZHNplayerPersonDetailTableViewCell.xib */; };
+		480FB4AF1F394F8C00E423D6 /* ZHNplayerRelatesTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4A81F394F8C00E423D6 /* ZHNplayerRelatesTitleTableViewCell.swift */; };
+		480FB4B01F394F8C00E423D6 /* ZHNplayerTagListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4A91F394F8C00E423D6 /* ZHNplayerTagListTableViewCell.swift */; };
+		480FB4BD1F394FA100E423D6 /* normalPlayerLoadingMaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4B11F394FA100E423D6 /* normalPlayerLoadingMaskView.swift */; };
+		480FB4BE1F394FA100E423D6 /* playCustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4B21F394FA100E423D6 /* playCustomSlider.swift */; };
+		480FB4BF1F394FA100E423D6 /* playerBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4B31F394FA100E423D6 /* playerBlurView.swift */; };
+		480FB4C01F394FA100E423D6 /* ZHNdanmuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4B41F394FA100E423D6 /* ZHNdanmuView.swift */; };
+		480FB4C11F394FA100E423D6 /* ZHNforwardBackforwardNoticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4B51F394FA100E423D6 /* ZHNforwardBackforwardNoticeView.swift */; };
+		480FB4C21F394FA100E423D6 /* ZHNforwardBackforwardNoticeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 480FB4B61F394FA100E423D6 /* ZHNforwardBackforwardNoticeView.xib */; };
+		480FB4C31F394FA100E423D6 /* ZHNnormalFullScreenBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4B71F394FA100E423D6 /* ZHNnormalFullScreenBottom.swift */; };
+		480FB4C41F394FA100E423D6 /* ZHNnormalFullScreenBottom.xib in Resources */ = {isa = PBXBuildFile; fileRef = 480FB4B81F394FA100E423D6 /* ZHNnormalFullScreenBottom.xib */; };
+		480FB4C51F394FA100E423D6 /* ZHNnormalFullScreenTop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4B91F394FA100E423D6 /* ZHNnormalFullScreenTop.swift */; };
+		480FB4C61F394FA100E423D6 /* ZHNnormalFullScreenTop.xib in Resources */ = {isa = PBXBuildFile; fileRef = 480FB4BA1F394FA100E423D6 /* ZHNnormalFullScreenTop.xib */; };
+		480FB4C71F394FA100E423D6 /* ZHNnormalPlayFullScreenMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4BB1F394FA100E423D6 /* ZHNnormalPlayFullScreenMenuView.swift */; };
+		480FB4C81F394FA100E423D6 /* ZHNnormalPlayWindowMenuVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4BC1F394FA100E423D6 /* ZHNnormalPlayWindowMenuVIew.swift */; };
+		480FB4CA1F394FFF00E423D6 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480FB4C91F394FFF00E423D6 /* IJKMediaFramework.framework */; };
+		480FB4EF1F39501200E423D6 /* BarrageCanvas.m in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4CE1F39501200E423D6 /* BarrageCanvas.m */; };
+		480FB4F01F39501200E423D6 /* BarrageClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4D01F39501200E423D6 /* BarrageClock.m */; };
+		480FB4F11F39501200E423D6 /* BarrageDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4D21F39501200E423D6 /* BarrageDescriptor.m */; };
+		480FB4F21F39501200E423D6 /* BarrageDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4D41F39501200E423D6 /* BarrageDispatcher.m */; };
+		480FB4F31F39501200E423D6 /* BarrageRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4D61F39501200E423D6 /* BarrageRenderer.m */; };
+		480FB4F41F39501200E423D6 /* BarrageSpriteFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4D81F39501200E423D6 /* BarrageSpriteFactory.m */; };
+		480FB4F51F39501200E423D6 /* BarrageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4DC1F39501200E423D6 /* BarrageLoader.m */; };
+		480FB4F61F39501200E423D6 /* BarrageFloatImageSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4DF1F39501200E423D6 /* BarrageFloatImageSprite.m */; };
+		480FB4F71F39501200E423D6 /* BarrageFloatSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4E11F39501200E423D6 /* BarrageFloatSprite.m */; };
+		480FB4F81F39501200E423D6 /* BarrageFloatTextSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4E31F39501200E423D6 /* BarrageFloatTextSprite.m */; };
+		480FB4F91F39501200E423D6 /* BarrageSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4E51F39501200E423D6 /* BarrageSprite.m */; };
+		480FB4FA1F39501200E423D6 /* BarrageSpriteUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4E81F39501200E423D6 /* BarrageSpriteUtility.m */; };
+		480FB4FB1F39501200E423D6 /* BarrageWalkImageSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4EA1F39501200E423D6 /* BarrageWalkImageSprite.m */; };
+		480FB4FC1F39501200E423D6 /* BarrageWalkSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4EC1F39501200E423D6 /* BarrageWalkSprite.m */; };
+		480FB4FD1F39501200E423D6 /* BarrageWalkTextSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4EE1F39501200E423D6 /* BarrageWalkTextSprite.m */; };
+		480FB5011F39503000E423D6 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 480FB5001F39503000E423D6 /* XMLReader.m */; };
+		480FB5181F39546200E423D6 /* ZHNelecView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB5071F39546200E423D6 /* ZHNelecView.swift */; };
+		480FB5191F39546200E423D6 /* ZHNelecView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 480FB5081F39546200E423D6 /* ZHNelecView.xib */; };
+		480FB51A1F39546200E423D6 /* ZHNhomePageArchiveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB5091F39546200E423D6 /* ZHNhomePageArchiveCell.swift */; };
+		480FB51B1F39546200E423D6 /* ZHNhomePageArchiveCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB50A1F39546200E423D6 /* ZHNhomePageArchiveCollectionViewCell.swift */; };
+		480FB51C1F39546200E423D6 /* ZHNhomePageBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB50B1F39546200E423D6 /* ZHNhomePageBaseTableViewCell.swift */; };
+		480FB51D1F39546200E423D6 /* ZHNhomePageCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB50C1F39546200E423D6 /* ZHNhomePageCardCell.swift */; };
+		480FB51E1F39546200E423D6 /* ZHNhomePageCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 480FB50D1F39546200E423D6 /* ZHNhomePageCardCell.xib */; };
+		480FB51F1F39546200E423D6 /* ZHNhomePageCoinCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB50E1F39546200E423D6 /* ZHNhomePageCoinCell.swift */; };
+		480FB5201F39546200E423D6 /* ZHNhomePageElecCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB50F1F39546200E423D6 /* ZHNhomePageElecCell.swift */; };
+		480FB5211F39546200E423D6 /* ZHNhomePageFavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB5101F39546200E423D6 /* ZHNhomePageFavoriteCell.swift */; };
+		480FB5221F39546200E423D6 /* ZHNhomePageFavoriteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB5111F39546200E423D6 /* ZHNhomePageFavoriteCollectionViewCell.swift */; };
+		480FB5231F39546200E423D6 /* ZHNhomePagePraviteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB5121F39546200E423D6 /* ZHNhomePagePraviteCell.swift */; };
+		480FB5241F39546200E423D6 /* ZHNhomePageRowHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB5131F39546200E423D6 /* ZHNhomePageRowHeadView.swift */; };
+		480FB5251F39546200E423D6 /* ZHNhomePageSeasonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB5141F39546200E423D6 /* ZHNhomePageSeasonCell.swift */; };
+		480FB5261F39546200E423D6 /* ZHNhomePageSubscibeLiveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB5151F39546200E423D6 /* ZHNhomePageSubscibeLiveCell.swift */; };
+		480FB5271F39546200E423D6 /* ZHNhomePageSubscibeLiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 480FB5161F39546200E423D6 /* ZHNhomePageSubscibeLiveCell.xib */; };
+		480FB5281F39546200E423D6 /* ZHNhomePageTageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB5171F39546200E423D6 /* ZHNhomePageTageCell.swift */; };
+		480FB52A1F39546700E423D6 /* ZHNhomePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB5291F39546700E423D6 /* ZHNhomePageViewModel.swift */; };
+		480FB52D1F39546B00E423D6 /* ZHNHomePageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB52B1F39546B00E423D6 /* ZHNHomePageModel.swift */; };
+		480FB52E1F39546B00E423D6 /* ZHNhomePageSeasonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB52C1F39546B00E423D6 /* ZHNhomePageSeasonCollectionViewCell.swift */; };
+		480FB5301F39546F00E423D6 /* ZHNhomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB52F1F39546F00E423D6 /* ZHNhomePageViewController.swift */; };
+		480FB5321F395A9C00E423D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480FB5311F395A9C00E423D6 /* UIKit.framework */; };
+		480FB5341F395AA100E423D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480FB5331F395AA100E423D6 /* Foundation.framework */; };
+		480FB5361F395AAA00E423D6 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 480FB5351F395AAA00E423D6 /* libstdc++.tbd */; };
+		480FB5381F395AAF00E423D6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480FB5371F395AAF00E423D6 /* AudioToolbox.framework */; };
+		480FB53A1F395AB900E423D6 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480FB5391F395AB900E423D6 /* VideoToolbox.framework */; };
+		480FB53C1F395ABD00E423D6 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480FB53B1F395ABD00E423D6 /* OpenGLES.framework */; };
+		480FB53E1F395AC300E423D6 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480FB53D1F395AC300E423D6 /* MobileCoreServices.framework */; };
+		480FB5401F395ACD00E423D6 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480FB53F1F395ACD00E423D6 /* MediaPlayer.framework */; };
+		480FB5421F395AD500E423D6 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 480FB5411F395AD500E423D6 /* libz.tbd */; };
+		480FB5441F395ADF00E423D6 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 480FB5431F395ADF00E423D6 /* libbz2.tbd */; };
+		480FB5461F395AE500E423D6 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480FB5451F395AE500E423D6 /* CoreVideo.framework */; };
+		480FB5481F395AEA00E423D6 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480FB5471F395AEA00E423D6 /* CoreMedia.framework */; };
+		480FB54A1F395AF000E423D6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480FB5491F395AF000E423D6 /* AVFoundation.framework */; };
+		480FB54D1F398B9300E423D6 /* YSMineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB54C1F398B9300E423D6 /* YSMineViewModel.swift */; };
+		480FB54F1F398BAD00E423D6 /* YSPlayDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB54E1F398BAD00E423D6 /* YSPlayDetailModel.swift */; };
 		48175E0F1F2B0C29005A00F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48175E0E1F2B0C29005A00F1 /* AppDelegate.swift */; };
 		48175E141F2B0C29005A00F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48175E121F2B0C29005A00F1 /* Main.storyboard */; };
 		48175E161F2B0C29005A00F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48175E151F2B0C29005A00F1 /* Assets.xcassets */; };
@@ -302,7 +402,6 @@
 		48F6512E1F359F1C008F8212 /* YSPlayerRelatesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F6512C1F359F1C008F8212 /* YSPlayerRelatesCell.swift */; };
 		48F6512F1F359F1C008F8212 /* YSPlayerRelatesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48F6512D1F359F1C008F8212 /* YSPlayerRelatesCell.xib */; };
 		48F651311F35A01B008F8212 /* YSBaseLineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F651301F35A01B008F8212 /* YSBaseLineCell.swift */; };
-		48F651351F35A0A9008F8212 /* YSPlayDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F651341F35A0A9008F8212 /* YSPlayDetailModel.swift */; };
 		48F651371F35A191008F8212 /* UIimageView+gifAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F651361F35A191008F8212 /* UIimageView+gifAdd.swift */; };
 		48F651391F35A1F3008F8212 /* YSHairLineConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F651381F35A1F3008F8212 /* YSHairLineConstraint.swift */; };
 		48F6513B1F35A312008F8212 /* Int+coutdealAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F6513A1F35A312008F8212 /* Int+coutdealAdd.swift */; };
@@ -337,7 +436,127 @@
 		480AC4A11F2B2E44001524B6 /* bilibili_splash_iphone_bg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bilibili_splash_iphone_bg@3x.png"; sourceTree = "<group>"; };
 		480AC4A41F2B3179001524B6 /* YSBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSBaseViewController.swift; sourceTree = "<group>"; };
 		480AC4A81F2B32A4001524B6 /* YSMineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSMineViewController.swift; sourceTree = "<group>"; };
-		480AC4AA1F2B32C4001524B6 /* YSMineViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSMineViewModel.swift; sourceTree = "<group>"; };
+		480FB45A1F394E3500E423D6 /* ZHNloadingProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNloadingProgressView.swift; sourceTree = "<group>"; };
+		480FB45B1F394E3500E423D6 /* ZHNplayerMenuBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNplayerMenuBaseView.swift; sourceTree = "<group>"; };
+		480FB45C1F394E3500E423D6 /* ZHNplayerUrlLoadingBackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNplayerUrlLoadingBackView.swift; sourceTree = "<group>"; };
+		480FB4601F394E4700E423D6 /* ZHNPlayerBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNPlayerBaseViewController.swift; sourceTree = "<group>"; };
+		480FB4621F394E5D00E423D6 /* ZHNnormalPlayerFullScreenActionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNnormalPlayerFullScreenActionModel.swift; sourceTree = "<group>"; };
+		480FB4631F394E5D00E423D6 /* ZHNplayBaseActionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNplayBaseActionModel.swift; sourceTree = "<group>"; };
+		480FB4641F394E5D00E423D6 /* ZHNplayerUrlLoadingBackViewActionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNplayerUrlLoadingBackViewActionModel.swift; sourceTree = "<group>"; };
+		480FB4651F394E5D00E423D6 /* ZHNplayFullScreenMenuViewActionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNplayFullScreenMenuViewActionModel.swift; sourceTree = "<group>"; };
+		480FB4661F394E5D00E423D6 /* ZHNplayNormalMenuViewActionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNplayNormalMenuViewActionModel.swift; sourceTree = "<group>"; };
+		480FB46C1F394E7800E423D6 /* ZHNbilibiliLivePlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNbilibiliLivePlayerViewController.swift; sourceTree = "<group>"; };
+		480FB4741F394EAB00E423D6 /* ZHNlivePlayDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNlivePlayDetailViewModel.swift; sourceTree = "<group>"; };
+		480FB4761F394EB800E423D6 /* ZHNliveDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNliveDetailView.swift; sourceTree = "<group>"; };
+		480FB4771F394EB800E423D6 /* ZHNliveDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZHNliveDetailView.xib; sourceTree = "<group>"; };
+		480FB4781F394EB800E423D6 /* ZHNliveFullScreenMenuViewBottom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNliveFullScreenMenuViewBottom.swift; sourceTree = "<group>"; };
+		480FB4791F394EB800E423D6 /* ZHNliveFullScreenMenuViewBottom.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZHNliveFullScreenMenuViewBottom.xib; sourceTree = "<group>"; };
+		480FB47A1F394EB800E423D6 /* ZHNliveFullScreenMenuViewTop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNliveFullScreenMenuViewTop.swift; sourceTree = "<group>"; };
+		480FB47B1F394EB800E423D6 /* ZHNliveFullScreenMenuViewTop.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZHNliveFullScreenMenuViewTop.xib; sourceTree = "<group>"; };
+		480FB47C1F394EB800E423D6 /* ZHNlivePlayFullScreenMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNlivePlayFullScreenMenuView.swift; sourceTree = "<group>"; };
+		480FB47D1F394EB800E423D6 /* ZHNlivePlayNoramlMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNlivePlayNoramlMenuView.swift; sourceTree = "<group>"; };
+		480FB4871F394EDE00E423D6 /* VideoURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoURL.h; sourceTree = "<group>"; };
+		480FB4881F394EDE00E423D6 /* VideoURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoURL.m; sourceTree = "<group>"; };
+		480FB4891F394EDE00E423D6 /* VideoURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoURLProtocol.h; sourceTree = "<group>"; };
+		480FB48A1F394EDE00E423D6 /* VideoURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoURLProtocol.m; sourceTree = "<group>"; };
+		480FB48E1F394EF800E423D6 /* danmuModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = danmuModel.swift; sourceTree = "<group>"; };
+		480FB48F1F394EF800E423D6 /* ZHHnormalPayerItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHHnormalPayerItemModel.swift; sourceTree = "<group>"; };
+		480FB4921F394F1000E423D6 /* ZHNnormalPlayerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNnormalPlayerViewModel.swift; sourceTree = "<group>"; };
+		480FB4941F394F1E00E423D6 /* ZHNnormalPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNnormalPlayerViewController.swift; sourceTree = "<group>"; };
+		480FB4971F394F3B00E423D6 /* ZHNnormalPlayerCommondTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNnormalPlayerCommondTableViewController.swift; sourceTree = "<group>"; };
+		480FB4991F394F4300E423D6 /* ZHNplayerCommendViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNplayerCommendViewModel.swift; sourceTree = "<group>"; };
+		480FB49F1F394F7500E423D6 /* ZHNnormalPlayerDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNnormalPlayerDetailTableViewController.swift; sourceTree = "<group>"; };
+		480FB4A11F394F7F00E423D6 /* ZHNplayerDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNplayerDetailViewModel.swift; sourceTree = "<group>"; };
+		480FB4A31F394F8C00E423D6 /* ZHNplayerDetailStatusTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNplayerDetailStatusTableViewCell.swift; sourceTree = "<group>"; };
+		480FB4A41F394F8C00E423D6 /* ZHNplayerDetailStatusTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZHNplayerDetailStatusTableViewCell.xib; sourceTree = "<group>"; };
+		480FB4A51F394F8C00E423D6 /* ZHNplayerPageListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNplayerPageListTableViewCell.swift; sourceTree = "<group>"; };
+		480FB4A61F394F8C00E423D6 /* ZHNplayerPersonDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNplayerPersonDetailTableViewCell.swift; sourceTree = "<group>"; };
+		480FB4A71F394F8C00E423D6 /* ZHNplayerPersonDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZHNplayerPersonDetailTableViewCell.xib; sourceTree = "<group>"; };
+		480FB4A81F394F8C00E423D6 /* ZHNplayerRelatesTitleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNplayerRelatesTitleTableViewCell.swift; sourceTree = "<group>"; };
+		480FB4A91F394F8C00E423D6 /* ZHNplayerTagListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNplayerTagListTableViewCell.swift; sourceTree = "<group>"; };
+		480FB4B11F394FA100E423D6 /* normalPlayerLoadingMaskView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = normalPlayerLoadingMaskView.swift; sourceTree = "<group>"; };
+		480FB4B21F394FA100E423D6 /* playCustomSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = playCustomSlider.swift; sourceTree = "<group>"; };
+		480FB4B31F394FA100E423D6 /* playerBlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = playerBlurView.swift; sourceTree = "<group>"; };
+		480FB4B41F394FA100E423D6 /* ZHNdanmuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNdanmuView.swift; sourceTree = "<group>"; };
+		480FB4B51F394FA100E423D6 /* ZHNforwardBackforwardNoticeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNforwardBackforwardNoticeView.swift; sourceTree = "<group>"; };
+		480FB4B61F394FA100E423D6 /* ZHNforwardBackforwardNoticeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZHNforwardBackforwardNoticeView.xib; sourceTree = "<group>"; };
+		480FB4B71F394FA100E423D6 /* ZHNnormalFullScreenBottom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNnormalFullScreenBottom.swift; sourceTree = "<group>"; };
+		480FB4B81F394FA100E423D6 /* ZHNnormalFullScreenBottom.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZHNnormalFullScreenBottom.xib; sourceTree = "<group>"; };
+		480FB4B91F394FA100E423D6 /* ZHNnormalFullScreenTop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNnormalFullScreenTop.swift; sourceTree = "<group>"; };
+		480FB4BA1F394FA100E423D6 /* ZHNnormalFullScreenTop.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZHNnormalFullScreenTop.xib; sourceTree = "<group>"; };
+		480FB4BB1F394FA100E423D6 /* ZHNnormalPlayFullScreenMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNnormalPlayFullScreenMenuView.swift; sourceTree = "<group>"; };
+		480FB4BC1F394FA100E423D6 /* ZHNnormalPlayWindowMenuVIew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNnormalPlayWindowMenuVIew.swift; sourceTree = "<group>"; };
+		480FB4C91F394FFF00E423D6 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		480FB4CD1F39501200E423D6 /* BarrageCanvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageCanvas.h; sourceTree = "<group>"; };
+		480FB4CE1F39501200E423D6 /* BarrageCanvas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageCanvas.m; sourceTree = "<group>"; };
+		480FB4CF1F39501200E423D6 /* BarrageClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageClock.h; sourceTree = "<group>"; };
+		480FB4D01F39501200E423D6 /* BarrageClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageClock.m; sourceTree = "<group>"; };
+		480FB4D11F39501200E423D6 /* BarrageDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageDescriptor.h; sourceTree = "<group>"; };
+		480FB4D21F39501200E423D6 /* BarrageDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageDescriptor.m; sourceTree = "<group>"; };
+		480FB4D31F39501200E423D6 /* BarrageDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageDispatcher.h; sourceTree = "<group>"; };
+		480FB4D41F39501200E423D6 /* BarrageDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageDispatcher.m; sourceTree = "<group>"; };
+		480FB4D51F39501200E423D6 /* BarrageRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageRenderer.h; sourceTree = "<group>"; };
+		480FB4D61F39501200E423D6 /* BarrageRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageRenderer.m; sourceTree = "<group>"; };
+		480FB4D71F39501200E423D6 /* BarrageSpriteFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageSpriteFactory.h; sourceTree = "<group>"; };
+		480FB4D81F39501200E423D6 /* BarrageSpriteFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageSpriteFactory.m; sourceTree = "<group>"; };
+		480FB4D91F39501200E423D6 /* BarrageHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageHeader.h; sourceTree = "<group>"; };
+		480FB4DB1F39501200E423D6 /* BarrageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageLoader.h; sourceTree = "<group>"; };
+		480FB4DC1F39501200E423D6 /* BarrageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageLoader.m; sourceTree = "<group>"; };
+		480FB4DE1F39501200E423D6 /* BarrageFloatImageSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageFloatImageSprite.h; sourceTree = "<group>"; };
+		480FB4DF1F39501200E423D6 /* BarrageFloatImageSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageFloatImageSprite.m; sourceTree = "<group>"; };
+		480FB4E01F39501200E423D6 /* BarrageFloatSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageFloatSprite.h; sourceTree = "<group>"; };
+		480FB4E11F39501200E423D6 /* BarrageFloatSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageFloatSprite.m; sourceTree = "<group>"; };
+		480FB4E21F39501200E423D6 /* BarrageFloatTextSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageFloatTextSprite.h; sourceTree = "<group>"; };
+		480FB4E31F39501200E423D6 /* BarrageFloatTextSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageFloatTextSprite.m; sourceTree = "<group>"; };
+		480FB4E41F39501200E423D6 /* BarrageSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageSprite.h; sourceTree = "<group>"; };
+		480FB4E51F39501200E423D6 /* BarrageSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageSprite.m; sourceTree = "<group>"; };
+		480FB4E61F39501200E423D6 /* BarrageSpriteProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageSpriteProtocol.h; sourceTree = "<group>"; };
+		480FB4E71F39501200E423D6 /* BarrageSpriteUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageSpriteUtility.h; sourceTree = "<group>"; };
+		480FB4E81F39501200E423D6 /* BarrageSpriteUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageSpriteUtility.m; sourceTree = "<group>"; };
+		480FB4E91F39501200E423D6 /* BarrageWalkImageSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageWalkImageSprite.h; sourceTree = "<group>"; };
+		480FB4EA1F39501200E423D6 /* BarrageWalkImageSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageWalkImageSprite.m; sourceTree = "<group>"; };
+		480FB4EB1F39501200E423D6 /* BarrageWalkSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageWalkSprite.h; sourceTree = "<group>"; };
+		480FB4EC1F39501200E423D6 /* BarrageWalkSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageWalkSprite.m; sourceTree = "<group>"; };
+		480FB4ED1F39501200E423D6 /* BarrageWalkTextSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageWalkTextSprite.h; sourceTree = "<group>"; };
+		480FB4EE1F39501200E423D6 /* BarrageWalkTextSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageWalkTextSprite.m; sourceTree = "<group>"; };
+		480FB4FF1F39503000E423D6 /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
+		480FB5001F39503000E423D6 /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
+		480FB5071F39546200E423D6 /* ZHNelecView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNelecView.swift; sourceTree = "<group>"; };
+		480FB5081F39546200E423D6 /* ZHNelecView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZHNelecView.xib; sourceTree = "<group>"; };
+		480FB5091F39546200E423D6 /* ZHNhomePageArchiveCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNhomePageArchiveCell.swift; sourceTree = "<group>"; };
+		480FB50A1F39546200E423D6 /* ZHNhomePageArchiveCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNhomePageArchiveCollectionViewCell.swift; sourceTree = "<group>"; };
+		480FB50B1F39546200E423D6 /* ZHNhomePageBaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNhomePageBaseTableViewCell.swift; sourceTree = "<group>"; };
+		480FB50C1F39546200E423D6 /* ZHNhomePageCardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNhomePageCardCell.swift; sourceTree = "<group>"; };
+		480FB50D1F39546200E423D6 /* ZHNhomePageCardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZHNhomePageCardCell.xib; sourceTree = "<group>"; };
+		480FB50E1F39546200E423D6 /* ZHNhomePageCoinCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNhomePageCoinCell.swift; sourceTree = "<group>"; };
+		480FB50F1F39546200E423D6 /* ZHNhomePageElecCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNhomePageElecCell.swift; sourceTree = "<group>"; };
+		480FB5101F39546200E423D6 /* ZHNhomePageFavoriteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNhomePageFavoriteCell.swift; sourceTree = "<group>"; };
+		480FB5111F39546200E423D6 /* ZHNhomePageFavoriteCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNhomePageFavoriteCollectionViewCell.swift; sourceTree = "<group>"; };
+		480FB5121F39546200E423D6 /* ZHNhomePagePraviteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNhomePagePraviteCell.swift; sourceTree = "<group>"; };
+		480FB5131F39546200E423D6 /* ZHNhomePageRowHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNhomePageRowHeadView.swift; sourceTree = "<group>"; };
+		480FB5141F39546200E423D6 /* ZHNhomePageSeasonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNhomePageSeasonCell.swift; sourceTree = "<group>"; };
+		480FB5151F39546200E423D6 /* ZHNhomePageSubscibeLiveCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNhomePageSubscibeLiveCell.swift; sourceTree = "<group>"; };
+		480FB5161F39546200E423D6 /* ZHNhomePageSubscibeLiveCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZHNhomePageSubscibeLiveCell.xib; sourceTree = "<group>"; };
+		480FB5171F39546200E423D6 /* ZHNhomePageTageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNhomePageTageCell.swift; sourceTree = "<group>"; };
+		480FB5291F39546700E423D6 /* ZHNhomePageViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNhomePageViewModel.swift; sourceTree = "<group>"; };
+		480FB52B1F39546B00E423D6 /* ZHNHomePageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNHomePageModel.swift; sourceTree = "<group>"; };
+		480FB52C1F39546B00E423D6 /* ZHNhomePageSeasonCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNhomePageSeasonCollectionViewCell.swift; sourceTree = "<group>"; };
+		480FB52F1F39546F00E423D6 /* ZHNhomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNhomePageViewController.swift; sourceTree = "<group>"; };
+		480FB5311F395A9C00E423D6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		480FB5331F395AA100E423D6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		480FB5351F395AAA00E423D6 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		480FB5371F395AAF00E423D6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		480FB5391F395AB900E423D6 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		480FB53B1F395ABD00E423D6 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		480FB53D1F395AC300E423D6 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		480FB53F1F395ACD00E423D6 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		480FB5411F395AD500E423D6 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		480FB5431F395ADF00E423D6 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		480FB5451F395AE500E423D6 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		480FB5471F395AEA00E423D6 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		480FB5491F395AF000E423D6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		480FB54C1F398B9300E423D6 /* YSMineViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSMineViewModel.swift; sourceTree = "<group>"; };
+		480FB54E1F398BAD00E423D6 /* YSPlayDetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSPlayDetailModel.swift; sourceTree = "<group>"; };
 		48175E0B1F2B0C29005A00F1 /* ysbilibili.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ysbilibili.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48175E0E1F2B0C29005A00F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48175E131F2B0C29005A00F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -834,7 +1053,6 @@
 		48F6512C1F359F1C008F8212 /* YSPlayerRelatesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSPlayerRelatesCell.swift; sourceTree = "<group>"; };
 		48F6512D1F359F1C008F8212 /* YSPlayerRelatesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YSPlayerRelatesCell.xib; sourceTree = "<group>"; };
 		48F651301F35A01B008F8212 /* YSBaseLineCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSBaseLineCell.swift; sourceTree = "<group>"; };
-		48F651341F35A0A9008F8212 /* YSPlayDetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSPlayDetailModel.swift; sourceTree = "<group>"; };
 		48F651361F35A191008F8212 /* UIimageView+gifAdd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIimageView+gifAdd.swift"; sourceTree = "<group>"; };
 		48F651381F35A1F3008F8212 /* YSHairLineConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSHairLineConstraint.swift; sourceTree = "<group>"; };
 		48F6513A1F35A312008F8212 /* Int+coutdealAdd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+coutdealAdd.swift"; sourceTree = "<group>"; };
@@ -856,7 +1074,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				480FB54A1F395AF000E423D6 /* AVFoundation.framework in Frameworks */,
+				480FB5481F395AEA00E423D6 /* CoreMedia.framework in Frameworks */,
+				480FB5461F395AE500E423D6 /* CoreVideo.framework in Frameworks */,
+				480FB5441F395ADF00E423D6 /* libbz2.tbd in Frameworks */,
+				480FB5421F395AD500E423D6 /* libz.tbd in Frameworks */,
+				480FB5401F395ACD00E423D6 /* MediaPlayer.framework in Frameworks */,
+				480FB53E1F395AC300E423D6 /* MobileCoreServices.framework in Frameworks */,
+				480FB53C1F395ABD00E423D6 /* OpenGLES.framework in Frameworks */,
+				480FB53A1F395AB900E423D6 /* VideoToolbox.framework in Frameworks */,
+				480FB5381F395AAF00E423D6 /* AudioToolbox.framework in Frameworks */,
+				480FB5361F395AAA00E423D6 /* libstdc++.tbd in Frameworks */,
+				480FB5341F395AA100E423D6 /* Foundation.framework in Frameworks */,
+				480FB5321F395A9C00E423D6 /* UIKit.framework in Frameworks */,
 				5937379367D709AC0248AA28 /* Pods_ysbilibili.framework in Frameworks */,
+				480FB4CA1F394FFF00E423D6 /* IJKMediaFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -866,6 +1098,19 @@
 		06601BD99A15473E6ABEF275 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				480FB5491F395AF000E423D6 /* AVFoundation.framework */,
+				480FB5471F395AEA00E423D6 /* CoreMedia.framework */,
+				480FB5451F395AE500E423D6 /* CoreVideo.framework */,
+				480FB5431F395ADF00E423D6 /* libbz2.tbd */,
+				480FB5411F395AD500E423D6 /* libz.tbd */,
+				480FB53F1F395ACD00E423D6 /* MediaPlayer.framework */,
+				480FB53D1F395AC300E423D6 /* MobileCoreServices.framework */,
+				480FB53B1F395ABD00E423D6 /* OpenGLES.framework */,
+				480FB5391F395AB900E423D6 /* VideoToolbox.framework */,
+				480FB5371F395AAF00E423D6 /* AudioToolbox.framework */,
+				480FB5351F395AAA00E423D6 /* libstdc++.tbd */,
+				480FB5331F395AA100E423D6 /* Foundation.framework */,
+				480FB5311F395A9C00E423D6 /* UIKit.framework */,
 				0D14DC222EBC77973F8EFED8 /* Pods_ysbilibili.framework */,
 			);
 			name = Frameworks;
@@ -917,6 +1162,7 @@
 			isa = PBXGroup;
 			children = (
 				480AC4A71F2B3285001524B6 /* Controller */,
+				480FB54B1F39854100E423D6 /* ViewModel */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -925,9 +1171,331 @@
 			isa = PBXGroup;
 			children = (
 				480AC4A81F2B32A4001524B6 /* YSMineViewController.swift */,
-				480AC4AA1F2B32C4001524B6 /* YSMineViewModel.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		480FB4561F394DE700E423D6 /* NormalPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				480FB48D1F394EEC00E423D6 /* Controller */,
+				480FB4721F394E8F00E423D6 /* Model */,
+				480FB4861F394ED400E423D6 /* VideoUrlHelper */,
+				480FB4731F394E9400E423D6 /* View */,
+				480FB4711F394E8A00E423D6 /* ViewModel */,
+			);
+			path = NormalPlayer;
+			sourceTree = "<group>";
+		};
+		480FB4571F394DF400E423D6 /* LivePlayer */ = {
+			isa = PBXGroup;
+			children = (
+				480FB46E1F394E7B00E423D6 /* Model */,
+				480FB4701F394E8400E423D6 /* View */,
+				480FB46F1F394E7F00E423D6 /* ViewModel */,
+				480FB46C1F394E7800E423D6 /* ZHNbilibiliLivePlayerViewController.swift */,
+			);
+			path = LivePlayer;
+			sourceTree = "<group>";
+		};
+		480FB4581F394DFB00E423D6 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				480FB4601F394E4700E423D6 /* ZHNPlayerBaseViewController.swift */,
+				480FB45A1F394E3500E423D6 /* ZHNloadingProgressView.swift */,
+				480FB45B1F394E3500E423D6 /* ZHNplayerMenuBaseView.swift */,
+				480FB45C1F394E3500E423D6 /* ZHNplayerUrlLoadingBackView.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		480FB4591F394DFF00E423D6 /* ActionModel */ = {
+			isa = PBXGroup;
+			children = (
+				480FB4621F394E5D00E423D6 /* ZHNnormalPlayerFullScreenActionModel.swift */,
+				480FB4631F394E5D00E423D6 /* ZHNplayBaseActionModel.swift */,
+				480FB4651F394E5D00E423D6 /* ZHNplayFullScreenMenuViewActionModel.swift */,
+				480FB4661F394E5D00E423D6 /* ZHNplayNormalMenuViewActionModel.swift */,
+				480FB4641F394E5D00E423D6 /* ZHNplayerUrlLoadingBackViewActionModel.swift */,
+			);
+			path = ActionModel;
+			sourceTree = "<group>";
+		};
+		480FB46E1F394E7B00E423D6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		480FB46F1F394E7F00E423D6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				480FB4741F394EAB00E423D6 /* ZHNlivePlayDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		480FB4701F394E8400E423D6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				480FB4761F394EB800E423D6 /* ZHNliveDetailView.swift */,
+				480FB4771F394EB800E423D6 /* ZHNliveDetailView.xib */,
+				480FB4781F394EB800E423D6 /* ZHNliveFullScreenMenuViewBottom.swift */,
+				480FB4791F394EB800E423D6 /* ZHNliveFullScreenMenuViewBottom.xib */,
+				480FB47A1F394EB800E423D6 /* ZHNliveFullScreenMenuViewTop.swift */,
+				480FB47B1F394EB800E423D6 /* ZHNliveFullScreenMenuViewTop.xib */,
+				480FB47C1F394EB800E423D6 /* ZHNlivePlayFullScreenMenuView.swift */,
+				480FB47D1F394EB800E423D6 /* ZHNlivePlayNoramlMenuView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		480FB4711F394E8A00E423D6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				480FB4921F394F1000E423D6 /* ZHNnormalPlayerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		480FB4721F394E8F00E423D6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				480FB54E1F398BAD00E423D6 /* YSPlayDetailModel.swift */,
+				480FB48F1F394EF800E423D6 /* ZHHnormalPayerItemModel.swift */,
+				480FB48E1F394EF800E423D6 /* danmuModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		480FB4731F394E9400E423D6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				480FB4B41F394FA100E423D6 /* ZHNdanmuView.swift */,
+				480FB4B51F394FA100E423D6 /* ZHNforwardBackforwardNoticeView.swift */,
+				480FB4B61F394FA100E423D6 /* ZHNforwardBackforwardNoticeView.xib */,
+				480FB4B71F394FA100E423D6 /* ZHNnormalFullScreenBottom.swift */,
+				480FB4B81F394FA100E423D6 /* ZHNnormalFullScreenBottom.xib */,
+				480FB4B91F394FA100E423D6 /* ZHNnormalFullScreenTop.swift */,
+				480FB4BA1F394FA100E423D6 /* ZHNnormalFullScreenTop.xib */,
+				480FB4BB1F394FA100E423D6 /* ZHNnormalPlayFullScreenMenuView.swift */,
+				480FB4BC1F394FA100E423D6 /* ZHNnormalPlayWindowMenuVIew.swift */,
+				480FB4B11F394FA100E423D6 /* normalPlayerLoadingMaskView.swift */,
+				480FB4B21F394FA100E423D6 /* playCustomSlider.swift */,
+				480FB4B31F394FA100E423D6 /* playerBlurView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		480FB4861F394ED400E423D6 /* VideoUrlHelper */ = {
+			isa = PBXGroup;
+			children = (
+				480FB4871F394EDE00E423D6 /* VideoURL.h */,
+				480FB4881F394EDE00E423D6 /* VideoURL.m */,
+				480FB4891F394EDE00E423D6 /* VideoURLProtocol.h */,
+				480FB48A1F394EDE00E423D6 /* VideoURLProtocol.m */,
+			);
+			path = VideoUrlHelper;
+			sourceTree = "<group>";
+		};
+		480FB48D1F394EEC00E423D6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				480FB4961F394F2E00E423D6 /* Commend */,
+				480FB49B1F394F4E00E423D6 /* Detail */,
+				480FB4941F394F1E00E423D6 /* ZHNnormalPlayerViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		480FB4961F394F2E00E423D6 /* Commend */ = {
+			isa = PBXGroup;
+			children = (
+				480FB4971F394F3B00E423D6 /* ZHNnormalPlayerCommondTableViewController.swift */,
+				480FB4991F394F4300E423D6 /* ZHNplayerCommendViewModel.swift */,
+			);
+			path = Commend;
+			sourceTree = "<group>";
+		};
+		480FB49B1F394F4E00E423D6 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				480FB49C1F394F5800E423D6 /* Controller */,
+				480FB49D1F394F5D00E423D6 /* View */,
+				480FB49E1F394F6100E423D6 /* ViewModel */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		480FB49C1F394F5800E423D6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				480FB49F1F394F7500E423D6 /* ZHNnormalPlayerDetailTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		480FB49D1F394F5D00E423D6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				480FB4A31F394F8C00E423D6 /* ZHNplayerDetailStatusTableViewCell.swift */,
+				480FB4A41F394F8C00E423D6 /* ZHNplayerDetailStatusTableViewCell.xib */,
+				480FB4A51F394F8C00E423D6 /* ZHNplayerPageListTableViewCell.swift */,
+				480FB4A61F394F8C00E423D6 /* ZHNplayerPersonDetailTableViewCell.swift */,
+				480FB4A71F394F8C00E423D6 /* ZHNplayerPersonDetailTableViewCell.xib */,
+				480FB4A81F394F8C00E423D6 /* ZHNplayerRelatesTitleTableViewCell.swift */,
+				480FB4A91F394F8C00E423D6 /* ZHNplayerTagListTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		480FB49E1F394F6100E423D6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				480FB4A11F394F7F00E423D6 /* ZHNplayerDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		480FB4CB1F39501200E423D6 /* BarrageRenderer */ = {
+			isa = PBXGroup;
+			children = (
+				480FB4CC1F39501200E423D6 /* BarrageEngine */,
+				480FB4DA1F39501200E423D6 /* BarrageLoader */,
+				480FB4DD1F39501200E423D6 /* BarrageSprite */,
+				480FB4D91F39501200E423D6 /* BarrageHeader.h */,
+			);
+			path = BarrageRenderer;
+			sourceTree = "<group>";
+		};
+		480FB4CC1F39501200E423D6 /* BarrageEngine */ = {
+			isa = PBXGroup;
+			children = (
+				480FB4CD1F39501200E423D6 /* BarrageCanvas.h */,
+				480FB4CE1F39501200E423D6 /* BarrageCanvas.m */,
+				480FB4CF1F39501200E423D6 /* BarrageClock.h */,
+				480FB4D01F39501200E423D6 /* BarrageClock.m */,
+				480FB4D11F39501200E423D6 /* BarrageDescriptor.h */,
+				480FB4D21F39501200E423D6 /* BarrageDescriptor.m */,
+				480FB4D31F39501200E423D6 /* BarrageDispatcher.h */,
+				480FB4D41F39501200E423D6 /* BarrageDispatcher.m */,
+				480FB4D51F39501200E423D6 /* BarrageRenderer.h */,
+				480FB4D61F39501200E423D6 /* BarrageRenderer.m */,
+				480FB4D71F39501200E423D6 /* BarrageSpriteFactory.h */,
+				480FB4D81F39501200E423D6 /* BarrageSpriteFactory.m */,
+			);
+			path = BarrageEngine;
+			sourceTree = "<group>";
+		};
+		480FB4DA1F39501200E423D6 /* BarrageLoader */ = {
+			isa = PBXGroup;
+			children = (
+				480FB4DB1F39501200E423D6 /* BarrageLoader.h */,
+				480FB4DC1F39501200E423D6 /* BarrageLoader.m */,
+			);
+			path = BarrageLoader;
+			sourceTree = "<group>";
+		};
+		480FB4DD1F39501200E423D6 /* BarrageSprite */ = {
+			isa = PBXGroup;
+			children = (
+				480FB4DE1F39501200E423D6 /* BarrageFloatImageSprite.h */,
+				480FB4DF1F39501200E423D6 /* BarrageFloatImageSprite.m */,
+				480FB4E01F39501200E423D6 /* BarrageFloatSprite.h */,
+				480FB4E11F39501200E423D6 /* BarrageFloatSprite.m */,
+				480FB4E21F39501200E423D6 /* BarrageFloatTextSprite.h */,
+				480FB4E31F39501200E423D6 /* BarrageFloatTextSprite.m */,
+				480FB4E41F39501200E423D6 /* BarrageSprite.h */,
+				480FB4E51F39501200E423D6 /* BarrageSprite.m */,
+				480FB4E61F39501200E423D6 /* BarrageSpriteProtocol.h */,
+				480FB4E71F39501200E423D6 /* BarrageSpriteUtility.h */,
+				480FB4E81F39501200E423D6 /* BarrageSpriteUtility.m */,
+				480FB4E91F39501200E423D6 /* BarrageWalkImageSprite.h */,
+				480FB4EA1F39501200E423D6 /* BarrageWalkImageSprite.m */,
+				480FB4EB1F39501200E423D6 /* BarrageWalkSprite.h */,
+				480FB4EC1F39501200E423D6 /* BarrageWalkSprite.m */,
+				480FB4ED1F39501200E423D6 /* BarrageWalkTextSprite.h */,
+				480FB4EE1F39501200E423D6 /* BarrageWalkTextSprite.m */,
+			);
+			path = BarrageSprite;
+			sourceTree = "<group>";
+		};
+		480FB4FE1F39502400E423D6 /* XMLReader */ = {
+			isa = PBXGroup;
+			children = (
+				480FB4FF1F39503000E423D6 /* XMLReader.h */,
+				480FB5001F39503000E423D6 /* XMLReader.m */,
+			);
+			path = XMLReader;
+			sourceTree = "<group>";
+		};
+		480FB5021F39543600E423D6 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				480FB5031F39544600E423D6 /* Controller */,
+				480FB5041F39544B00E423D6 /* Model */,
+				480FB5051F39544F00E423D6 /* VewModel */,
+				480FB5061F39545500E423D6 /* View */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		480FB5031F39544600E423D6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				480FB52F1F39546F00E423D6 /* ZHNhomePageViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		480FB5041F39544B00E423D6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				480FB52B1F39546B00E423D6 /* ZHNHomePageModel.swift */,
+				480FB52C1F39546B00E423D6 /* ZHNhomePageSeasonCollectionViewCell.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		480FB5051F39544F00E423D6 /* VewModel */ = {
+			isa = PBXGroup;
+			children = (
+				480FB5291F39546700E423D6 /* ZHNhomePageViewModel.swift */,
+			);
+			path = VewModel;
+			sourceTree = "<group>";
+		};
+		480FB5061F39545500E423D6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				480FB5071F39546200E423D6 /* ZHNelecView.swift */,
+				480FB5081F39546200E423D6 /* ZHNelecView.xib */,
+				480FB5091F39546200E423D6 /* ZHNhomePageArchiveCell.swift */,
+				480FB50A1F39546200E423D6 /* ZHNhomePageArchiveCollectionViewCell.swift */,
+				480FB50B1F39546200E423D6 /* ZHNhomePageBaseTableViewCell.swift */,
+				480FB50C1F39546200E423D6 /* ZHNhomePageCardCell.swift */,
+				480FB50D1F39546200E423D6 /* ZHNhomePageCardCell.xib */,
+				480FB50E1F39546200E423D6 /* ZHNhomePageCoinCell.swift */,
+				480FB50F1F39546200E423D6 /* ZHNhomePageElecCell.swift */,
+				480FB5101F39546200E423D6 /* ZHNhomePageFavoriteCell.swift */,
+				480FB5111F39546200E423D6 /* ZHNhomePageFavoriteCollectionViewCell.swift */,
+				480FB5121F39546200E423D6 /* ZHNhomePagePraviteCell.swift */,
+				480FB5131F39546200E423D6 /* ZHNhomePageRowHeadView.swift */,
+				480FB5141F39546200E423D6 /* ZHNhomePageSeasonCell.swift */,
+				480FB5151F39546200E423D6 /* ZHNhomePageSubscibeLiveCell.swift */,
+				480FB5161F39546200E423D6 /* ZHNhomePageSubscibeLiveCell.xib */,
+				480FB5171F39546200E423D6 /* ZHNhomePageTageCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		480FB54B1F39854100E423D6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				480FB54C1F398B9300E423D6 /* YSMineViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		48175E021F2B0C29005A00F1 = {
@@ -1018,12 +1586,12 @@
 		48175E251F2B0C63005A00F1 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				483E548C1F3871C1002FABE5 /* Player */,
-				482C56C01F2ECEF100225D39 /* Dynamic */,
 				481E9EF71F34667500C4DBE4 /* Home */,
+				482C56C01F2ECEF100225D39 /* Dynamic */,
+				480FB5021F39543600E423D6 /* HomePage */,
 				480AC4881F2B1381001524B6 /* Main */,
 				480AC4A61F2B327F001524B6 /* Mine */,
-				48F651321F35A094008F8212 /* Player */,
+				483E548C1F3871C1002FABE5 /* Player */,
 				48F6515C1F35C961008F8212 /* WebView */,
 				482C56C31F2EF76300225D39 /* Zone */,
 			);
@@ -1034,6 +1602,7 @@
 			isa = PBXGroup;
 			children = (
 				480AC49E1F2B2DFD001524B6 /* splash */,
+				480FB4C91F394FFF00E423D6 /* IJKMediaFramework.framework */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -1060,9 +1629,11 @@
 		481C68FD1F38501E0019E220 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				480FB4CB1F39501200E423D6 /* BarrageRenderer */,
 				483E521B1F386C09002FABE5 /* LFLiveKit */,
 				481C68FE1F38502A0019E220 /* TagList */,
 				483E52031F386502002FABE5 /* WTKAutoHighLightLabel */,
+				480FB4FE1F39502400E423D6 /* XMLReader */,
 			);
 			path = Libs;
 			sourceTree = "<group>";
@@ -1202,16 +1773,16 @@
 		483E521B1F386C09002FABE5 /* LFLiveKit */ = {
 			isa = PBXGroup;
 			children = (
+				483E52531F386C09002FABE5 /* Vendor */,
 				483E521C1F386C09002FABE5 /* capture */,
 				483E52211F386C09002FABE5 /* coder */,
 				483E52331F386C09002FABE5 /* configuration */,
 				483E52381F386C09002FABE5 /* filter */,
+				483E52401F386C09002FABE5 /* objects */,
+				483E524B1F386C09002FABE5 /* publish */,
 				483E523D1F386C09002FABE5 /* LFLiveKit.h */,
 				483E523E1F386C09002FABE5 /* LFLiveSession.h */,
 				483E523F1F386C09002FABE5 /* LFLiveSession.m */,
-				483E52401F386C09002FABE5 /* objects */,
-				483E524B1F386C09002FABE5 /* publish */,
-				483E52531F386C09002FABE5 /* Vendor */,
 			);
 			path = LFLiveKit;
 			sourceTree = "<group>";
@@ -1300,11 +1871,11 @@
 		483E524B1F386C09002FABE5 /* publish */ = {
 			isa = PBXGroup;
 			children = (
-				483E524C1F386C09002FABE5 /* LFStreamingBuffer.h */,
-				483E524D1F386C09002FABE5 /* LFStreamingBuffer.m */,
 				483E524E1F386C09002FABE5 /* LFStreamRTMPSocket.h */,
 				483E524F1F386C09002FABE5 /* LFStreamRtmpSocket.m */,
 				483E52501F386C09002FABE5 /* LFStreamSocket.h */,
+				483E524C1F386C09002FABE5 /* LFStreamingBuffer.h */,
+				483E524D1F386C09002FABE5 /* LFStreamingBuffer.m */,
 				483E52511F386C09002FABE5 /* NSMutableArray+LFAdd.h */,
 				483E52521F386C09002FABE5 /* NSMutableArray+LFAdd.m */,
 			);
@@ -1323,6 +1894,7 @@
 		483E52541F386C09002FABE5 /* GPUImage */ = {
 			isa = PBXGroup;
 			children = (
+				483E53A41F386C0A002FABE5 /* iOS */,
 				483E52551F386C09002FABE5 /* GLProgram.h */,
 				483E52561F386C09002FABE5 /* GLProgram.m */,
 				483E52571F386C09002FABE5 /* GPUImage.h */,
@@ -1352,10 +1924,10 @@
 				483E526F1F386C0A002FABE5 /* GPUImageBuffer.m */,
 				483E52701F386C0A002FABE5 /* GPUImageBulgeDistortionFilter.h */,
 				483E52711F386C0A002FABE5 /* GPUImageBulgeDistortionFilter.m */,
-				483E52721F386C0A002FABE5 /* GPUImageCannyEdgeDetectionFilter.h */,
-				483E52731F386C0A002FABE5 /* GPUImageCannyEdgeDetectionFilter.m */,
 				483E52741F386C0A002FABE5 /* GPUImageCGAColorspaceFilter.h */,
 				483E52751F386C0A002FABE5 /* GPUImageCGAColorspaceFilter.m */,
+				483E52721F386C0A002FABE5 /* GPUImageCannyEdgeDetectionFilter.h */,
+				483E52731F386C0A002FABE5 /* GPUImageCannyEdgeDetectionFilter.m */,
 				483E52761F386C0A002FABE5 /* GPUImageChromaKeyBlendFilter.h */,
 				483E52771F386C0A002FABE5 /* GPUImageChromaKeyBlendFilter.m */,
 				483E52781F386C0A002FABE5 /* GPUImageChromaKeyFilter.h */,
@@ -1412,10 +1984,10 @@
 				483E52AB1F386C0A002FABE5 /* GPUImageExclusionBlendFilter.m */,
 				483E52AC1F386C0A002FABE5 /* GPUImageExposureFilter.h */,
 				483E52AD1F386C0A002FABE5 /* GPUImageExposureFilter.m */,
-				483E52AE1F386C0A002FABE5 /* GPUImageFalseColorFilter.h */,
-				483E52AF1F386C0A002FABE5 /* GPUImageFalseColorFilter.m */,
 				483E52B01F386C0A002FABE5 /* GPUImageFASTCornerDetectionFilter.h */,
 				483E52B11F386C0A002FABE5 /* GPUImageFASTCornerDetectionFilter.m */,
+				483E52AE1F386C0A002FABE5 /* GPUImageFalseColorFilter.h */,
+				483E52AF1F386C0A002FABE5 /* GPUImageFalseColorFilter.m */,
 				483E52B21F386C0A002FABE5 /* GPUImageFilter.h */,
 				483E52B31F386C0A002FABE5 /* GPUImageFilter.m */,
 				483E52B41F386C0A002FABE5 /* GPUImageFilterGroup.h */,
@@ -1440,6 +2012,8 @@
 				483E52C71F386C0A002FABE5 /* GPUImageGlassSphereFilter.m */,
 				483E52C81F386C0A002FABE5 /* GPUImageGrayscaleFilter.h */,
 				483E52C91F386C0A002FABE5 /* GPUImageGrayscaleFilter.m */,
+				483E52E01F386C0A002FABE5 /* GPUImageHSBFilter.h */,
+				483E52E11F386C0A002FABE5 /* GPUImageHSBFilter.m */,
 				483E52CA1F386C0A002FABE5 /* GPUImageHalftoneFilter.h */,
 				483E52CB1F386C0A002FABE5 /* GPUImageHalftoneFilter.m */,
 				483E52CC1F386C0A002FABE5 /* GPUImageHardLightBlendFilter.h */,
@@ -1448,12 +2022,12 @@
 				483E52CF1F386C0A002FABE5 /* GPUImageHarrisCornerDetectionFilter.m */,
 				483E52D01F386C0A002FABE5 /* GPUImageHazeFilter.h */,
 				483E52D11F386C0A002FABE5 /* GPUImageHazeFilter.m */,
+				483E52D61F386C0A002FABE5 /* GPUImageHighPassFilter.h */,
+				483E52D71F386C0A002FABE5 /* GPUImageHighPassFilter.m */,
 				483E52D21F386C0A002FABE5 /* GPUImageHighlightShadowFilter.h */,
 				483E52D31F386C0A002FABE5 /* GPUImageHighlightShadowFilter.m */,
 				483E52D41F386C0A002FABE5 /* GPUImageHighlightShadowTintFilter.h */,
 				483E52D51F386C0A002FABE5 /* GPUImageHighlightShadowTintFilter.m */,
-				483E52D61F386C0A002FABE5 /* GPUImageHighPassFilter.h */,
-				483E52D71F386C0A002FABE5 /* GPUImageHighPassFilter.m */,
 				483E52D81F386C0A002FABE5 /* GPUImageHistogramEqualizationFilter.h */,
 				483E52D91F386C0A002FABE5 /* GPUImageHistogramEqualizationFilter.m */,
 				483E52DA1F386C0A002FABE5 /* GPUImageHistogramFilter.h */,
@@ -1462,14 +2036,10 @@
 				483E52DD1F386C0A002FABE5 /* GPUImageHistogramGenerator.m */,
 				483E52DE1F386C0A002FABE5 /* GPUImageHoughTransformLineDetector.h */,
 				483E52DF1F386C0A002FABE5 /* GPUImageHoughTransformLineDetector.m */,
-				483E52E01F386C0A002FABE5 /* GPUImageHSBFilter.h */,
-				483E52E11F386C0A002FABE5 /* GPUImageHSBFilter.m */,
 				483E52E21F386C0A002FABE5 /* GPUImageHueBlendFilter.h */,
 				483E52E31F386C0A002FABE5 /* GPUImageHueBlendFilter.m */,
 				483E52E41F386C0A002FABE5 /* GPUImageHueFilter.h */,
 				483E52E51F386C0A002FABE5 /* GPUImageHueFilter.m */,
-				483E52E61F386C0A002FABE5 /* GPUImageiOSBlurFilter.h */,
-				483E52E71F386C0A002FABE5 /* GPUImageiOSBlurFilter.m */,
 				483E52E81F386C0A002FABE5 /* GPUImageJFAVoronoiFilter.h */,
 				483E52E91F386C0A002FABE5 /* GPUImageJFAVoronoiFilter.m */,
 				483E52EA1F386C0A002FABE5 /* GPUImageKuwaharaFilter.h */,
@@ -1484,10 +2054,10 @@
 				483E52F31F386C0A002FABE5 /* GPUImageLevelsFilter.m */,
 				483E52F41F386C0A002FABE5 /* GPUImageLightenBlendFilter.h */,
 				483E52F51F386C0A002FABE5 /* GPUImageLightenBlendFilter.m */,
-				483E52F61F386C0A002FABE5 /* GPUImageLinearBurnBlendFilter.h */,
-				483E52F71F386C0A002FABE5 /* GPUImageLinearBurnBlendFilter.m */,
 				483E52F81F386C0A002FABE5 /* GPUImageLineGenerator.h */,
 				483E52F91F386C0A002FABE5 /* GPUImageLineGenerator.m */,
+				483E52F61F386C0A002FABE5 /* GPUImageLinearBurnBlendFilter.h */,
+				483E52F71F386C0A002FABE5 /* GPUImageLinearBurnBlendFilter.m */,
 				483E52FA1F386C0A002FABE5 /* GPUImageLocalBinaryPatternFilter.h */,
 				483E52FB1F386C0A002FABE5 /* GPUImageLocalBinaryPatternFilter.m */,
 				483E52FC1F386C0A002FABE5 /* GPUImageLookupFilter.h */,
@@ -1556,10 +2126,6 @@
 				483E533B1F386C0A002FABE5 /* GPUImagePosterizeFilter.m */,
 				483E533C1F386C0A002FABE5 /* GPUImagePrewittEdgeDetectionFilter.h */,
 				483E533D1F386C0A002FABE5 /* GPUImagePrewittEdgeDetectionFilter.m */,
-				483E533E1F386C0A002FABE5 /* GPUImageRawDataInput.h */,
-				483E533F1F386C0A002FABE5 /* GPUImageRawDataInput.m */,
-				483E53401F386C0A002FABE5 /* GPUImageRawDataOutput.h */,
-				483E53411F386C0A002FABE5 /* GPUImageRawDataOutput.m */,
 				483E53421F386C0A002FABE5 /* GPUImageRGBClosingFilter.h */,
 				483E53431F386C0A002FABE5 /* GPUImageRGBClosingFilter.m */,
 				483E53441F386C0A002FABE5 /* GPUImageRGBDilationFilter.h */,
@@ -1570,6 +2136,10 @@
 				483E53491F386C0A002FABE5 /* GPUImageRGBFilter.m */,
 				483E534A1F386C0A002FABE5 /* GPUImageRGBOpeningFilter.h */,
 				483E534B1F386C0A002FABE5 /* GPUImageRGBOpeningFilter.m */,
+				483E533E1F386C0A002FABE5 /* GPUImageRawDataInput.h */,
+				483E533F1F386C0A002FABE5 /* GPUImageRawDataInput.m */,
+				483E53401F386C0A002FABE5 /* GPUImageRawDataOutput.h */,
+				483E53411F386C0A002FABE5 /* GPUImageRawDataOutput.m */,
 				483E534C1F386C0A002FABE5 /* GPUImageSaturationBlendFilter.h */,
 				483E534D1F386C0A002FABE5 /* GPUImageSaturationBlendFilter.m */,
 				483E534E1F386C0A002FABE5 /* GPUImageSaturationFilter.h */,
@@ -1620,10 +2190,10 @@
 				483E537B1F386C0A002FABE5 /* GPUImageThreeInputFilter.m */,
 				483E537C1F386C0A002FABE5 /* GPUImageThresholdEdgeDetectionFilter.h */,
 				483E537D1F386C0A002FABE5 /* GPUImageThresholdEdgeDetectionFilter.m */,
-				483E537E1F386C0A002FABE5 /* GPUImageThresholdedNonMaximumSuppressionFilter.h */,
-				483E537F1F386C0A002FABE5 /* GPUImageThresholdedNonMaximumSuppressionFilter.m */,
 				483E53801F386C0A002FABE5 /* GPUImageThresholdSketchFilter.h */,
 				483E53811F386C0A002FABE5 /* GPUImageThresholdSketchFilter.m */,
+				483E537E1F386C0A002FABE5 /* GPUImageThresholdedNonMaximumSuppressionFilter.h */,
+				483E537F1F386C0A002FABE5 /* GPUImageThresholdedNonMaximumSuppressionFilter.m */,
 				483E53821F386C0A002FABE5 /* GPUImageTiltShiftFilter.h */,
 				483E53831F386C0A002FABE5 /* GPUImageTiltShiftFilter.m */,
 				483E53841F386C0A002FABE5 /* GPUImageToneCurveFilter.h */,
@@ -1658,7 +2228,8 @@
 				483E53A11F386C0A002FABE5 /* GPUImageXYDerivativeFilter.m */,
 				483E53A21F386C0A002FABE5 /* GPUImageZoomBlurFilter.h */,
 				483E53A31F386C0A002FABE5 /* GPUImageZoomBlurFilter.m */,
-				483E53A41F386C0A002FABE5 /* iOS */,
+				483E52E61F386C0A002FABE5 /* GPUImageiOSBlurFilter.h */,
+				483E52E71F386C0A002FABE5 /* GPUImageiOSBlurFilter.m */,
 			);
 			path = GPUImage;
 			sourceTree = "<group>";
@@ -1715,24 +2286,12 @@
 		483E548C1F3871C1002FABE5 /* Player */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			name = Player;
-			sourceTree = "<group>";
-		};
-		48F651321F35A094008F8212 /* Player */ = {
-			isa = PBXGroup;
-			children = (
-				48F651331F35A099008F8212 /* Model */,
+				480FB4591F394DFF00E423D6 /* ActionModel */,
+				480FB4581F394DFB00E423D6 /* Base */,
+				480FB4571F394DF400E423D6 /* LivePlayer */,
+				480FB4561F394DE700E423D6 /* NormalPlayer */,
 			);
 			path = Player;
-			sourceTree = "<group>";
-		};
-		48F651331F35A099008F8212 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				48F651341F35A0A9008F8212 /* YSPlayDetailModel.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		48F651461F35C21A008F8212 /* Timer */ = {
@@ -1852,8 +2411,8 @@
 		48F651551F35C7E3008F8212 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				483E548A1F386CF2002FABE5 /* YSLiveViewModel.swift */,
 				483E520F1F386A4C002FABE5 /* YSLiveReloadURLhelper.swift */,
+				483E548A1F386CF2002FABE5 /* YSLiveViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -1954,6 +2513,7 @@
 				TargetAttributes = {
 					48175E0A1F2B0C29005A00F1 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 32TZ8J928T;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
@@ -1982,15 +2542,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				480FB51E1F39546200E423D6 /* ZHNhomePageCardCell.xib in Resources */,
+				480FB4831F394EB800E423D6 /* ZHNliveFullScreenMenuViewTop.xib in Resources */,
+				480FB4C41F394FA100E423D6 /* ZHNnormalFullScreenBottom.xib in Resources */,
 				48175E191F2B0C29005A00F1 /* LaunchScreen.storyboard in Resources */,
+				480FB47F1F394EB800E423D6 /* ZHNliveDetailView.xib in Resources */,
+				480FB5191F39546200E423D6 /* ZHNelecView.xib in Resources */,
 				480AC4A21F2B2E44001524B6 /* bilibili_splash_iphone_bg@3x.png in Resources */,
+				480FB4AB1F394F8C00E423D6 /* ZHNplayerDetailStatusTableViewCell.xib in Resources */,
+				480FB4C61F394FA100E423D6 /* ZHNnormalFullScreenTop.xib in Resources */,
 				481C68FC1F384F980019E220 /* YSBangumiDetailHeadMenuView.xib in Resources */,
+				480FB4811F394EB800E423D6 /* ZHNliveFullScreenMenuViewBottom.xib in Resources */,
 				48175E161F2B0C29005A00F1 /* Assets.xcassets in Resources */,
 				483E51EA1F385755002FABE5 /* YSBangumiMenuView.xib in Resources */,
 				480AC4A01F2B2E3C001524B6 /* bilibili_splash_default@3x.png in Resources */,
 				48175E141F2B0C29005A00F1 /* Main.storyboard in Resources */,
+				480FB5271F39546200E423D6 /* ZHNhomePageSubscibeLiveCell.xib in Resources */,
 				483E52181F386A68002FABE5 /* YSLiveHeadMenu.xib in Resources */,
+				480FB4C21F394FA100E423D6 /* ZHNforwardBackforwardNoticeView.xib in Resources */,
 				481C68FA1F384F980019E220 /* YSBangumiDetailHeadCharacterView.xib in Resources */,
+				480FB4AE1F394F8C00E423D6 /* ZHNplayerPersonDetailTableViewCell.xib in Resources */,
 				48F6512F1F359F1C008F8212 /* YSPlayerRelatesCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2050,6 +2621,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				480FB4FA1F39501200E423D6 /* BarrageSpriteUtility.m in Sources */,
 				483E540C1F386C0A002FABE5 /* GPUImageGammaFilter.m in Sources */,
 				483E53FB1F386C0A002FABE5 /* GPUImageDilationFilter.m in Sources */,
 				483E53F61F386C0A002FABE5 /* GPUImageCropFilter.m in Sources */,
@@ -2065,8 +2637,10 @@
 				4830D48A1F306FD8001E427B /* String+ysAdd.swift in Sources */,
 				48F6513D1F35C0BF008F8212 /* Double+dateAdd.swift in Sources */,
 				481C68F01F384E8F0019E220 /* YSBangumiHeaderTagView.swift in Sources */,
+				480FB4F61F39501200E423D6 /* BarrageFloatImageSprite.m in Sources */,
 				483E54461F386C0A002FABE5 /* GPUImagePixellatePositionFilter.m in Sources */,
 				483E543A1F386C0A002FABE5 /* GPUImageMultiplyBlendFilter.m in Sources */,
+				480FB4F21F39501200E423D6 /* BarrageDispatcher.m in Sources */,
 				480AC48B1F2B13A6001524B6 /* YSMainTabBarController.swift in Sources */,
 				483E54231F386C0A002FABE5 /* GPUImageKuwaharaRadius3Filter.m in Sources */,
 				482C56D81F2EFDB900225D39 /* YSZoneCell.swift in Sources */,
@@ -2080,45 +2654,60 @@
 				483E54501F386C0A002FABE5 /* GPUImageRGBErosionFilter.m in Sources */,
 				48F651411F35C11C008F8212 /* Int+seasonAdd.swift in Sources */,
 				481C68EA1F384CA80019E220 /* YSBangumiHeaderView.swift in Sources */,
+				480FB4F51F39501200E423D6 /* BarrageLoader.m in Sources */,
+				480FB47E1F394EB800E423D6 /* ZHNliveDetailView.swift in Sources */,
 				483E54481F386C0A002FABE5 /* GPUImagePolarPixellateFilter.m in Sources */,
 				483E53DB1F386C0A002FABE5 /* GPUImageAdaptiveThresholdFilter.m in Sources */,
 				483E541D1F386C0A002FABE5 /* GPUImageHSBFilter.m in Sources */,
+				480FB45D1F394E3500E423D6 /* ZHNloadingProgressView.swift in Sources */,
+				480FB4F11F39501200E423D6 /* BarrageDescriptor.m in Sources */,
 				483E545B1F386C0B002FABE5 /* GPUImageSkinToneFilter.m in Sources */,
+				480FB4AA1F394F8C00E423D6 /* ZHNplayerDetailStatusTableViewCell.swift in Sources */,
 				483E54041F386C0A002FABE5 /* GPUImageFalseColorFilter.m in Sources */,
 				480AC47A1F2B1293001524B6 /* HairLineConstraint.swift in Sources */,
 				483E54091F386C0A002FABE5 /* GPUImageFourInputFilter.m in Sources */,
 				48F6513F1F35C0F4008F8212 /* Date+timeBucket.swift in Sources */,
+				480FB51A1F39546200E423D6 /* ZHNhomePageArchiveCell.swift in Sources */,
 				48F6515E1F35C984008F8212 /* YSBilibiliWebViewController.swift in Sources */,
+				480FB4F81F39501200E423D6 /* BarrageFloatTextSprite.m in Sources */,
 				483E53D81F386C0A002FABE5 /* GLProgram.m in Sources */,
 				481C68DC1F383DE70019E220 /* YSCollectionNormalHeader.swift in Sources */,
+				480FB4931F394F1000E423D6 /* ZHNnormalPlayerViewModel.swift in Sources */,
 				483E54621F386C0B002FABE5 /* GPUImageSourceOverBlendFilter.m in Sources */,
+				480FB4A21F394F7F00E423D6 /* ZHNplayerDetailViewModel.swift in Sources */,
 				483E541E1F386C0A002FABE5 /* GPUImageHueBlendFilter.m in Sources */,
 				483E51ED1F385755002FABE5 /* YSBangumiRecommendCell.swift in Sources */,
 				483E53E31F386C0A002FABE5 /* GPUImageBrightnessFilter.m in Sources */,
 				48F651601F35CA03008F8212 /* YSHomeViewController.swift in Sources */,
 				480AC4851F2B12BA001524B6 /* UITableViewCell+instanceMethod.swift in Sources */,
+				480FB51C1F39546200E423D6 /* ZHNhomePageBaseTableViewCell.swift in Sources */,
 				483E543E1F386C0A002FABE5 /* GPUImageOpacityFilter.m in Sources */,
 				483E54771F386C0B002FABE5 /* GPUImageUnsharpMaskFilter.m in Sources */,
+				480FB48B1F394EDE00E423D6 /* VideoURL.m in Sources */,
 				483E54221F386C0A002FABE5 /* GPUImageKuwaharaFilter.m in Sources */,
 				483E54021F386C0A002FABE5 /* GPUImageExclusionBlendFilter.m in Sources */,
 				483E53E81F386C0A002FABE5 /* GPUImageChromaKeyBlendFilter.m in Sources */,
 				483E53F71F386C0A002FABE5 /* GPUImageCrosshairGenerator.m in Sources */,
 				483E52021F38647E002FABE5 /* YSCommendTwoReplayCell.swift in Sources */,
+				480FB46B1F394E5D00E423D6 /* ZHNplayNormalMenuViewActionModel.swift in Sources */,
+				480FB4F31F39501200E423D6 /* BarrageRenderer.m in Sources */,
 				483E54331F386C0A002FABE5 /* GPUImageMissEtikateFilter.m in Sources */,
 				483E54801F386C0B002FABE5 /* GPUImageMovieWriter.m in Sources */,
-				480AC4AB1F2B32C4001524B6 /* YSMineViewModel.swift in Sources */,
 				482C56C91F2EF78F00225D39 /* YSZoneViewController.swift in Sources */,
 				481C68D41F383C190019E220 /* YSNormalBaseCell.swift in Sources */,
 				483E54101F386C0A002FABE5 /* GPUImageGlassSphereFilter.m in Sources */,
 				482C56D01F2EFA9100225D39 /* YSZoneModel.swift in Sources */,
 				483E54681F386C0B002FABE5 /* GPUImageTextureInput.m in Sources */,
 				483E54181F386C0A002FABE5 /* GPUImageHighPassFilter.m in Sources */,
+				480FB48C1F394EDE00E423D6 /* VideoURLProtocol.m in Sources */,
 				483E54241F386C0A002FABE5 /* GPUImageLanczosResamplingFilter.m in Sources */,
 				481C69061F3850380019E220 /* JCTagCell.m in Sources */,
 				483E53D71F386C0A002FABE5 /* NSMutableArray+LFAdd.m in Sources */,
 				483E54851F386C0B002FABE5 /* error.c in Sources */,
+				480FB4C31F394FA100E423D6 /* ZHNnormalFullScreenBottom.swift in Sources */,
 				483E546B1F386C0B002FABE5 /* GPUImageThresholdEdgeDetectionFilter.m in Sources */,
 				483E543F1F386C0A002FABE5 /* GPUImageOpeningFilter.m in Sources */,
+				480FB4AC1F394F8C00E423D6 /* ZHNplayerPageListTableViewCell.swift in Sources */,
 				483E54591F386C0B002FABE5 /* GPUImageSingleComponentGaussianBlurFilter.m in Sources */,
 				483E54191F386C0A002FABE5 /* GPUImageHistogramEqualizationFilter.m in Sources */,
 				481E9EF41F34642A00C4DBE4 /* YSZoneItemHeader.swift in Sources */,
@@ -2126,20 +2715,28 @@
 				483E53C41F386C0A002FABE5 /* LFAVEncoder.mm in Sources */,
 				483E53DC1F386C0A002FABE5 /* GPUImageAddBlendFilter.m in Sources */,
 				481C68EE1F384DF10019E220 /* YSBangumiHeaderSeasonView.swift in Sources */,
+				480FB4681F394E5D00E423D6 /* ZHNplayBaseActionModel.swift in Sources */,
 				483E544D1F386C0A002FABE5 /* GPUImageRawDataOutput.m in Sources */,
 				483E52011F38647E002FABE5 /* YSCommendThirdReplayCell.swift in Sources */,
 				483E520D1F386A3D002FABE5 /* YSLiveShowViewController.swift in Sources */,
 				483E53DE1F386C0A002FABE5 /* GPUImageAmatorkaFilter.m in Sources */,
+				480FB4BD1F394FA100E423D6 /* normalPlayerLoadingMaskView.swift in Sources */,
 				481E9EFA1F3466AF00C4DBE4 /* YSRecommendModel.swift in Sources */,
 				483E546C1F386C0B002FABE5 /* GPUImageThresholdedNonMaximumSuppressionFilter.m in Sources */,
 				481C69051F3850380019E220 /* JCCollectionViewTagFlowLayout.m in Sources */,
 				483E54651F386C0B002FABE5 /* GPUImageStretchDistortionFilter.m in Sources */,
+				480FB4691F394E5D00E423D6 /* ZHNplayerUrlLoadingBackViewActionModel.swift in Sources */,
 				483E54701F386C0B002FABE5 /* GPUImageToonFilter.m in Sources */,
 				483E54161F386C0A002FABE5 /* GPUImageHighlightShadowFilter.m in Sources */,
 				483E54491F386C0A002FABE5 /* GPUImagePolkaDotFilter.m in Sources */,
+				480FB46D1F394E7800E423D6 /* ZHNbilibiliLivePlayerViewController.swift in Sources */,
 				483E542E1F386C0A002FABE5 /* GPUImageLuminanceThresholdFilter.m in Sources */,
+				480FB4C71F394FA100E423D6 /* ZHNnormalPlayFullScreenMenuView.swift in Sources */,
+				480FB4A01F394F7500E423D6 /* ZHNnormalPlayerDetailTableViewController.swift in Sources */,
 				483E54451F386C0A002FABE5 /* GPUImagePixellateFilter.m in Sources */,
 				483E53E91F386C0A002FABE5 /* GPUImageChromaKeyFilter.m in Sources */,
+				480FB4801F394EB800E423D6 /* ZHNliveFullScreenMenuViewBottom.swift in Sources */,
+				480FB51D1F39546200E423D6 /* ZHNhomePageCardCell.swift in Sources */,
 				483E547B1F386C0B002FABE5 /* GPUImageWeakPixelInclusionFilter.m in Sources */,
 				483E51F11F38575C002FABE5 /* YSBangumiViewModel.swift in Sources */,
 				483E53FD1F386C0A002FABE5 /* GPUImageDirectionalSobelEdgeDetectionFilter.m in Sources */,
@@ -2147,7 +2744,9 @@
 				483E53D61F386C0A002FABE5 /* LFStreamRtmpSocket.m in Sources */,
 				483E53D01F386C0A002FABE5 /* LFAudioFrame.m in Sources */,
 				483E53FA1F386C0A002FABE5 /* GPUImageDifferenceBlendFilter.m in Sources */,
+				480FB52D1F39546B00E423D6 /* ZHNHomePageModel.swift in Sources */,
 				483E54031F386C0A002FABE5 /* GPUImageExposureFilter.m in Sources */,
+				480FB5231F39546200E423D6 /* ZHNhomePagePraviteCell.swift in Sources */,
 				483E54291F386C0A002FABE5 /* GPUImageLineGenerator.m in Sources */,
 				483E53EB1F386C0A002FABE5 /* GPUImageColorBlendFilter.m in Sources */,
 				483E53C91F386C0A002FABE5 /* LFHardwareAudioEncoder.m in Sources */,
@@ -2156,6 +2755,7 @@
 				481C68FB1F384F980019E220 /* YSBangumiDetailHeadMenuView.swift in Sources */,
 				483E51EE1F385755002FABE5 /* YSBangumiTopFooterView.swift in Sources */,
 				483E53CC1F386C0A002FABE5 /* LFLiveVideoConfiguration.m in Sources */,
+				480FB4821F394EB800E423D6 /* ZHNliveFullScreenMenuViewTop.swift in Sources */,
 				48F651451F35C18A008F8212 /* UILabel+lastLineAdd.swift in Sources */,
 				481C68E41F3841AE0019E220 /* YSRecommendURLHelper.swift in Sources */,
 				483E53F41F386C0A002FABE5 /* GPUImageColourFASTSamplingOperation.m in Sources */,
@@ -2167,11 +2767,15 @@
 				483E54441F386C0A002FABE5 /* GPUImagePinchDistortionFilter.m in Sources */,
 				481E9EF61F3465E900C4DBE4 /* YSZoneItemViewModel.swift in Sources */,
 				48F651481F35C229008F8212 /* SwiftTimer.swift in Sources */,
+				480FB4F71F39501200E423D6 /* BarrageFloatSprite.m in Sources */,
 				483E545F1F386C0B002FABE5 /* GPUImageSoftLightBlendFilter.m in Sources */,
+				480FB4AD1F394F8C00E423D6 /* ZHNplayerPersonDetailTableViewCell.swift in Sources */,
+				480FB4BF1F394FA100E423D6 /* playerBlurView.swift in Sources */,
 				483E542C1F386C0A002FABE5 /* GPUImageLowPassFilter.m in Sources */,
 				483E54371F386C0A002FABE5 /* GPUImageMotionDetector.m in Sources */,
 				483E53E11F386C0A002FABE5 /* GPUImageBilateralFilter.m in Sources */,
 				480AC4831F2B12BA001524B6 /* UIColor+ysAdd.swift in Sources */,
+				480FB4B01F394F8C00E423D6 /* ZHNplayerTagListTableViewCell.swift in Sources */,
 				483E545A1F386C0B002FABE5 /* GPUImageSketchFilter.m in Sources */,
 				481C68DE1F383EB90019E220 /* YSRecommendHeaderView.swift in Sources */,
 				481C68EC1F384D3E0019E220 /* YSBangumiHeaderItemView.swift in Sources */,
@@ -2197,9 +2801,11 @@
 				483E51EB1F385755002FABE5 /* YSBangumiNormalCell.swift in Sources */,
 				483E54151F386C0A002FABE5 /* GPUImageHazeFilter.m in Sources */,
 				483E540F1F386C0A002FABE5 /* GPUImageGaussianSelectiveBlurFilter.m in Sources */,
+				480FB51F1F39546200E423D6 /* ZHNhomePageCoinCell.swift in Sources */,
 				481C68D81F383D4E0019E220 /* YSLiveShowCell.swift in Sources */,
 				483E53F81F386C0A002FABE5 /* GPUImageCrosshatchFilter.m in Sources */,
-				48F651351F35A0A9008F8212 /* YSPlayDetailModel.swift in Sources */,
+				480FB4FC1F39501200E423D6 /* BarrageWalkSprite.m in Sources */,
+				480FB4841F394EB800E423D6 /* ZHNlivePlayFullScreenMenuView.swift in Sources */,
 				483E53CE1F386C0A002FABE5 /* LFGPUImageEmptyFilter.m in Sources */,
 				483E51E91F385755002FABE5 /* YSBangumiMenuView.swift in Sources */,
 				483E54861F386C0B002FABE5 /* hashswf.c in Sources */,
@@ -2210,7 +2816,9 @@
 				483E544C1F386C0A002FABE5 /* GPUImageRawDataInput.m in Sources */,
 				480AC4781F2B1288001524B6 /* YSFPSStatus.swift in Sources */,
 				483E53DA1F386C0A002FABE5 /* GPUImage3x3TextureSamplingFilter.m in Sources */,
+				480FB5251F39546200E423D6 /* ZHNhomePageSeasonCell.swift in Sources */,
 				482C56C21F2ECF3C00225D39 /* YSDynamicViewController.swift in Sources */,
+				480FB5011F39503000E423D6 /* XMLReader.m in Sources */,
 				481C68CE1F383B040019E220 /* YSRecommendSectionModel.swift in Sources */,
 				480AC4A51F2B3179001524B6 /* YSBaseViewController.swift in Sources */,
 				483E53F21F386C0A002FABE5 /* GPUImageColorPackingFilter.m in Sources */,
@@ -2219,9 +2827,12 @@
 				483E54351F386C0A002FABE5 /* GPUImageMosaicFilter.m in Sources */,
 				483E54391F386C0A002FABE5 /* GPUImageMovieComposition.m in Sources */,
 				483E54551F386C0A002FABE5 /* GPUImageScreenBlendFilter.m in Sources */,
+				480FB5201F39546200E423D6 /* ZHNhomePageElecCell.swift in Sources */,
 				483E54281F386C0A002FABE5 /* GPUImageLinearBurnBlendFilter.m in Sources */,
 				483E53C71F386C0A002FABE5 /* LFVideoEncoder.m in Sources */,
 				483E53D11F386C0A002FABE5 /* LFFrame.m in Sources */,
+				480FB4611F394E4700E423D6 /* ZHNPlayerBaseViewController.swift in Sources */,
+				480FB4751F394EAB00E423D6 /* ZHNlivePlayDetailViewModel.swift in Sources */,
 				4830D4851F305963001E427B /* SlideMenu.swift in Sources */,
 				48F6515B1F35C844008F8212 /* YSBangumiModel.swift in Sources */,
 				483E53CD1F386C0A002FABE5 /* LFGPUImageBeautyFilter.m in Sources */,
@@ -2231,14 +2842,18 @@
 				483E54831F386C0B002FABE5 /* GPUImageView.m in Sources */,
 				483E54531F386C0A002FABE5 /* GPUImageSaturationBlendFilter.m in Sources */,
 				48F6512E1F359F1C008F8212 /* YSPlayerRelatesCell.swift in Sources */,
+				480FB49A1F394F4300E423D6 /* ZHNplayerCommendViewModel.swift in Sources */,
 				483E540A1F386C0A002FABE5 /* GPUImageFramebuffer.m in Sources */,
 				483E54261F386C0A002FABE5 /* GPUImageLevelsFilter.m in Sources */,
 				481C69091F3852010019E220 /* YSBangumiDetailViewModel.swift in Sources */,
+				480FB4901F394EF800E423D6 /* danmuModel.swift in Sources */,
 				483E545D1F386C0B002FABE5 /* GPUImageSobelEdgeDetectionFilter.m in Sources */,
 				48F6514A1F35C5A1008F8212 /* YSNotificationHelper.swift in Sources */,
 				483E53C21F386C0A002FABE5 /* LFAudioCapture.m in Sources */,
+				480FB5261F39546200E423D6 /* ZHNhomePageSubscibeLiveCell.swift in Sources */,
 				483E540E1F386C0A002FABE5 /* GPUImageGaussianBlurPositionFilter.m in Sources */,
 				483E54001F386C0A002FABE5 /* GPUImageEmbossFilter.m in Sources */,
+				480FB52E1F39546B00E423D6 /* ZHNhomePageSeasonCollectionViewCell.swift in Sources */,
 				483E54131F386C0A002FABE5 /* GPUImageHardLightBlendFilter.m in Sources */,
 				483E54811F386C0B002FABE5 /* GPUImagePicture+TextureSubimage.m in Sources */,
 				483E53C51F386C0A002FABE5 /* LFMP4Atom.m in Sources */,
@@ -2251,15 +2866,20 @@
 				483E51FB1F386432002FABE5 /* YSCommendTableViewCell.swift in Sources */,
 				483E54051F386C0A002FABE5 /* GPUImageFASTCornerDetectionFilter.m in Sources */,
 				483E53ED1F386C0A002FABE5 /* GPUImageColorConversion.m in Sources */,
+				480FB4C01F394FA100E423D6 /* ZHNdanmuView.swift in Sources */,
 				483E53EF1F386C0A002FABE5 /* GPUImageColorInvertFilter.m in Sources */,
 				483E53F31F386C0A002FABE5 /* GPUImageColourFASTFeatureDetector.m in Sources */,
+				480FB4FD1F39501200E423D6 /* BarrageWalkTextSprite.m in Sources */,
 				483E54081F386C0A002FABE5 /* GPUImageFilterPipeline.m in Sources */,
 				483E52061F386512002FABE5 /* WTKAutoHighLightLabel.m in Sources */,
+				480FB4FB1F39501200E423D6 /* BarrageWalkImageSprite.m in Sources */,
 				4830D4871F306D2A001E427B /* UIGestureRecognizer+ysAdd.swift in Sources */,
 				483E54751F386C0B002FABE5 /* GPUImageTwoPassTextureSamplingFilter.m in Sources */,
 				483E544F1F386C0A002FABE5 /* GPUImageRGBDilationFilter.m in Sources */,
 				483E546D1F386C0B002FABE5 /* GPUImageThresholdSketchFilter.m in Sources */,
+				480FB5181F39546200E423D6 /* ZHNelecView.swift in Sources */,
 				483E54871F386C0B002FABE5 /* log.c in Sources */,
+				480FB4BE1F394FA100E423D6 /* playCustomSlider.swift in Sources */,
 				48F651391F35A1F3008F8212 /* YSHairLineConstraint.swift in Sources */,
 				483E52151F386A68002FABE5 /* YSLiveFooterView.swift in Sources */,
 				483E52001F38647E002FABE5 /* ZHNcommendFourReplayCell.swift in Sources */,
@@ -2276,35 +2896,50 @@
 				483E54341F386C0A002FABE5 /* GPUImageMonochromeFilter.m in Sources */,
 				483E54111F386C0A002FABE5 /* GPUImageGrayscaleFilter.m in Sources */,
 				483E53D21F386C0A002FABE5 /* LFLiveDebug.m in Sources */,
+				480FB4C81F394FA100E423D6 /* ZHNnormalPlayWindowMenuVIew.swift in Sources */,
 				481C68D61F383C8A0019E220 /* YSCommenAreaCell.swift in Sources */,
 				483E54761F386C0B002FABE5 /* GPUImageUIElement.m in Sources */,
 				482C56DA1F2EFE3400225D39 /* YSNetworkTool.swift in Sources */,
+				480FB4EF1F39501200E423D6 /* BarrageCanvas.m in Sources */,
+				480FB45F1F394E3500E423D6 /* ZHNplayerUrlLoadingBackView.swift in Sources */,
 				483E54571F386C0B002FABE5 /* GPUImageSharpenFilter.m in Sources */,
 				483E54271F386C0A002FABE5 /* GPUImageLightenBlendFilter.m in Sources */,
 				483E54381F386C0A002FABE5 /* GPUImageMovie.m in Sources */,
 				483E546F1F386C0B002FABE5 /* GPUImageToneCurveFilter.m in Sources */,
 				483E54171F386C0A002FABE5 /* GPUImageHighlightShadowTintFilter.m in Sources */,
 				483E541B1F386C0A002FABE5 /* GPUImageHistogramGenerator.m in Sources */,
+				480FB4F01F39501200E423D6 /* BarrageClock.m in Sources */,
 				481C68E61F38449C0019E220 /* YSRabbitFreshBaseViewController.swift in Sources */,
 				483E52101F386A4C002FABE5 /* YSLiveReloadURLhelper.swift in Sources */,
 				483E54641F386C0B002FABE5 /* GPUImageStillCamera.m in Sources */,
 				482A18EA1F3169DB000301F8 /* YSZoneItemViewController.swift in Sources */,
 				48F651371F35A191008F8212 /* UIimageView+gifAdd.swift in Sources */,
+				480FB5301F39546F00E423D6 /* ZHNhomePageViewController.swift in Sources */,
 				481C68D21F383BBE0019E220 /* YSRecommendActivityCell.swift in Sources */,
+				480FB4951F394F1E00E423D6 /* ZHNnormalPlayerViewController.swift in Sources */,
 				48F651311F35A01B008F8212 /* YSBaseLineCell.swift in Sources */,
+				480FB4C51F394FA100E423D6 /* ZHNnormalFullScreenTop.swift in Sources */,
 				481C68D01F383B400019E220 /* YSRecommendViewModel.swift in Sources */,
+				480FB5241F39546200E423D6 /* ZHNhomePageRowHeadView.swift in Sources */,
 				483E544E1F386C0A002FABE5 /* GPUImageRGBClosingFilter.m in Sources */,
 				483E54401F386C0A002FABE5 /* GPUImageOutput.m in Sources */,
+				480FB4AF1F394F8C00E423D6 /* ZHNplayerRelatesTitleTableViewCell.swift in Sources */,
+				480FB4851F394EB800E423D6 /* ZHNlivePlayNoramlMenuView.swift in Sources */,
+				480FB52A1F39546700E423D6 /* ZHNhomePageViewModel.swift in Sources */,
 				483E520E1F386A3D002FABE5 /* YSStartLiveViewController.swift in Sources */,
 				483E547E1F386C0B002FABE5 /* GPUImageZoomBlurFilter.m in Sources */,
 				481E9EFD1F3470CE00C4DBE4 /* YSGifHeader.swift in Sources */,
+				480FB4F91F39501200E423D6 /* BarrageSprite.m in Sources */,
 				483E53FC1F386C0A002FABE5 /* GPUImageDirectionalNonMaximumSuppressionFilter.m in Sources */,
 				481C68F21F384EBA0019E220 /* YSBangumiDetailHeaderView.swift in Sources */,
 				483E547A1F386C0B002FABE5 /* GPUImageVoronoiConsumerFilter.m in Sources */,
 				483E540B1F386C0A002FABE5 /* GPUImageFramebufferCache.m in Sources */,
+				480FB5221F39546200E423D6 /* ZHNhomePageFavoriteCollectionViewCell.swift in Sources */,
 				480AC49D1F2B2C30001524B6 /* YSMainNavigationController.swift in Sources */,
+				480FB4911F394EF800E423D6 /* ZHHnormalPayerItemModel.swift in Sources */,
 				483E54141F386C0A002FABE5 /* GPUImageHarrisCornerDetectionFilter.m in Sources */,
 				483E53D31F386C0A002FABE5 /* LFLiveStreamInfo.m in Sources */,
+				480FB54D1F398B9300E423D6 /* YSMineViewModel.swift in Sources */,
 				483E53EC1F386C0A002FABE5 /* GPUImageColorBurnBlendFilter.m in Sources */,
 				481C68E21F3840140019E220 /* YSRecommendFooterView.swift in Sources */,
 				483E547D1F386C0B002FABE5 /* GPUImageXYDerivativeFilter.m in Sources */,
@@ -2316,10 +2951,14 @@
 				483E541A1F386C0A002FABE5 /* GPUImageHistogramFilter.m in Sources */,
 				483E545C1F386C0B002FABE5 /* GPUImageSmoothToonFilter.m in Sources */,
 				482C56DE1F2F13E300225D39 /* YSZoneDetailViewController.swift in Sources */,
+				480FB4671F394E5D00E423D6 /* ZHNnormalPlayerFullScreenActionModel.swift in Sources */,
+				480FB46A1F394E5D00E423D6 /* ZHNplayFullScreenMenuViewActionModel.swift in Sources */,
+				480FB54F1F398BAD00E423D6 /* YSPlayDetailModel.swift in Sources */,
 				483E547F1F386C0B002FABE5 /* GPUImageContext.m in Sources */,
 				483E53E61F386C0A002FABE5 /* GPUImageCannyEdgeDetectionFilter.m in Sources */,
 				483E54561F386C0B002FABE5 /* GPUImageSepiaFilter.m in Sources */,
 				483E54061F386C0A002FABE5 /* GPUImageFilter.m in Sources */,
+				480FB51B1F39546200E423D6 /* ZHNhomePageArchiveCollectionViewCell.swift in Sources */,
 				483E548B1F386CF2002FABE5 /* YSLiveViewModel.swift in Sources */,
 				480AC4841F2B12BA001524B6 /* UIImage+ysAdd.swift in Sources */,
 				480AC4A91F2B32A4001524B6 /* YSMineViewController.swift in Sources */,
@@ -2328,12 +2967,16 @@
 				483E54321F386C0A002FABE5 /* GPUImageMedianFilter.m in Sources */,
 				483E52161F386A68002FABE5 /* YSLiveHeaderView.swift in Sources */,
 				483E544B1F386C0A002FABE5 /* GPUImagePrewittEdgeDetectionFilter.m in Sources */,
+				480FB4F41F39501200E423D6 /* BarrageSpriteFactory.m in Sources */,
 				483E53E01F386C0A002FABE5 /* GPUImageAverageLuminanceThresholdFilter.m in Sources */,
 				483E54631F386C0B002FABE5 /* GPUImageSphereRefractionFilter.m in Sources */,
 				483E53C81F386C0A002FABE5 /* LFH264VideoEncoder.mm in Sources */,
 				483E54361F386C0A002FABE5 /* GPUImageMotionBlurFilter.m in Sources */,
 				480AC4861F2B12BA001524B6 /* UIView+captureImage.swift in Sources */,
+				480FB4981F394F3B00E423D6 /* ZHNnormalPlayerCommondTableViewController.swift in Sources */,
 				483E54311F386C0A002FABE5 /* GPUImageMaskFilter.m in Sources */,
+				480FB45E1F394E3500E423D6 /* ZHNplayerMenuBaseView.swift in Sources */,
+				480FB5281F39546200E423D6 /* ZHNhomePageTageCell.swift in Sources */,
 				483E546E1F386C0B002FABE5 /* GPUImageTiltShiftFilter.m in Sources */,
 				483E51DE1F38554B002FABE5 /* YSBangumiDetailViewController.swift in Sources */,
 				483E54411F386C0A002FABE5 /* GPUImageOverlayBlendFilter.m in Sources */,
@@ -2343,12 +2986,14 @@
 				483E546A1F386C0B002FABE5 /* GPUImageThreeInputFilter.m in Sources */,
 				483E53C61F386C0A002FABE5 /* LFNALUnit.cpp in Sources */,
 				483E54421F386C0A002FABE5 /* GPUImageParallelCoordinateLineTransformFilter.m in Sources */,
+				480FB4C11F394FA100E423D6 /* ZHNforwardBackforwardNoticeView.swift in Sources */,
 				483E51EF1F385755002FABE5 /* YSBangumiTopView.swift in Sources */,
 				481C68DA1F383DB40019E220 /* YSBanmikuShowCell.swift in Sources */,
 				483E53F11F386C0A002FABE5 /* GPUImageColorMatrixFilter.m in Sources */,
 				483E54781F386C0B002FABE5 /* GPUImageVideoCamera.m in Sources */,
 				483E51F71F385B5E002FABE5 /* SwiftNotice.swift in Sources */,
 				482C56CE1F2EF94100225D39 /* YSZoneViewModel.swift in Sources */,
+				480FB5211F39546200E423D6 /* ZHNhomePageFavoriteCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2475,11 +3120,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 32TZ8J928T;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ysbilibili",
+					"$(PROJECT_DIR)/ysbilibili/Resources",
 				);
-				INFOPLIST_FILE = ysbilibili/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ysbilibili/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = YangShen.ysbilibili;
@@ -2497,11 +3144,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 32TZ8J928T;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ysbilibili",
+					"$(PROJECT_DIR)/ysbilibili/Resources",
 				);
-				INFOPLIST_FILE = ysbilibili/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ysbilibili/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = YangShen.ysbilibili;

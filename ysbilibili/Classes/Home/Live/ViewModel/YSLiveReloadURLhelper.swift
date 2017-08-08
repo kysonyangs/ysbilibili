@@ -13,7 +13,6 @@ class YSLiveReloadURLhelper: NSObject {
     // 加密过的,sign 和 area 有关系只能用这种方法拿
     class func createReloadSectionURL(area: String) -> String {
         
-        
         // 1. 推荐主播
         if area == "hot" {
             return "http://live.bilibili.com/AppIndex/recommendRefresh?actionKey=appkey&appkey=27eb53fc9058f8c3&build=3970&device=phone&mobi_app=iphone&platform=ios&sign=ee5759f6df79cf2abbaf7927ab35e983&ts=1479286545"

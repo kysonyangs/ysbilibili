@@ -32,6 +32,7 @@ class YSNavigationBar: UIView {
         let backArrowButton = UIButton()
         backArrowButton.setImage(UIImage(named: "common_back_v2"), for: .normal)
         backArrowButton.setImage(UIImage(named: "common_back_v2"), for: .highlighted)
+        backArrowButton.isHidden = true
         return backArrowButton
     }()
     
@@ -60,7 +61,7 @@ class YSNavigationBar: UIView {
         
         titleLabel.snp.makeConstraints { (make) in
             make.centerX.equalTo(self)
-            make.centerY.equalTo(self).offset(6)
+            make.centerY.equalTo(self).offset(8)
             make.size.equalTo(CGSize(width: kScreenWidth - 140, height: 44))
         }
         

@@ -10,10 +10,18 @@ import UIKit
 
 class YSDynamicViewController: YSBaseViewController {
     
+    fileprivate var searchButton: UIButton = {
+        let searchButton = UIButton()
+        searchButton.setImage(UIImage(named: "home_search_white_22x22_"), for: .normal)
+        searchButton.backgroundColor = UIColor.clear
+        return searchButton
+    }()
+    
     fileprivate lazy var tableView: UITableView = { [unowned self] in
         var tableView = UITableView(frame: CGRect.zero, style: .plain)
         tableView.tableFooterView = UIView()
         tableView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0)
+        tableView.backgroundColor = kHomeBackColor
         return tableView
     }()
     
@@ -36,6 +44,7 @@ class YSDynamicViewController: YSBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         naviBar.titleLabel.text = "动态"
+        naviBar.rightItem = searchButton
         
         view.addSubview(tableView)
         tableView.addSubview(noLoginImageview)

@@ -7,3 +7,6 @@
 #import "JCTagListView.h"
 #import "WTKAutoHighLightLabel.h"
 #import "LFLiveKit.h"
+#import "VideoURL.h"
+#import "BarrageHeader.h"
+#import "XMLReader.h"
