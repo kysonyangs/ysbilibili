@@ -107,7 +107,7 @@ class YSCommendTableViewCell: UITableViewCell {
     
     lazy var cellLineView: UIImageView = {
         let cellLineView = UIImageView()
-        cellLineView.backgroundColor = kCellLineColor
+        cellLineView.backgroundColor = kCellLineGrayColor
         return cellLineView
     }()
     

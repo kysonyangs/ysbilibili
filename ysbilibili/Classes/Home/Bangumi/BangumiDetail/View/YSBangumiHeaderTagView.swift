@@ -69,7 +69,7 @@ class YSBangumiHeaderTagView: UIView {
     
     lazy var lineView: UIImageView = {
         let lineView = UIImageView()
-        lineView.backgroundColor = kCellLineColor
+        lineView.backgroundColor = kCellLineGrayColor
         return lineView
     }()
     

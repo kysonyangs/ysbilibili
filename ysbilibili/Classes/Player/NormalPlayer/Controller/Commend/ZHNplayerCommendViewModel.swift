@@ -95,10 +95,10 @@ extension ZHNplayerCommendViewModel {
                 noticeLabel.textColor = kNavBarColor
                 container.addSubview(noticeLabel)
                 let leftLine = UIView()
-                leftLine.backgroundColor = kCellLineColor 
+                leftLine.backgroundColor = kCellLineGrayColor 
                 container.addSubview(leftLine)
                 let rightLine = UIView()
-                rightLine.backgroundColor = kCellLineColor
+                rightLine.backgroundColor = kCellLineGrayColor
                 container.addSubview(rightLine)
                 // 2. 位置初始化
                 noticeLabel.snp.makeConstraints { (make) in

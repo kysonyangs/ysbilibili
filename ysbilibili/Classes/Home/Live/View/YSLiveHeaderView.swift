@@ -8,14 +8,13 @@
 
 import UIKit
 
-let khomeLiveMenuHeight:CGFloat = 100
+let khomeLiveMenuHeight: CGFloat = 100
 
 class YSLiveHeaderView: UICollectionReusableView {
 
     // 普通的头部数据
     var headModel: YSLiveHeadModel? {
-        didSet{
-            
+        didSet {
             // 1. 设置图标
             if let imgStr = headModel?.sub_icon?.src {
                 let imgUrl = URL(string: imgStr)
@@ -55,7 +54,6 @@ class YSLiveHeaderView: UICollectionReusableView {
         }
     }
     
-    
     // MARK: - 懒加载控件
     lazy var contentView: YSCollectionNormalHeader = {
         let conteView = YSCollectionNormalHeader()
@@ -70,7 +68,7 @@ class YSLiveHeaderView: UICollectionReusableView {
     }()
     
     lazy var menuView: YSLiveHeadMenu = {
-        let menuView = YSLiveHeadMenu.instanceView()
+        let menuView = YSLiveHeadMenu()
         menuView.backgroundColor = kHomeBackColor
         return menuView
     }()

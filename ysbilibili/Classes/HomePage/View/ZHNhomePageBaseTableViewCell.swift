@@ -30,7 +30,7 @@ class ZHNhomePageBaseTableViewCell: UITableViewCell {
     
     lazy var lineView: UIImageView = {
         let lineView = UIImageView()
-        lineView.backgroundColor = kTableCellLineColor
+        lineView.backgroundColor = kCellLineBlackColor
         return lineView
     }()
     

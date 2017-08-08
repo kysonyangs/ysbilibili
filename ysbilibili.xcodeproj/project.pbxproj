@@ -196,7 +196,6 @@
 		483E52151F386A68002FABE5 /* YSLiveFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483E52111F386A68002FABE5 /* YSLiveFooterView.swift */; };
 		483E52161F386A68002FABE5 /* YSLiveHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483E52121F386A68002FABE5 /* YSLiveHeaderView.swift */; };
 		483E52171F386A68002FABE5 /* YSLiveHeadMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483E52131F386A68002FABE5 /* YSLiveHeadMenu.swift */; };
-		483E52181F386A68002FABE5 /* YSLiveHeadMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 483E52141F386A68002FABE5 /* YSLiveHeadMenu.xib */; };
 		483E521A1F386A7C002FABE5 /* YSLiveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483E52191F386A7C002FABE5 /* YSLiveModel.swift */; };
 		483E53C21F386C0A002FABE5 /* LFAudioCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 483E521E1F386C09002FABE5 /* LFAudioCapture.m */; };
 		483E53C31F386C0A002FABE5 /* LFVideoCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 483E52201F386C09002FABE5 /* LFVideoCapture.m */; };
@@ -637,7 +636,6 @@
 		483E52111F386A68002FABE5 /* YSLiveFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSLiveFooterView.swift; sourceTree = "<group>"; };
 		483E52121F386A68002FABE5 /* YSLiveHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSLiveHeaderView.swift; sourceTree = "<group>"; };
 		483E52131F386A68002FABE5 /* YSLiveHeadMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSLiveHeadMenu.swift; sourceTree = "<group>"; };
-		483E52141F386A68002FABE5 /* YSLiveHeadMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YSLiveHeadMenu.xib; sourceTree = "<group>"; };
 		483E52191F386A7C002FABE5 /* YSLiveModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSLiveModel.swift; sourceTree = "<group>"; };
 		483E521D1F386C09002FABE5 /* LFAudioCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFAudioCapture.h; sourceTree = "<group>"; };
 		483E521E1F386C09002FABE5 /* LFAudioCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFAudioCapture.m; sourceTree = "<group>"; };
@@ -2437,7 +2435,6 @@
 			children = (
 				483E52111F386A68002FABE5 /* YSLiveFooterView.swift */,
 				483E52131F386A68002FABE5 /* YSLiveHeadMenu.swift */,
-				483E52141F386A68002FABE5 /* YSLiveHeadMenu.xib */,
 				483E52121F386A68002FABE5 /* YSLiveHeaderView.swift */,
 			);
 			path = View;
@@ -2558,7 +2555,6 @@
 				480AC4A01F2B2E3C001524B6 /* bilibili_splash_default@3x.png in Resources */,
 				48175E141F2B0C29005A00F1 /* Main.storyboard in Resources */,
 				480FB5271F39546200E423D6 /* ZHNhomePageSubscibeLiveCell.xib in Resources */,
-				483E52181F386A68002FABE5 /* YSLiveHeadMenu.xib in Resources */,
 				480FB4C21F394FA100E423D6 /* ZHNforwardBackforwardNoticeView.xib in Resources */,
 				481C68FA1F384F980019E220 /* YSBangumiDetailHeadCharacterView.xib in Resources */,
 				480FB4AE1F394F8C00E423D6 /* ZHNplayerPersonDetailTableViewCell.xib in Resources */,

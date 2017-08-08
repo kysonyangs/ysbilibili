@@ -25,8 +25,8 @@ class YSStartLiveViewController: UIViewController {
     lazy var liveStartEndButton: UIButton = {
         let liveStartEndButton = UIButton()
         liveStartEndButton.ysCornerRadius = 25
-        liveStartEndButton.ysBoderColor = kNavBarColor
-        liveStartEndButton.ysBoderWidth = 1
+        liveStartEndButton.ysBorderColor = kNavBarColor
+        liveStartEndButton.ysBorderWidth = 1
         liveStartEndButton.setTitle("开始直播", for: .normal)
         liveStartEndButton.setTitleColor(kNavBarColor, for: .normal)
         liveStartEndButton.addTarget(self, action: #selector(liveButtonAction), for: .touchUpInside)
@@ -117,13 +117,13 @@ extension YSStartLiveViewController {
     }
     
     fileprivate func buttonStartType() {
-        liveStartEndButton.ysBoderColor = kNavBarColor
+        liveStartEndButton.ysBorderColor = kNavBarColor
         liveStartEndButton.setTitle("开始直播", for: .normal)
         liveStartEndButton.setTitleColor(kNavBarColor, for: .normal)
     }
     
     fileprivate func buttonEndType() {
-        liveStartEndButton.ysBoderColor = UIColor.white
+        liveStartEndButton.ysBorderColor = UIColor.white
         liveStartEndButton.setTitle("结束直播", for: .normal)
         liveStartEndButton.setTitleColor(UIColor.white, for: .normal)
     }

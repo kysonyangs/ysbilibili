@@ -10,13 +10,7 @@ import UIKit
 
 class ZHNhomePageElecCell: UITableViewCell {
 
-    
-    var elecStatusModel: YSElecModel? {
-        didSet {
-            
-        }
-    }
-    
+    var elecStatusModel: YSElecModel?
     
     // MARK - 懒加载控件
     lazy var elecView: ZHNelecView = {

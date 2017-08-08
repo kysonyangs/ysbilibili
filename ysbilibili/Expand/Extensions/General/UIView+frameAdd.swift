@@ -147,7 +147,7 @@ extension UIView {
         }
     }
     
-    @IBInspectable var ysBoderWidth: CGFloat {
+    @IBInspectable var ysBorderWidth: CGFloat {
         get {
             return layer.borderWidth
         }
@@ -157,8 +157,11 @@ extension UIView {
         }
     }
     
-    @IBInspectable var ysBoderColor: UIColor {
+    @IBInspectable var ysBorderColor: UIColor {
         get {
+            if let cgColor = layer.borderColor {
+                return UIColor(cgColor: cgColor)
+            }
             return UIColor.black
         }
         

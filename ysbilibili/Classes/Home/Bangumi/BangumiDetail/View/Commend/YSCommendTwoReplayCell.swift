@@ -12,7 +12,7 @@ class YSCommendTwoReplayCell: YSCommendTableViewCell {
     
     lazy var twoSeclineView: UIView = {
         let towSeclineView = UIView()
-        towSeclineView.backgroundColor = kCellLineColor
+        towSeclineView.backgroundColor = kCellLineGrayColor
         return towSeclineView
     }()
     lazy var twoSecNameLabel: UILabel = {

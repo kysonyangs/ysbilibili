@@ -12,7 +12,7 @@ class YSCommendThirdReplayCell: YSCommendTwoReplayCell {
 
     lazy var thirdSeclineView: UIView = {
         let thirdSeclineView = UIView()
-        thirdSeclineView.backgroundColor = kCellLineColor
+        thirdSeclineView.backgroundColor = kCellLineGrayColor
         return thirdSeclineView
     }()
     lazy var thirdSecNameLabel: UILabel = {

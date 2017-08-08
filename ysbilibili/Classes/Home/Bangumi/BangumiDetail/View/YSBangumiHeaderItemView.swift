@@ -57,7 +57,7 @@ class YSBangumiHeaderItemView: UIView {
     
     lazy var lineView: UIImageView = {
         let lineView = UIImageView()
-        lineView.backgroundColor = kCellLineColor
+        lineView.backgroundColor = kCellLineGrayColor
         return lineView
     }()
     
@@ -152,11 +152,11 @@ class YSBangumiItemCollectionCell: UICollectionViewCell {
     var isShowing = false {
         didSet {
             if isShowing {
-                self.ysBoderColor = kNavBarColor
+                self.ysBorderColor = kNavBarColor
                 titleLabel.textColor = kNavBarColor
                 contentLabel.textColor = kNavBarColor
             } else {
-                self.ysBoderColor = UIColor.lightGray
+                self.ysBorderColor = UIColor.lightGray
                 titleLabel.textColor = UIColor.black
                 contentLabel.textColor = UIColor.black
             }
@@ -181,9 +181,9 @@ class YSBangumiItemCollectionCell: UICollectionViewCell {
     // MARK - life cycle
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.ysBoderColor = UIColor.lightGray
+        self.ysBorderColor = UIColor.lightGray
         self.ysCornerRadius = 5
-        self.ysBoderWidth = 1
+        self.ysBorderWidth = 1
         self.backgroundColor = UIColor.white
         self.addSubview(titleLabel)
         self.addSubview(contentLabel)
