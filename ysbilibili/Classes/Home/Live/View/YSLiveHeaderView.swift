@@ -8,7 +8,7 @@
 
 import UIKit
 
-let khomeLiveMenuHeight: CGFloat = 100
+let kLiveMenuHeight: CGFloat = 100
 
 class YSLiveHeaderView: UICollectionReusableView {
 
@@ -62,7 +62,6 @@ class YSLiveHeaderView: UICollectionReusableView {
     
     lazy var carouselView: YSCarouselView = {
         let carouselView = YSCarouselView(viewframe: CGRect(x: 0, y: 0, width: kScreenWidth, height: kCarouseHeight))
-        carouselView.clipsToBounds = true
         carouselView.delegate = self
         return carouselView
     }()
@@ -87,10 +86,8 @@ class YSLiveHeaderView: UICollectionReusableView {
 
 // MARK: - 私有方法
 extension YSLiveHeaderView {
-
     // 普通头部的内部控件的位置
     fileprivate func normalHead() {
-        
         menuView.isHidden = true
         carouselView.removeFromSuperview()
         menuView.removeFromSuperview()
@@ -102,7 +99,6 @@ extension YSLiveHeaderView {
     
     // 第一个section的内部控件的位置
     fileprivate func topHead() {
-    
         menuView.isHidden = false
         self.addSubview(carouselView)
         self.addSubview(menuView)
@@ -115,7 +111,7 @@ extension YSLiveHeaderView {
         menuView.snp.remakeConstraints { (make) in
             make.top.equalTo(carouselView.snp.bottom)
             make.left.right.equalTo(self)
-            make.height.equalTo(khomeLiveMenuHeight)
+            make.height.equalTo(kLiveMenuHeight)
         }
         
         contentView.snp.remakeConstraints { (make) in

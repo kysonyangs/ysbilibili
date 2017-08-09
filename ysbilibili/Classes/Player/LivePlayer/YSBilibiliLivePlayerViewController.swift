@@ -9,7 +9,7 @@
 import UIKit
 
 
-class ZHNbilibiliLivePlayerViewController: ZHNPlayerBaseViewController {
+class YSBilibiliLivePlayerViewController: ZHNPlayerBaseViewController {
     
     var liveModel: YSLiveDetailModel? {
         didSet {

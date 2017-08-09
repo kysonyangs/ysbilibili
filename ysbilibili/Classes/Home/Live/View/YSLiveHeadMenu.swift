@@ -56,7 +56,6 @@ class YSLiveHeadMenu: UIView {
                 make.top.equalTo(imgv.snp.bottom)
                 make.height.equalTo(20)
             })
-            
         }
     }
     

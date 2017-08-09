@@ -63,8 +63,7 @@ class YSNormalBaseCell: UICollectionViewCell {
     lazy var contentImageView: UIImageView = {
         let contentImageView = UIImageView()
         contentImageView.contentMode = UIViewContentMode.scaleAspectFill
-        contentImageView.layer.masksToBounds = true
-        contentImageView.layer.cornerRadius = 6
+        contentImageView.ysCornerRadius = 6;
         return contentImageView
     }()
     
@@ -98,21 +97,20 @@ class YSNormalBaseCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        self.addSubview(placeholderImageView)
-        self.addSubview(contentImageView)
+        addSubview(placeholderImageView)
+        addSubview(contentImageView)
         contentImageView.addSubview(maskImageView)
-        self.addSubview(titleLabel)
-        self.addSubview(reloadButton)
+        addSubview(titleLabel)
+        addSubview(reloadButton)
+        
+        setupConstraints()
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    // MARK: - 初始化位置
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        
+    fileprivate func setupConstraints() {
         placeholderImageView.snp.makeConstraints { (make) in
             make.top.equalTo(self).offset(kCenterPadding)
             make.left.right.equalTo(self)
@@ -130,20 +128,20 @@ class YSNormalBaseCell: UICollectionViewCell {
         }
         
         // 特殊处理每一个section的最后一个数据
-        if showReloadButton{
+        if showReloadButton {
             reloadButton.snp.makeConstraints { (make) in
                 make.bottom.equalTo(self).offset(5)
                 make.right.equalTo(self).offset(10)
-                make.size.equalTo(CGSize(width: 60, height: 60))
+                make.size.equalTo(CGSize(width: 70, height: 70))
             }
-        }else{
+        } else {
             reloadButton.snp.makeConstraints { (make) in
                 make.bottom.equalTo(self)
                 make.right.equalTo(self)
                 make.size.equalTo(CGSize(width: 0, height: 0))
             }
         }
-        
+
         titleLabel.snp.makeConstraints { (make) in
             make.left.equalTo(self)
             make.right.equalTo(reloadButton.snp.left)
@@ -155,10 +153,8 @@ class YSNormalBaseCell: UICollectionViewCell {
 
 // MARK: - target action
 extension YSNormalBaseCell {
-    
     // 点击刷新了每个section的数据
     @objc fileprivate func clickReload(){
-        
         // 1.按钮做旋转动画
         let rotaAnimation = CABasicAnimation(keyPath: "transform.rotation")
         rotaAnimation.toValue = Float.pi * 8
@@ -168,7 +164,7 @@ extension YSNormalBaseCell {
         
         // 2.通知代理
         if let delegate = delegate {
-            if let method = delegate.normalBaseReloadSection{
+            if let method = delegate.normalBaseReloadSection {
                 method(selectedSection, sectiontype)
             }
         }

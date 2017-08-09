@@ -15,8 +15,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
-        application.setStatusBarHidden(false, with: .fade)
         // 初始化控制器
         initMainController()
         // 加载动画
@@ -25,7 +23,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         YSFPSStatus.shared.open()
         // 添加观察者观察网络变化
         YSNetworkTool.shared.startNetworkObserver()
-        
         return true
     }
     
@@ -46,6 +43,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }) { (complete) in
             DispatchQueue.afer(time: 0.5, action: {
                 backImageView.removeFromSuperview()
+                UIApplication.shared.setStatusBarHidden(false, with: .fade)
             })
         }
         window?.addSubview(backImageView)

@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>0.0 允许我使用麦克风卜~</string>
+	<key>NSCameraUsageDescription</key>
+	<string>0.0 允许我使用摄像头卜~</string>
 	<key>UIStatusBarHidden</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>

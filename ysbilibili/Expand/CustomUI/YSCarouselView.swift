@@ -45,28 +45,24 @@ class YSCarouselView: UIView {
     }
     
     /// 选中的action
-    var selectedAction:((_ index: Int)->())?
+    var selectedAction: ((_ index: Int)->())?
     
     // MARK: - 内部属性
     fileprivate var contentCollectonView: UICollectionView?
-    fileprivate let kmaxSectionCount = 100
-    fileprivate let kreuseKey = "YSCarouselViewCell"
+    fileprivate let kMaxSectionCount = 100
+    fileprivate let kReuseKey = "YSCarouselViewCell"
     fileprivate var showingIndex = 0
     fileprivate var repeatTimer: Timer?
     fileprivate var arrayCount = 0
     
-    lazy var pageControl: UIPageControl = {
-        let pageControl = UIPageControl()
-        return pageControl
-    }()
-    
+    lazy var pageControl = UIPageControl()
     // MARK: - life cycle
     override func layoutSubviews() {
         super.layoutSubviews()
         
         // 1. 障眼法
-        if arrayCount > 0{
-            contentCollectonView?.scrollToItem(at: IndexPath(row: 0, section: kmaxSectionCount/2), at: .left, animated: false)
+        if arrayCount > 0 {
+            contentCollectonView?.scrollToItem(at: IndexPath(row: 0, section: kMaxSectionCount / 2), at: .left, animated: false)
         }
         
         // 2. pagecontrol初始化
@@ -104,7 +100,7 @@ extension YSCarouselView {
     /// - parameter selectAction:           点击的action
     ///
     /// - returns: 轮播
-    convenience init(viewframe:CGRect,localImageStringArray:[String]? = nil,intentImageStringArray:[String]? = nil,selectAction:((_ index:Int)->())? = nil) {
+    convenience init(viewframe: CGRect, localImageStringArray: [String]? = nil, intentImageStringArray: [String]? = nil,selectAction: ((_ index:Int)->())? = nil) {
         self.init()
         
         // 1. 赋值
@@ -114,13 +110,12 @@ extension YSCarouselView {
         frame = viewframe
         self.backgroundColor = UIColor.white
         // 2. ui初始化
-        setupui()
+        setupUI()
     }
 }
 
 extension YSCarouselView {
-    func setupui() {
-        
+    func setupUI() {
         // 1.collectionview初始化
         let flowLayout = UICollectionViewFlowLayout()
         flowLayout.itemSize = frame.size
@@ -130,7 +125,7 @@ extension YSCarouselView {
         contentCollectonView = UICollectionView(frame: bounds, collectionViewLayout: flowLayout)
         contentCollectonView?.delegate = self
         contentCollectonView?.dataSource = self
-        contentCollectonView?.register(carouselViewCell.self, forCellWithReuseIdentifier: kreuseKey)
+        contentCollectonView?.register(CarouselViewCell.self, forCellWithReuseIdentifier: kReuseKey)
         contentCollectonView?.isPagingEnabled = true
         contentCollectonView?.showsVerticalScrollIndicator = false
         contentCollectonView?.showsHorizontalScrollIndicator = false
@@ -138,13 +133,12 @@ extension YSCarouselView {
     }
     
     @objc fileprivate func nextPage() {
-        
         // 1. 先障眼法
-        let resetitem = IndexPath(item: showingIndex, section: self.kmaxSectionCount/2)
+        let resetitem = IndexPath(item: showingIndex, section: self.kMaxSectionCount / 2)
         self.contentCollectonView?.scrollToItem(at: resetitem, at: .left, animated: false)
         
         // 2. 滑动到下一张
-        var nextSection = kmaxSectionCount/2
+        var nextSection = kMaxSectionCount / 2
         showingIndex += 1
         
         if showingIndex == self.arrayCount {
@@ -165,7 +159,6 @@ extension YSCarouselView {
     }
     
     fileprivate func addTimer() {
-        
         if (repeatTimer != nil) {return}
         
         // 1. 数据少于2不添加timer
@@ -185,7 +178,7 @@ extension YSCarouselView {
             self.contentCollectonView?.isScrollEnabled = false
             removeTimer()
             pageControl.isHidden = true
-        }else{
+        } else {
             self.contentCollectonView?.isScrollEnabled = true
             pageControl.isHidden = false
             addTimer()
@@ -198,7 +191,6 @@ extension YSCarouselView {
 
 // MARK: - collectionview 代理方法
 extension YSCarouselView: UICollectionViewDelegate {
-    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if let action = selectedAction {
             action(indexPath.row)
@@ -219,21 +211,18 @@ extension YSCarouselView: UICollectionViewDelegate {
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        
-        let page = Int(scrollView.contentOffset.x/scrollView.frame.size.width)%arrayCount
+        let page = Int(scrollView.contentOffset.x / scrollView.frame.size.width) % arrayCount
         self.pageControl.currentPage = page;
     }
 }
 
 // MARK: - collectionview 数据源方法
 extension YSCarouselView: UICollectionViewDataSource {
-    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return kmaxSectionCount
+        return kMaxSectionCount
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
         // 1. 本地数组有值
         if let localImageArray = localImageArray {
             return localImageArray.count
@@ -249,9 +238,8 @@ extension YSCarouselView: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
         // 1. 获取cell
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kreuseKey, for: indexPath) as! carouselViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kReuseKey, for: indexPath) as! CarouselViewCell
         
         // 2. 本地数组有值,赋值本地图片数据
         if let localImageArray = localImageArray {
@@ -282,8 +270,7 @@ extension YSCarouselView: UICollectionViewDataSource {
 
 
 // MARK: - collectionViewcell （自定义就自定义这个cell咯）
-fileprivate class carouselViewCell: UICollectionViewCell  {
-    
+fileprivate class CarouselViewCell: UICollectionViewCell  {
     lazy var contentImageView: UIImageView = {
         let contentImageView = UIImageView()
         contentImageView.clipsToBounds = true

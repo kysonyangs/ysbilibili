@@ -15,16 +15,14 @@ import SwiftyJSON
 }
 
 class YSLiveViewModel {
-
     /// 存储数据的model
     var statusModelArray: [YSLiveItemModel] = [YSLiveItemModel]()
     /// banner的数组
     var bannerModelArray: [YSLiveBannerModel]?
     /// 存放collectionview 每个section的数据数组的字典
-    var reloadSectionDict = [String:Any]()
+    var reloadSectionDict = [String: Any]()
     /// 代理
     weak var delegate: YSLiveViewModelDelegate?
-    
 }
 
 
@@ -32,13 +30,11 @@ class YSLiveViewModel {
 // MARK:- 请求数据
 //======================================================================
 extension YSLiveViewModel {
-    
     // 请求数据
-    func requestDatas(finishCallBack:@escaping ()->(),failueCallBack:@escaping ()->()){
-        
+    func requestDatas(finishCallBack: @escaping ()->(), failueCallBack: @escaping ()->()){
         // 1. 生成几个arra来暂时存放数据
-        var commonAreaArray:[YSLiveItemModel]?
-        var hotRecommendModel:YSLiveItemModel?
+        var commonAreaArray: [YSLiveItemModel]?
+        var hotRecommendModel: YSLiveItemModel?
         
         // 2. 数据是从两个接口获取用group最后来同步数据
         let group = DispatchGroup()
@@ -119,7 +115,7 @@ extension YSLiveViewModel {
             // <4. 失败或者成功的回调
             if self.statusModelArray.count > 0 {
                 finishCallBack()
-            }else {
+            } else {
                 failueCallBack()
             }
         }
@@ -131,10 +127,8 @@ extension YSLiveViewModel {
 // MARK:- datasource方法
 //======================================================================
 extension YSLiveViewModel {
-    
     // 生成cell
-    func createCell(collectionView:UICollectionView,indexPath:IndexPath) -> UICollectionViewCell {
-        
+    func createCell(collectionView: UICollectionView, indexPath: IndexPath) -> UICollectionViewCell {
         // 1. 获取数据
         let sectionModel = statusModelArray[indexPath.section]
         let rowModel = sectionModel.lives?[indexPath.row]
@@ -159,7 +153,7 @@ extension YSLiveViewModel {
         // 4. 判断是不是最后一个数据
         if indexPath.row == (sectionModel.lives?.count)!-1 {
             cell.showReloadButton = true
-        }else{
+        } else {
             cell.showReloadButton = false
         }
         
@@ -175,7 +169,7 @@ extension YSLiveViewModel {
             // 1.拿到数据
             let sectionModel = statusModelArray[indexPath.section]
             // 2.生成cell
-            let head = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: khomeLiveheadReuseKey, for: indexPath) as! YSLiveHeaderView
+            let head = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: kLiveheadReuseKey, for: indexPath) as! YSLiveHeaderView
             // 3.赋值数据
             head.headModel = sectionModel.partition
             
@@ -185,8 +179,8 @@ extension YSLiveViewModel {
             }
             
             return head
-        }else{// foot
-            let foot = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionFooter, withReuseIdentifier: khomeLiveFootReuseKey, for: indexPath)
+        } else {// foot
+            let foot = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionFooter, withReuseIdentifier: kLiveFootReuseKey, for: indexPath)
             return foot
         }
     }
@@ -195,7 +189,7 @@ extension YSLiveViewModel {
     func returnRowCount(section:Int) -> Int {
         if let count = statusModelArray[section].lives?.count {
             return count
-        }else{
+        } else {
             return 0
         }
     }
@@ -206,10 +200,8 @@ extension YSLiveViewModel {
 // MARK:- layout delegate 方法
 //======================================================================
 extension YSLiveViewModel {
-    
     // 计算 itemsize
     func calculateItemSize(indexPath: IndexPath) -> CGSize {
-        
         // 1.拿到数据
         let sectionModel = statusModelArray[indexPath.section]
         let rowModel = sectionModel.lives?[indexPath.row]
@@ -218,7 +210,7 @@ extension YSLiveViewModel {
         if let rowModel = rowModel {
             if rowModel.is_hotBanner {
                 return CGSize(width: kScreenWidth - 2 * kPadding, height: 160)
-            }else{
+            } else {
                 let width = (kScreenWidth - 3*kPadding)/2
                 let height:CGFloat = 160
                 return CGSize(width: width, height: height)
@@ -226,16 +218,16 @@ extension YSLiveViewModel {
         }
         
         // 3. 返回默认的数据
-        let width = (kScreenWidth - 3*kPadding)/2
+        let width = (kScreenWidth - 3 * kPadding)/2
         let height:CGFloat = 160
         return CGSize(width: width, height: height)
     }
     
     // head的高度
     func calculateHeadHeight(section: Int) -> CGSize {
-        if section == 0{
-            return CGSize(width: kScreenWidth, height: 40 + kCarouseHeight + khomeLiveMenuHeight)
-        }else{
+        if section == 0 {
+            return CGSize(width: kScreenWidth, height: 40 + kCarouseHeight + kLiveMenuHeight)
+        } else {
             return CGSize(width: kScreenWidth, height: 50)
         }
     }
@@ -243,8 +235,8 @@ extension YSLiveViewModel {
     // foot的size
     func calculateFootHeight(section: Int) -> CGSize {
         if section == statusModelArray.count - 1{
-            return CGSize(width: kScreenWidth, height: 65)
-        }else{
+            return CGSize(width: kScreenWidth, height: 55)
+        } else {
             return CGSize(width: 0, height: 0)
         }
     }
@@ -255,18 +247,15 @@ extension YSLiveViewModel {
 // MARK:- YSNormalBaseCell 的代理
 //======================================================================
 extension YSLiveViewModel: YSNormalBaseCellDelegate {
-    
     func normalBaseReloadSection(section: Int, type: String?) {
         reloadSectionDataWithType(type: type, section: section)
     }
-    
 }
 
 //======================================================================
 // MARK:- 私有方法
 //======================================================================
 extension YSLiveViewModel {
-    
     fileprivate func creatItemModel(liveModel: YSLiveDetailModel) -> YSItemDetailModel{
         let itemModel = YSItemDetailModel()
         itemModel.name = liveModel.owner?.name
@@ -279,7 +268,6 @@ extension YSLiveViewModel {
     }
     
     fileprivate func reloadSectionDataWithType(type: String?,section: Int) {
-    
         guard let type = type else {return}
         let urlString = YSLiveReloadURLhelper.createReloadSectionURL(area: type)
         YSNetworkTool.shared.requestData(.get, URLString: urlString, finished: { (result) in
@@ -297,7 +285,7 @@ extension YSLiveViewModel {
                 if let hotModel = hotModel{
                     self.statusModelArray[0] = hotModel
                 }
-            }else{// 2. 普通的数据
+            } else {// 2. 普通的数据
                 //
                 // 这里偷懒了啊, 每次返回的array长度为10 显示的长度为4.完全可以吧这个10先缓存起来，没有缓存的时候再去加载网络的数据
                 //
@@ -330,7 +318,6 @@ extension YSLiveViewModel {
     }
     
     fileprivate func dealFirstSectionData(hotRecommendModel: YSLiveItemModel?) {
-        
         guard let maxCount = hotRecommendModel?.lives?.count else {return}
         if hotRecommendModel?.banner_data?.count == 1 {
             // 拿到数据插入到最中间

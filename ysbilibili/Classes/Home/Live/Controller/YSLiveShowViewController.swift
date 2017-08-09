@@ -9,8 +9,8 @@
 import UIKit
 
 
-let khomeLiveheadReuseKey = "khomeLiveheadReuseKey"
-let khomeLiveFootReuseKey = "khomeLiveFootReuseKey"
+let kLiveheadReuseKey = "kLiveheadReuseKey"
+let kLiveFootReuseKey = "kLiveFootReuseKey"
 
 class YSLiveShowViewController: YSRabbitFreshBaseViewController {
 
@@ -28,24 +28,22 @@ class YSLiveShowViewController: YSRabbitFreshBaseViewController {
         mainCollectionView.showsVerticalScrollIndicator = false
         // 注册cell foot head
         mainCollectionView.register(YSLiveShowCell.self, forCellWithReuseIdentifier: kLiveCellReuseKey)
-        mainCollectionView.register(YSLiveHeaderView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: khomeLiveheadReuseKey)
-        mainCollectionView.register(YSLiveFooterView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionFooter, withReuseIdentifier: khomeLiveFootReuseKey)
+        mainCollectionView.register(YSLiveHeaderView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: kLiveheadReuseKey)
+        mainCollectionView.register(YSLiveFooterView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionFooter, withReuseIdentifier: kLiveFootReuseKey)
         return mainCollectionView
     }()
     
-    lazy var startLivIngButton: UIButton = {
-        let startLivIngButton = UIButton()
-        startLivIngButton.backgroundColor = UIColor.ysColor(red: 250, green: 91, blue: 136, alpha: 1)
-        startLivIngButton.frame = CGRect(x: kScreenWidth - 80, y: kScreenHeight - 130, width: 60, height: 60)
-        startLivIngButton.layer.cornerRadius = 30
-        startLivIngButton.imageView?.contentMode = .center
-        startLivIngButton.setImage(UIImage(named: "goLive"), for: .normal)
-        startLivIngButton.setImage(UIImage(named: "goLive"), for: .highlighted)
-        startLivIngButton.addTarget(self, action: #selector(startLive), for: .touchUpInside)
-        return startLivIngButton
+    lazy var startLivingButton: UIButton = {
+        let startLivingButton = UIButton()
+        startLivingButton.backgroundColor = UIColor.ysColor(red: 250, green: 91, blue: 136, alpha: 1)
+        startLivingButton.frame = CGRect(x: kScreenWidth - 80, y: kScreenHeight - 130, width: 60, height: 60)
+        startLivingButton.layer.cornerRadius = 30
+        startLivingButton.imageView?.contentMode = .center
+        startLivingButton.setImage(UIImage(named: "goLive"), for: .normal)
+        startLivingButton.setImage(UIImage(named: "goLive"), for: .highlighted)
+        startLivingButton.addTarget(self, action: #selector(startLive), for: .touchUpInside)
+        return startLivingButton
     }()
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,7 +51,7 @@ class YSLiveShowViewController: YSRabbitFreshBaseViewController {
         loadDatas()
         
         liveVM.delegate = self
-        view.addSubview(startLivIngButton)
+        view.addSubview(startLivingButton)
         
         NotificationCenter.default.addObserver(self, selector: #selector(carouselViewSelecLink(notification:)), name: kCarouselViewSelectedBangumiNotification, object: nil)
     }
@@ -78,7 +76,6 @@ class YSLiveShowViewController: YSRabbitFreshBaseViewController {
 // MARK:- 私有方法
 //======================================================================
 extension YSLiveShowViewController {
-
     fileprivate func loadDatas() {
         liveVM.requestDatas(finishCallBack: {[weak self] in
             DispatchQueue.main.async {
@@ -97,7 +94,6 @@ extension YSLiveShowViewController {
 // MARK:- HomeLiveViewModelDelegate
 //======================================================================
 extension YSLiveShowViewController: YSLiveViewModelDelegate{
-    
     func liveViewModelReloadSetion(section: Int) {
         DispatchQueue.main.async {
             self.maincollectionView.reloadSections(IndexSet(integer: section))
@@ -119,7 +115,6 @@ extension YSLiveShowViewController {
 // MARK:- collectionView 的数据源
 //======================================================================
 extension YSLiveShowViewController: UICollectionViewDataSource {
-    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return liveVM.statusModelArray.count
     }
@@ -142,7 +137,6 @@ extension YSLiveShowViewController: UICollectionViewDataSource {
 // MARK:- collectionView 的代理方法
 //======================================================================
 extension YSLiveShowViewController: UICollectionViewDelegate{
-    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         // 1.拿到数据
         let sectionModel = liveVM.statusModelArray[indexPath.section]
@@ -150,12 +144,12 @@ extension YSLiveShowViewController: UICollectionViewDelegate{
         // 2.生成控制器
         guard let playUrl = rowModel?.playurl else {return}
         print(playUrl)
-//        let vc = YSBilibiliLivePlayerViewController()
-//        // 3.赋值
-//        vc.liveString = playUrl
-//        vc.liveModel = rowModel
-//        // 4.跳转
-//        navigationController?.pushViewController(vc, animated: true)
+        let vc = YSBilibiliLivePlayerViewController()
+        // 3.赋值
+        vc.liveString = playUrl
+        vc.liveModel = rowModel
+        // 4.跳转
+        navigationController?.pushViewController(vc, animated: true)
     }
     
 }
@@ -164,7 +158,6 @@ extension YSLiveShowViewController: UICollectionViewDelegate{
 // MARK:- collectionView layout 的代理方法
 //======================================================================
 extension YSLiveShowViewController: UICollectionViewDelegateFlowLayout{
-    
     // 1. 每个section的inset
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 0, left: kPadding, bottom: 0, right: kPadding)
@@ -190,7 +183,6 @@ extension YSLiveShowViewController: UICollectionViewDelegateFlowLayout{
 // MARK:- banner 点击事件
 //======================================================================
 extension YSLiveShowViewController {
-    
     func carouselViewSelecLink(notification:Notification) {
         let userInfo = notification.userInfo
         guard let link = userInfo?[kCarouselSelectedUrlKey] as? String else {

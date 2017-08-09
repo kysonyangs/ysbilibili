@@ -13,8 +13,7 @@ class YSLiveShowCell: YSNormalBaseCell {
     var isNeedShowArea = true
     
     var sonStatusModel: YSItemDetailModel? {
-        
-        didSet{
+        didSet {
             playLabel.text = sonStatusModel?.online.returnShowString()
             nameLabel.text = sonStatusModel?.name
             if isNeedShowArea {
@@ -22,7 +21,7 @@ class YSLiveShowCell: YSNormalBaseCell {
                 liveAreaButton.setTitle(areabuttonString(), for: .normal)
                 liveAreaButton.setTitle(areabuttonString(), for: .highlighted)
                 titleLabel.text = liveTitleLabelString()
-            }else{
+            } else {
                 liveAreaButton.isHidden = true
             }
             
@@ -77,21 +76,20 @@ class YSLiveShowCell: YSNormalBaseCell {
     // 添加控件
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.addSubview(nameLabel)
-        self.addSubview(playLabel)
-        self.addSubview(playIocnImageView)
-        self.addSubview(liveAreaButton)
-        self.addSubview(cornerImageView)
+        addSubview(nameLabel)
+        addSubview(playLabel)
+        addSubview(playIocnImageView)
+        addSubview(liveAreaButton)
+        addSubview(cornerImageView)
+        
+        setupConstraints()
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    // 初始化位置
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        
+    fileprivate func setupConstraints() {
         playLabel.snp.makeConstraints { (make) in
             make.right.equalTo(maskImageView.snp.right).offset(-5)
             make.bottom.equalTo(maskImageView.snp.bottom).offset(-5)
@@ -124,7 +122,6 @@ class YSLiveShowCell: YSNormalBaseCell {
 
 // MARK: - 私有方法
 extension YSLiveShowCell {
-    
     fileprivate func areabuttonString() -> String {
         if let area = sonStatusModel?.area{
             return "#\(area)#"
@@ -134,7 +131,6 @@ extension YSLiveShowCell {
     }
     
     fileprivate func liveTitleLabelString() -> String {
-        
         var str = areabuttonString()
         if let titleStr = sonStatusModel?.title{
             var newTitleStr = titleStr

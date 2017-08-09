@@ -31,7 +31,7 @@
 		480FB4691F394E5D00E423D6 /* ZHNplayerUrlLoadingBackViewActionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4641F394E5D00E423D6 /* ZHNplayerUrlLoadingBackViewActionModel.swift */; };
 		480FB46A1F394E5D00E423D6 /* ZHNplayFullScreenMenuViewActionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4651F394E5D00E423D6 /* ZHNplayFullScreenMenuViewActionModel.swift */; };
 		480FB46B1F394E5D00E423D6 /* ZHNplayNormalMenuViewActionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4661F394E5D00E423D6 /* ZHNplayNormalMenuViewActionModel.swift */; };
-		480FB46D1F394E7800E423D6 /* ZHNbilibiliLivePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB46C1F394E7800E423D6 /* ZHNbilibiliLivePlayerViewController.swift */; };
+		480FB46D1F394E7800E423D6 /* YSBilibiliLivePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB46C1F394E7800E423D6 /* YSBilibiliLivePlayerViewController.swift */; };
 		480FB4751F394EAB00E423D6 /* ZHNlivePlayDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4741F394EAB00E423D6 /* ZHNlivePlayDetailViewModel.swift */; };
 		480FB47E1F394EB800E423D6 /* ZHNliveDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB4761F394EB800E423D6 /* ZHNliveDetailView.swift */; };
 		480FB47F1F394EB800E423D6 /* ZHNliveDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 480FB4771F394EB800E423D6 /* ZHNliveDetailView.xib */; };
@@ -444,7 +444,7 @@
 		480FB4641F394E5D00E423D6 /* ZHNplayerUrlLoadingBackViewActionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNplayerUrlLoadingBackViewActionModel.swift; sourceTree = "<group>"; };
 		480FB4651F394E5D00E423D6 /* ZHNplayFullScreenMenuViewActionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNplayFullScreenMenuViewActionModel.swift; sourceTree = "<group>"; };
 		480FB4661F394E5D00E423D6 /* ZHNplayNormalMenuViewActionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNplayNormalMenuViewActionModel.swift; sourceTree = "<group>"; };
-		480FB46C1F394E7800E423D6 /* ZHNbilibiliLivePlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNbilibiliLivePlayerViewController.swift; sourceTree = "<group>"; };
+		480FB46C1F394E7800E423D6 /* YSBilibiliLivePlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSBilibiliLivePlayerViewController.swift; sourceTree = "<group>"; };
 		480FB4741F394EAB00E423D6 /* ZHNlivePlayDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNlivePlayDetailViewModel.swift; sourceTree = "<group>"; };
 		480FB4761F394EB800E423D6 /* ZHNliveDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNliveDetailView.swift; sourceTree = "<group>"; };
 		480FB4771F394EB800E423D6 /* ZHNliveDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZHNliveDetailView.xib; sourceTree = "<group>"; };
@@ -1191,7 +1191,7 @@
 				480FB46E1F394E7B00E423D6 /* Model */,
 				480FB4701F394E8400E423D6 /* View */,
 				480FB46F1F394E7F00E423D6 /* ViewModel */,
-				480FB46C1F394E7800E423D6 /* ZHNbilibiliLivePlayerViewController.swift */,
+				480FB46C1F394E7800E423D6 /* YSBilibiliLivePlayerViewController.swift */,
 			);
 			path = LivePlayer;
 			sourceTree = "<group>";
@@ -2725,7 +2725,7 @@
 				483E54701F386C0B002FABE5 /* GPUImageToonFilter.m in Sources */,
 				483E54161F386C0A002FABE5 /* GPUImageHighlightShadowFilter.m in Sources */,
 				483E54491F386C0A002FABE5 /* GPUImagePolkaDotFilter.m in Sources */,
-				480FB46D1F394E7800E423D6 /* ZHNbilibiliLivePlayerViewController.swift in Sources */,
+				480FB46D1F394E7800E423D6 /* YSBilibiliLivePlayerViewController.swift in Sources */,
 				483E542E1F386C0A002FABE5 /* GPUImageLuminanceThresholdFilter.m in Sources */,
 				480FB4C71F394FA100E423D6 /* ZHNnormalPlayFullScreenMenuView.swift in Sources */,
 				480FB4A01F394F7500E423D6 /* ZHNnormalPlayerDetailTableViewController.swift in Sources */,

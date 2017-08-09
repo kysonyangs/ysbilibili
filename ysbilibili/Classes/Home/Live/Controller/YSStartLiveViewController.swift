@@ -40,8 +40,21 @@ class YSStartLiveViewController: UIViewController {
         return disMissButton
     }()
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        UIApplication.shared.setStatusBarStyle(.default, animated: true)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        UIApplication.shared.setStatusBarStyle(.lightContent, animated: true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        UIApplication.shared.setStatusBarStyle(.default, animated: false)
+        
         view.backgroundColor = UIColor.white
         view.addSubview(liveStartEndButton)
         liveStartEndButton.snp.makeConstraints { (make) in

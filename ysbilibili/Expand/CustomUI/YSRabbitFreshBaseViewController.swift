@@ -18,7 +18,7 @@ class YSRabbitFreshBaseViewController: UIViewController {
     fileprivate let kfreshMinHeight: CGFloat = 50// 兔耳朵开始显示的高度
     fileprivate let KfreshMaxHeight: CGFloat = 100// 兔耳朵转动到最大值90度的高度
     fileprivate let knoticelabelCenterY: CGFloat = 40
-    fileprivate let kscrollViewCornerRadius: CGFloat = 10
+    fileprivate let kscrollViewCornerRadius: CGFloat = 8
     fileprivate let screenWidth = UIScreen.main.bounds.width
     
     fileprivate var animateTimer:Timer?
