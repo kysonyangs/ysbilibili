@@ -275,6 +275,7 @@ extension YSLiveViewModel {
             if type == "hot" {// 1. 推荐的数据
                 // <1. 获取到dict
                 let jsonDict = JSON(result)
+                print(jsonDict)
                 // <2. 转成string
                 let modelJson = jsonDict["data"].dictionaryObject
                 // <3. 转模型
@@ -291,6 +292,7 @@ extension YSLiveViewModel {
                 //
                 // <1. 获取到dict
                 guard let resultDict = result as? [String:Any] else{return}
+                print(resultDict)
                 // <2. 转成string
                 let resultString = YSJsonHelper.getjsonArrayString(key: "data", json: resultDict)
                 // <3. 转成model
